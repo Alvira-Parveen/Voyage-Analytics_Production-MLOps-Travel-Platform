@@ -1,8 +1,9 @@
 """Gender Classification API Route"""
 
-import time
 import sys
+import time
 from pathlib import Path
+
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 import numpy as np
@@ -25,6 +26,7 @@ async def predict_gender(payload: GenderInput, request: Request):
     t0 = time.perf_counter()
     try:
         from api.main import get_model_cache
+
         model_cache = get_model_cache()
     except Exception:
         model_cache = {}
@@ -38,16 +40,16 @@ async def predict_gender(payload: GenderInput, request: Request):
     feature_cols = artifact["feature_cols"]
 
     feature_map = {
-        "age":                       payload.age,
-        "company_enc":               payload.company_enc,
-        "travel_frequency":          payload.travel_frequency,
-        "avg_flight_price":          payload.avg_flight_price,
-        "total_flight_spend":        payload.total_flight_spend,
+        "age": payload.age,
+        "company_enc": payload.company_enc,
+        "travel_frequency": payload.travel_frequency,
+        "avg_flight_price": payload.avg_flight_price,
+        "total_flight_spend": payload.total_flight_spend,
         "preferred_flight_type_enc": payload.preferred_flight_type_enc,
-        "hotel_bookings":            payload.hotel_bookings,
-        "avg_hotel_spend":           payload.avg_hotel_spend,
-        "age_group_enc":             payload.age_group_enc,
-        "spending_category_enc":     payload.spending_category_enc,
+        "hotel_bookings": payload.hotel_bookings,
+        "avg_hotel_spend": payload.avg_hotel_spend,
+        "age_group_enc": payload.age_group_enc,
+        "spending_category_enc": payload.spending_category_enc,
     }
 
     row = pd.DataFrame([{col: feature_map.get(col, 0) for col in feature_cols}])
@@ -93,9 +95,7 @@ async def predict_gender(payload: GenderInput, request: Request):
         f"contributor is the average flight spending category and travel frequency."
     )
 
-    logger.info("Gender predicted", extra={
-        "prediction": gender_label, "confidence": confidence
-    })
+    logger.info("Gender predicted", extra={"prediction": gender_label, "confidence": confidence})
 
     return GenderPredictionResponse(
         predicted_gender=gender_label,
@@ -106,5 +106,5 @@ async def predict_gender(payload: GenderInput, request: Request):
         customer_persona=persona,
         travel_profile=profile,
         decision_summary=summary,
-        inference_time_ms=round(inference_time, 2)
+        inference_time_ms=round(inference_time, 2),
     )

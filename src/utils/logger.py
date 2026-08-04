@@ -28,11 +28,7 @@ class JSONFormatter(logging.Formatter):
         return json.dumps(log_obj)
 
 
-def get_logger(
-    name: str,
-    level: str = "INFO",
-    log_file: Optional[str] = None
-) -> logging.Logger:
+def get_logger(name: str, level: str = "INFO", log_file: Optional[str] = None) -> logging.Logger:
     """
     Returns a structured JSON logger.
 

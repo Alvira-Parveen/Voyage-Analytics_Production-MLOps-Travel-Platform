@@ -13,11 +13,18 @@ from sklearn.preprocessing import LabelEncoder
 logger = logging.getLogger(__name__)
 
 BRAZIL_HOLIDAYS = [
-    "01/01", "04/21", "05/01", "09/07",
-    "10/12", "11/02", "11/15", "12/25",
+    "01/01",
+    "04/21",
+    "05/01",
+    "09/07",
+    "10/12",
+    "11/02",
+    "11/15",
+    "12/25",
 ]
 
 # Flights Feature Engineering
+
 
 def engineer_flights(df: pd.DataFrame) -> pd.DataFrame:
     """Create features for the flight price regression model."""
@@ -25,17 +32,21 @@ def engineer_flights(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
 
     # Date features
-    df["year"]    = df["date"].dt.year
-    df["month"]   = df["date"].dt.month
+    df["year"] = df["date"].dt.year
+    df["month"] = df["date"].dt.month
     df["weekday"] = df["date"].dt.weekday
     df["is_weekend"] = (df["weekday"] >= 5).astype(int)
 
     # Season (Southern Hemisphere — Brazil)
     def get_season(month):
-        if month in [12, 1, 2]:  return "summer"
-        elif month in [3, 4, 5]:  return "autumn"
-        elif month in [6, 7, 8]:  return "winter"
-        else:                      return "spring"
+        if month in [12, 1, 2]:
+            return "summer"
+        elif month in [3, 4, 5]:
+            return "autumn"
+        elif month in [6, 7, 8]:
+            return "winter"
+        else:
+            return "spring"
 
     df["season"] = df["month"].apply(get_season)
 
@@ -65,7 +76,9 @@ def engineer_flights(df: pd.DataFrame) -> pd.DataFrame:
     logger.info(f"Flights features ready: {df.shape}")
     return df
 
+
 # Hotels Feature Engineering
+
 
 def engineer_hotels(df: pd.DataFrame) -> pd.DataFrame:
     """Create features for hotel recommendation."""
@@ -73,14 +86,18 @@ def engineer_hotels(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
 
     df["price_per_day"] = (df["price"]).round(4)
-    df["year"]  = df["date"].dt.year
+    df["year"] = df["date"].dt.year
     df["month"] = df["date"].dt.month
 
     # Stay duration category
     def stay_cat(d):
-        if d <= 2:   return "short"
-        elif d <= 5: return "medium"
-        else:        return "long"
+        if d <= 2:
+            return "short"
+        elif d <= 5:
+            return "medium"
+        else:
+            return "long"
+
     df["stay_category"] = df["days"].apply(stay_cat)
 
     # Hotel popularity (how many times booked)
@@ -98,13 +115,11 @@ def engineer_hotels(df: pd.DataFrame) -> pd.DataFrame:
     logger.info(f"Hotels features ready: {df.shape}")
     return df
 
+
 # Users Feature Engineering
 
-def engineer_users(
-    users: pd.DataFrame,
-    flights: pd.DataFrame,
-    hotels: pd.DataFrame
-) -> pd.DataFrame:
+
+def engineer_users(users: pd.DataFrame, flights: pd.DataFrame, hotels: pd.DataFrame) -> pd.DataFrame:
     """Create behavioral features for the gender classification model."""
     logger.info("Engineering user features...")
     df = users.copy()
@@ -145,17 +160,20 @@ def engineer_users(
 
     # Age group
     def age_group(a):
-        if a < 25:   return "young"
-        elif a < 40: return "adult"
-        elif a < 60: return "middle_aged"
-        else:        return "senior"
+        if a < 25:
+            return "young"
+        elif a < 40:
+            return "adult"
+        elif a < 60:
+            return "middle_aged"
+        else:
+            return "senior"
+
     df["age_group"] = df["age"].apply(age_group)
 
     # Spending category
     df["spending_category"] = pd.cut(
-        df["avg_flight_price"],
-        bins=[0, 300, 800, 1500, np.inf],
-        labels=["budget", "economy", "premium", "luxury"]
+        df["avg_flight_price"], bins=[0, 300, 800, 1500, np.inf], labels=["budget", "economy", "premium", "luxury"]
     ).astype(str)
 
     # Label encode
@@ -166,24 +184,26 @@ def engineer_users(
     logger.info(f"Users features ready: {df.shape}")
     return df
 
+
 # Run Feature Engineering
+
 
 def run_feature_engineering(processed_dir: str = "data/processed"):
     """Load clean data, engineer features, save to processed dir."""
     out = Path(processed_dir)
     out.mkdir(parents=True, exist_ok=True)
 
-    print("\n" + "="*60)
+    print("\n" + "=" * 60)
     print("  VOYAGE ANALYTICS 2.0 — FEATURE ENGINEERING")
-    print("="*60)
+    print("=" * 60)
 
     flights = pd.read_csv(out / "flights_clean.csv", parse_dates=["date"])
-    hotels  = pd.read_csv(out / "hotels_clean.csv",  parse_dates=["date"])
-    users   = pd.read_csv(out / "users_clean.csv")
+    hotels = pd.read_csv(out / "hotels_clean.csv", parse_dates=["date"])
+    users = pd.read_csv(out / "users_clean.csv")
 
     flights_fe = engineer_flights(flights)
-    hotels_fe  = engineer_hotels(hotels)
-    users_fe   = engineer_users(users, flights, hotels)
+    hotels_fe = engineer_hotels(hotels)
+    users_fe = engineer_users(users, flights, hotels)
 
     flights_fe.to_csv(out / "flights_features.csv", index=False)
     hotels_fe.to_csv(out / "hotels_features.csv", index=False)
@@ -192,12 +212,13 @@ def run_feature_engineering(processed_dir: str = "data/processed"):
     print(f"  ✅  flights_features.csv — {flights_fe.shape[0]:,} rows × {flights_fe.shape[1]} cols")
     print(f"  ✅  hotels_features.csv  — {hotels_fe.shape[0]:,} rows × {hotels_fe.shape[1]} cols")
     print(f"  ✅  users_features.csv   — {users_fe.shape[0]:,} rows × {users_fe.shape[1]} cols")
-    print("="*60 + "\n")
+    print("=" * 60 + "\n")
 
     return flights_fe, hotels_fe, users_fe
 
 
 if __name__ == "__main__":
     import sys
+
     sys.path.insert(0, str(Path(__file__).parent.parent.parent))
     run_feature_engineering()

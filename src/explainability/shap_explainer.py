@@ -16,6 +16,7 @@ logger = logging.getLogger(__name__)
 SHAP_AVAILABLE = False
 try:
     import shap as _shap_lib
+
     SHAP_AVAILABLE = True
 except Exception as _shap_err:
     logger.warning(f"SHAP disabled (incompatible environment): {_shap_err}")
@@ -63,13 +64,13 @@ def get_shap_explanation(
             # Linear models fallback
             explainer = _shap_lib.LinearExplainer(model, X)
             shap_vals = explainer.shap_values(X)
-            shap_arr  = shap_vals[0]
-            base_val  = float(explainer.expected_value)
+            shap_arr = shap_vals[0]
+            base_val = float(explainer.expected_value)
 
         contribs = [
             {
-                "feature":    feature_cols[i],
-                "value":      float(input_df[feature_cols[i]].iloc[0]),
+                "feature": feature_cols[i],
+                "value": float(input_df[feature_cols[i]].iloc[0]),
                 "shap_value": float(shap_arr[i]),
             }
             for i in range(len(feature_cols))
@@ -77,8 +78,8 @@ def get_shap_explanation(
         contribs.sort(key=lambda x: abs(x["shap_value"]), reverse=True)
 
         return {
-            "base_value":     base_val,
-            "top_features":   contribs[:max_display],
+            "base_value": base_val,
+            "top_features": contribs[:max_display],
             "total_features": len(feature_cols),
         }
 
@@ -93,10 +94,10 @@ def format_shap_for_api(shap_result: dict) -> list[dict]:
         return []
     return [
         {
-            "feature":     c["feature"],
+            "feature": c["feature"],
             "input_value": round(c["value"], 4),
-            "impact":      round(c["shap_value"], 4),
-            "direction":   "increases" if c["shap_value"] > 0 else "decreases",
+            "impact": round(c["shap_value"], 4),
+            "direction": "increases" if c["shap_value"] > 0 else "decreases",
         }
         for c in shap_result.get("top_features", [])
     ]

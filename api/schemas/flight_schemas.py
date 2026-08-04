@@ -1,6 +1,7 @@
 """Pydantic schemas for Flight Price API"""
 
 from typing import Any, Optional
+
 from pydantic import BaseModel, Field
 
 

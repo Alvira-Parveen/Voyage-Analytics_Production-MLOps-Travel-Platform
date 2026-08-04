@@ -1,8 +1,9 @@
 """Flight Price Prediction API Route"""
 
-import time
 import sys
+import time
 from pathlib import Path
+
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 import numpy as np
@@ -25,6 +26,7 @@ async def predict_flight_price(payload: FlightInput, request: Request):
     t0 = time.perf_counter()
     try:
         from api.main import get_model_cache
+
         model_cache = get_model_cache()
     except Exception:
         model_cache = {}
@@ -39,20 +41,20 @@ async def predict_flight_price(payload: FlightInput, request: Request):
 
     # Build feature map matching trained features exactly (NO TARGET LEAKS)
     feature_map = {
-        "flightType_enc":     payload.flightType_enc,
-        "agency_enc":         payload.agency_enc,
-        "from_enc":           payload.from_enc,
-        "to_enc":             payload.to_enc,
-        "distance":           payload.distance,
-        "time":               payload.time,
-        "speed_proxy":        round(payload.distance / max(payload.time, 0.01), 4),
-        "month":              payload.month,
-        "weekday":            payload.weekday,
-        "year":               payload.year,
-        "season_enc":         payload.season_enc,
-        "is_weekend":         int(payload.weekday >= 5),
-        "is_holiday":         int(payload.is_holiday),
-        "agency_popularity":  payload.agency_popularity,
+        "flightType_enc": payload.flightType_enc,
+        "agency_enc": payload.agency_enc,
+        "from_enc": payload.from_enc,
+        "to_enc": payload.to_enc,
+        "distance": payload.distance,
+        "time": payload.time,
+        "speed_proxy": round(payload.distance / max(payload.time, 0.01), 4),
+        "month": payload.month,
+        "weekday": payload.weekday,
+        "year": payload.year,
+        "season_enc": payload.season_enc,
+        "is_weekend": int(payload.weekday >= 5),
+        "is_holiday": int(payload.is_holiday),
+        "agency_popularity": payload.agency_popularity,
     }
 
     row = pd.DataFrame([{col: feature_map.get(col, 0) for col in feature_cols}])
@@ -71,9 +73,13 @@ async def predict_flight_price(payload: FlightInput, request: Request):
     explanation = format_shap_for_api(shap_result)
 
     # 2. Decision Summary (WOW Feature: Premium Natural Language AI Decision Center)
-    flight_type = "First Class" if payload.flightType_enc == 2 else ("Business Class" if payload.flightType_enc == 0 else "Economy Class")
+    flight_type = (
+        "First Class"
+        if payload.flightType_enc == 2
+        else ("Business Class" if payload.flightType_enc == 0 else "Economy Class")
+    )
     is_holiday_str = "during a holiday season" if payload.is_holiday else "on a standard travel day"
-    
+
     summary = (
         f"The predicted fare is BRL {pred:,.2f} for a {flight_type} flight covering {payload.distance:,} km ({payload.time:.1f} hours). "
         f"The trip occurs {is_holiday_str}. The model predicts this price based on airline agency supply dynamics and seasonal demand."
@@ -82,9 +88,7 @@ async def predict_flight_price(payload: FlightInput, request: Request):
     # 3. Expected Price Range & Booking Recommendation
     expected_range = [round(pred * 0.92, 2), round(pred * 1.08, 2)]
 
-    logger.info("Flight price predicted", extra={
-        "prediction": pred, "model": artifact.get("model_name", "unknown")
-    })
+    logger.info("Flight price predicted", extra={"prediction": pred, "model": artifact.get("model_name", "unknown")})
 
     return FlightPredictionResponse(
         predicted_price=pred,
@@ -93,5 +97,5 @@ async def predict_flight_price(payload: FlightInput, request: Request):
         explanation=explanation,
         decision_summary=summary,
         expected_range=expected_range,
-        inference_time_ms=round(inference_time, 2)
+        inference_time_ms=round(inference_time, 2),
     )

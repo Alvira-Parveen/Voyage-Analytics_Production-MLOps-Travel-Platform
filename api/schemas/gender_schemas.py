@@ -1,6 +1,7 @@
 """Pydantic schemas for Gender Classification API"""
 
 from typing import Optional
+
 from pydantic import BaseModel, Field
 
 

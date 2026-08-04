@@ -12,23 +12,26 @@ warnings.filterwarnings("ignore")
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import joblib
-import mlflow
 import mlflow.sklearn
 import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.linear_model import LinearRegression, Ridge
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
-from sklearn.model_selection import train_test_split, KFold
+from sklearn.model_selection import KFold, train_test_split
 from sklearn.preprocessing import StandardScaler
+
+import mlflow
 
 try:
     from lightgbm import LGBMRegressor
+
     LIGHTGBM_AVAILABLE = True
 except ImportError:
     LIGHTGBM_AVAILABLE = False
 
 from xgboost import XGBRegressor
+
 from src.utils.logger import get_logger
 from src.utils.model_registry import promote_to_production, save_model_metadata
 
@@ -36,38 +39,53 @@ logger = get_logger(__name__)
 
 # ── Clean Feature List (NO TARGET LEAKAGE) ──
 FEATURE_COLS = [
-    "flightType_enc", "agency_enc", "from_enc", "to_enc",
-    "distance", "time", "speed_proxy",
-    "month", "weekday", "year", "season_enc",
-    "is_weekend", "is_holiday", "agency_popularity",
+    "flightType_enc",
+    "agency_enc",
+    "from_enc",
+    "to_enc",
+    "distance",
+    "time",
+    "speed_proxy",
+    "month",
+    "weekday",
+    "year",
+    "season_enc",
+    "is_weekend",
+    "is_holiday",
+    "agency_popularity",
 ]
 TARGET_COL = "price"
-MODEL_NAME  = "FlightPricePredictor"
-EXPERIMENT  = "flight-price-prediction"
-MODEL_PATH  = Path("models")
+MODEL_NAME = "FlightPricePredictor"
+EXPERIMENT = "flight-price-prediction"
+MODEL_PATH = Path("models")
 
 # Hyperparameters tuned for speed & generalization
 CANDIDATE_MODELS = {
     "LinearRegression": LinearRegression(),
     "Ridge": Ridge(alpha=10.0),
     "RandomForest": RandomForestRegressor(n_estimators=50, max_depth=10, random_state=42, n_jobs=-1),
-    "XGBoost": XGBRegressor(n_estimators=100, max_depth=6, learning_rate=0.08,
-                             subsample=0.8, colsample_bytree=0.8,
-                             random_state=42, verbosity=0),
+    "XGBoost": XGBRegressor(
+        n_estimators=100,
+        max_depth=6,
+        learning_rate=0.08,
+        subsample=0.8,
+        colsample_bytree=0.8,
+        random_state=42,
+        verbosity=0,
+    ),
 }
 
 if LIGHTGBM_AVAILABLE:
     CANDIDATE_MODELS["LightGBM"] = LGBMRegressor(
-        n_estimators=100, max_depth=6, learning_rate=0.08,
-        random_state=42, verbose=-1, n_jobs=-1
+        n_estimators=100, max_depth=6, learning_rate=0.08, random_state=42, verbose=-1, n_jobs=-1
     )
 
 
 def evaluate(y_true, y_pred) -> dict:
     return {
         "rmse": float(np.sqrt(mean_squared_error(y_true, y_pred))),
-        "mae":  float(mean_absolute_error(y_true, y_pred)),
-        "r2":   float(r2_score(y_true, y_pred)),
+        "mae": float(mean_absolute_error(y_true, y_pred)),
+        "r2": float(r2_score(y_true, y_pred)),
     }
 
 
@@ -81,25 +99,23 @@ def train_flight_price_model(data_dir: str = "data/processed", version: str = "1
     X = df[FEATURE_COLS]
     y = df[TARGET_COL]
 
-    X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size=0.2, random_state=42
-    )
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
     # Scaling setup
     scaler = StandardScaler()
     X_train_scaled = pd.DataFrame(scaler.fit_transform(X_train), columns=FEATURE_COLS)
-    X_test_scaled  = pd.DataFrame(scaler.transform(X_test), columns=FEATURE_COLS)
+    X_test_scaled = pd.DataFrame(scaler.transform(X_test), columns=FEATURE_COLS)
 
     mlflow.set_tracking_uri("sqlite:///mlflow/mlflow.db")
     mlflow.set_experiment(EXPERIMENT)
 
-    print("\n" + "="*70)
+    print("\n" + "=" * 70)
     print("  FLIGHT PRICE PREDICTION — MODEL SELECTION (5-FOLD CV)")
-    print("="*70)
+    print("=" * 70)
     print(f"  Training Set Size : {X_train.shape[0]:,} samples")
     print(f"  Test Set Size     : {X_test.shape[0]:,} samples")
     print(f"  Features          : {len(FEATURE_COLS)}")
-    print("="*70)
+    print("=" * 70)
 
     # Subset for cross-validation to prevent training hangs
     cv_sample_size = min(30000, len(X_train))
@@ -132,7 +148,7 @@ def train_flight_price_model(data_dir: str = "data/processed", version: str = "1
                 fold_model = base_model.__class__(**base_model.get_params())
                 fold_model.fit(X_tr_s, y_tr)
                 preds = fold_model.predict(X_val_s)
-                
+
                 cv_r2_scores.append(r2_score(y_val, preds))
                 cv_rmse_scores.append(np.sqrt(mean_squared_error(y_val, preds)))
 
@@ -154,11 +170,7 @@ def train_flight_price_model(data_dir: str = "data/processed", version: str = "1
             # Log to MLflow
             mlflow.log_params(final_model.get_params())
             mlflow.log_param("features", ",".join(FEATURE_COLS))
-            mlflow.log_metrics({
-                **metrics,
-                "cv_r2_mean": cv_r2_mean,
-                "cv_rmse_mean": cv_rmse_mean
-            })
+            mlflow.log_metrics({**metrics, "cv_r2_mean": cv_r2_mean, "cv_rmse_mean": cv_rmse_mean})
 
             # Feature Importance
             if hasattr(final_model, "feature_importances_"):
@@ -174,7 +186,7 @@ def train_flight_price_model(data_dir: str = "data/processed", version: str = "1
                 "run_id": run_id,
                 "exp_id": exp_id,
                 "model": final_model,
-                "scaler": scaler if use_scaled else None
+                "scaler": scaler if use_scaled else None,
             }
 
             print(f"  {name:<20} | CV R²={cv_r2_mean:.4f} | Test R²={metrics['r2']:.4f} | RMSE={metrics['rmse']:.2f}")
@@ -183,20 +195,15 @@ def train_flight_price_model(data_dir: str = "data/processed", version: str = "1
     best_name = max(results, key=lambda k: results[k]["cv_r2_mean"])
     best = results[best_name]
 
-    print("-"*70)
+    print("-" * 70)
     print(f"  🏆 Best Algorithm  : {best_name}")
     print(f"  📊 Best Test R²     : {best['r2']:.4f}")
     print(f"  📊 CV R² Mean       : {best['cv_r2_mean']:.4f}")
-    print("="*70)
+    print("=" * 70)
 
     # Save artifact
     model_file = MODEL_PATH / f"flight_price_v{version}.pkl"
-    artifact = {
-        "model": best["model"],
-        "scaler": best["scaler"],
-        "feature_cols": FEATURE_COLS,
-        "model_name": best_name
-    }
+    artifact = {"model": best["model"], "scaler": best["scaler"], "feature_cols": FEATURE_COLS, "model_name": best_name}
     joblib.dump(artifact, model_file)
     print(f"  💾 Saved Production Artifact: {model_file}")
 
@@ -205,20 +212,15 @@ def train_flight_price_model(data_dir: str = "data/processed", version: str = "1
         model_name=MODEL_NAME,
         version=version,
         algorithm=best_name,
-        metrics={
-            "rmse": best["rmse"],
-            "mae": best["mae"],
-            "r2": best["r2"],
-            "cv_r2_mean": best["cv_r2_mean"]
-        },
+        metrics={"rmse": best["rmse"], "mae": best["mae"], "r2": best["r2"], "cv_r2_mean": best["cv_r2_mean"]},
         mlflow_run_id=best["run_id"],
         mlflow_experiment_id=best["exp_id"],
         feature_columns=FEATURE_COLS,
-        stage="Production"
+        stage="Production",
     )
     promote_to_production(MODEL_NAME, version)
     print(f"  📋 Registered v{version} -> Production")
-    print("="*70 + "\n")
+    print("=" * 70 + "\n")
 
     return model_file, best
 

@@ -2,6 +2,7 @@
 
 import sys
 from pathlib import Path
+
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 from fastapi import APIRouter, HTTPException, Request
@@ -24,6 +25,7 @@ async def recommend_hotels(payload: HotelRecommendInput, request: Request):
     """
     try:
         from api.main import get_model_cache
+
         model_cache = get_model_cache()
     except Exception:
         model_cache = {}
@@ -40,9 +42,7 @@ async def recommend_hotels(payload: HotelRecommendInput, request: Request):
         reason=True,
     )
 
-    logger.info("Hotels recommended", extra={
-        "user_code": payload.user_code, "count": len(recommendations)
-    })
+    logger.info("Hotels recommended", extra={"user_code": payload.user_code, "count": len(recommendations)})
 
     return HotelRecommendResponse(
         user_code=payload.user_code,

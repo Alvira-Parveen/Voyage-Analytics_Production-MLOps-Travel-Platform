@@ -33,10 +33,10 @@ MODEL_CACHE: dict = {}
 
 MODELS_PATH = Path(os.getenv("MODELS_PATH", "models"))
 
+
 def _load_model(filename: str):
     path = MODELS_PATH / filename
-    candidates = sorted(MODELS_PATH.glob(filename.replace("vX", "v*")),
-                        key=lambda p: p.stat().st_mtime, reverse=True)
+    candidates = sorted(MODELS_PATH.glob(filename.replace("vX", "v*")), key=lambda p: p.stat().st_mtime, reverse=True)
     return joblib.load(candidates[0]) if candidates else None
 
 
@@ -46,8 +46,7 @@ async def lifespan(app: FastAPI):
     logger.info("Starting Voyage Analytics API — loading models...")
 
     try:
-        candidates = sorted(MODELS_PATH.glob("flight_price_v*.pkl"),
-                            key=lambda p: p.stat().st_mtime, reverse=True)
+        candidates = sorted(MODELS_PATH.glob("flight_price_v*.pkl"), key=lambda p: p.stat().st_mtime, reverse=True)
         if candidates:
             MODEL_CACHE["flight"] = joblib.load(candidates[0])
             logger.info(f"Flight model loaded: {candidates[0].name}")
@@ -55,8 +54,7 @@ async def lifespan(app: FastAPI):
         logger.error(f"Failed to load flight model: {e}")
 
     try:
-        candidates = sorted(MODELS_PATH.glob("gender_classifier_v*.pkl"),
-                            key=lambda p: p.stat().st_mtime, reverse=True)
+        candidates = sorted(MODELS_PATH.glob("gender_classifier_v*.pkl"), key=lambda p: p.stat().st_mtime, reverse=True)
         if candidates:
             MODEL_CACHE["gender"] = joblib.load(candidates[0])
             logger.info(f"Gender model loaded: {candidates[0].name}")
@@ -64,8 +62,7 @@ async def lifespan(app: FastAPI):
         logger.error(f"Failed to load gender model: {e}")
 
     try:
-        candidates = sorted(MODELS_PATH.glob("hotel_recommender_v*.pkl"),
-                            key=lambda p: p.stat().st_mtime, reverse=True)
+        candidates = sorted(MODELS_PATH.glob("hotel_recommender_v*.pkl"), key=lambda p: p.stat().st_mtime, reverse=True)
         if candidates:
             MODEL_CACHE["recommender"] = joblib.load(candidates[0])
             logger.info(f"Recommender loaded: {candidates[0].name}")
@@ -91,11 +88,11 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
-#  Rate limiting 
+#  Rate limiting
 app.state.limiter = limiter
 app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
-#  CORS 
+#  CORS
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -103,10 +100,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-#  Prometheus metrics 
+#  Prometheus metrics
 Instrumentator().instrument(app).expose(app)
 
-#  API Key Security 
+#  API Key Security
 API_KEY = os.getenv("API_KEY", "voyage-dev-key-2024")
 API_KEY_NAME = os.getenv("API_KEY_NAME", "X-API-Key")
 api_key_header = APIKeyHeader(name=API_KEY_NAME, auto_error=False)
@@ -118,20 +115,20 @@ async def verify_api_key(key: str = Security(api_key_header)):
     return key
 
 
-#  Request logging middleware 
+#  Request logging middleware
 @app.middleware("http")
 async def log_requests(request: Request, call_next):
     start = time.time()
     response = await call_next(request)
     duration = round((time.time() - start) * 1000, 2)
     logger.info(
-        f"Request",
+        "Request",
         extra={
             "method": request.method,
             "path": request.url.path,
             "status": response.status_code,
             "latency_ms": duration,
-        }
+        },
     )
     return response
 
@@ -168,10 +165,10 @@ async def health():
         "api_version": "2.0.0",
         "models_loaded": list(MODEL_CACHE.keys()),
         "production_models": {
-            "flight":      get_production_model("FlightPricePredictor"),
-            "gender":      get_production_model("GenderClassifier"),
+            "flight": get_production_model("FlightPricePredictor"),
+            "gender": get_production_model("GenderClassifier"),
             "recommender": get_production_model("HotelRecommender"),
-        }
+        },
     }
 
 
@@ -185,13 +182,14 @@ async def root():
     }
 
 
-#  Expose MODEL_CACHE to routes 
+#  Expose MODEL_CACHE to routes
 def get_model_cache() -> dict:
     return MODEL_CACHE
 
 
 if __name__ == "__main__":
     import uvicorn
+
     uvicorn.run(
         "api.main:app",
         host=os.getenv("API_HOST", "0.0.0.0"),

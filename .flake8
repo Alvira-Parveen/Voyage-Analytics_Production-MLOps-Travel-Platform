@@ -1,0 +1,13 @@
+[flake8]
+max-line-length = 120
+# Ignore:
+# E501: line too long (black handles line lengths, but sometimes we have long strings)
+# W503: line break before binary operator
+# E402: module level import not at top of file (needed because we dynamically insert sys.path to resolve src/ modules)
+# F401: module imported but unused (standard during iterations)
+# F811: redefinition of unused variable
+# F841: local variable assigned but never used
+# E203: whitespace before ':' (incompatible with black formatting)
+# E241: multiple spaces after ','
+ignore = E501, W503, E402, F401, F811, F841, E203, E241
+exclude = .git, __pycache__, venv, .venv, env, build, dist, mlflow, mlruns, logs

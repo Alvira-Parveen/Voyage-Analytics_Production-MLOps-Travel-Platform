@@ -11,9 +11,9 @@ warnings.filterwarnings("ignore")
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import joblib
-import mlflow
 import pandas as pd
 
+import mlflow
 from src.models.hotel_recommender import HybridRecommender
 from src.utils.logger import get_logger
 from src.utils.model_registry import promote_to_production, save_model_metadata
@@ -21,8 +21,8 @@ from src.utils.model_registry import promote_to_production, save_model_metadata
 logger = get_logger(__name__)
 
 MODEL_NAME = "HotelRecommender"
-EXPERIMENT  = "hotel-recommendation"
-MODEL_PATH  = Path("models")
+EXPERIMENT = "hotel-recommendation"
+MODEL_PATH = Path("models")
 
 
 def train_recommender(data_dir: str = "data/processed", version: str = "1.0"):
@@ -32,14 +32,14 @@ def train_recommender(data_dir: str = "data/processed", version: str = "1.0"):
     mlflow.set_tracking_uri("sqlite:///mlflow/mlflow.db")
     mlflow.set_experiment(EXPERIMENT)
 
-    print("\n" + "="*65)
+    print("\n" + "=" * 65)
     print("  HOTEL RECOMMENDATION — HYBRID ENGINE TRAINING")
-    print("="*65)
+    print("=" * 65)
     print(f"  Hotels dataset   : {hotels_df.shape[0]:,} bookings")
     print(f"  Unique hotels    : {hotels_df['name'].nunique()}")
     print(f"  Unique users     : {hotels_df['userCode'].nunique()}")
     print(f"  Unique places    : {hotels_df['place'].nunique()}")
-    print("="*65)
+    print("=" * 65)
 
     with mlflow.start_run(run_name="HybridRecommender"):
         recommender = HybridRecommender()
@@ -47,14 +47,12 @@ def train_recommender(data_dir: str = "data/processed", version: str = "1.0"):
 
         metrics = {
             "unique_hotels": int(hotels_df["name"].nunique()),
-            "unique_users":  int(hotels_df["userCode"].nunique()),
+            "unique_users": int(hotels_df["userCode"].nunique()),
             **recommender.svd_metrics,
         }
 
-        mlflow.log_params({"cf_model": "SVD", "n_factors": 50,
-                           "cb_model": "cosine_similarity"})
-        mlflow.log_metrics({k: v for k, v in metrics.items()
-                            if isinstance(v, (int, float))})
+        mlflow.log_params({"cf_model": "SVD", "n_factors": 50, "cb_model": "cosine_similarity"})
+        mlflow.log_metrics({k: v for k, v in metrics.items() if isinstance(v, (int, float))})
 
         run_id = mlflow.active_run().info.run_id
         exp_id = mlflow.active_run().info.experiment_id
@@ -79,7 +77,7 @@ def train_recommender(data_dir: str = "data/processed", version: str = "1.0"):
     )
     promote_to_production(MODEL_NAME, version)
     print(f"  📋  Registered v{version} → Production")
-    print("="*65 + "\n")
+    print("=" * 65 + "\n")
 
     return model_file, recommender
 

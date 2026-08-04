@@ -16,6 +16,7 @@ logger = logging.getLogger(__name__)
 try:
     from surprise import SVD, Dataset, Reader, accuracy
     from surprise.model_selection import train_test_split as s_split
+
     SURPRISE_AVAILABLE = True
 except ImportError:
     SURPRISE_AVAILABLE = False
@@ -48,9 +49,8 @@ class ContentBasedRecommender:
             return self._get_popular(top_n)
         idx = self.hotel_names.index(hotel_name)
         sims = self.similarity_matrix[idx]
-        top_indices = np.argsort(sims)[::-1][1: top_n + 1]
-        return [{"hotel": self.hotel_names[i], "similarity": float(sims[i])}
-                for i in top_indices]
+        top_indices = np.argsort(sims)[::-1][1 : top_n + 1]
+        return [{"hotel": self.hotel_names[i], "similarity": float(sims[i])} for i in top_indices]
 
     def _get_popular(self, n: int):
         if self.hotel_profiles is None:
@@ -76,10 +76,7 @@ class CollaborativeRecommender:
             return self
 
         interaction = (
-            hotels_df.groupby(["userCode", "name"])["total"]
-            .sum()
-            .reset_index()
-            .rename(columns={"total": "rating"})
+            hotels_df.groupby(["userCode", "name"])["total"].sum().reset_index().rename(columns={"total": "rating"})
         )
 
         mn, mx = interaction["rating"].min(), interaction["rating"].max()
@@ -94,7 +91,7 @@ class CollaborativeRecommender:
         predictions = self.svd_model.test(testset)
         self.svd_metrics = {
             "svd_rmse": float(accuracy.rmse(predictions, verbose=False)),
-            "svd_mae":  float(accuracy.mae(predictions,  verbose=False)),
+            "svd_mae": float(accuracy.mae(predictions, verbose=False)),
         }
         self.user_hotel_matrix = interaction
         return self
@@ -105,11 +102,7 @@ class CollaborativeRecommender:
 
         seen = set()
         if self.user_hotel_matrix is not None:
-            seen = set(
-                self.user_hotel_matrix[
-                    self.user_hotel_matrix["userCode"] == user_code
-                ]["name"].tolist()
-            )
+            seen = set(self.user_hotel_matrix[self.user_hotel_matrix["userCode"] == user_code]["name"].tolist())
 
         unseen = [h for h in self.all_hotels if h not in seen]
         if not unseen:
@@ -151,18 +144,22 @@ class HybridRecommender:
                     row = self.hotel_profiles[self.hotel_profiles["name"] == rec["hotel"]]
                     if not row.empty:
                         profile = {
-                            "place":            row["place"].iloc[0],
+                            "place": row["place"].iloc[0],
                             "avg_price_per_day": round(float(row["price"].mean()), 2),
-                            "avg_stay_days":     round(float(row["days"].mean()), 1),
+                            "avg_stay_days": round(float(row["days"].mean()), 1),
                         }
-                enriched.append({
-                    **rec, **profile,
-                    "source": "collaborative_filtering",
-                    "reason": "Based on similar users' bookings" if reason else "",
-                })
+                enriched.append(
+                    {
+                        **rec,
+                        **profile,
+                        "source": "collaborative_filtering",
+                        "reason": "Based on similar users' bookings" if reason else "",
+                    }
+                )
             return enriched
         else:
             popular = self.cb._get_popular(top_n)
-            return [{**h, "source": "content_based",
-                     "reason": "Popular hotel recommendation" if reason else ""}
-                    for h in popular]
+            return [
+                {**h, "source": "content_based", "reason": "Popular hotel recommendation" if reason else ""}
+                for h in popular
+            ]
