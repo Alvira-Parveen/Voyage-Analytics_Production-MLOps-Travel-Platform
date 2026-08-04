@@ -50,20 +50,57 @@ To build a secure, enterprise-grade AI Operations platform that demonstrates the
 
 ## 📸 Screenshots
 
-### Platform Dashboard Interface
-![Dashboard](Screenshots/dashboard.png)
+### 1. Dashboard Overview
+![Overview Dashboard](Screenshots/Overview.png)
 
-### Multi-Agent Console
-![Multi-Agent Console](Screenshots/console.png)
+### 2. API Performance Metrics
+![API Performance Metrics](Screenshots/API%20Performance%20Metrics.png)
 
-### Match Hub & Schedule
-![Match Hub](Screenshots/matchhub.png)
+### 3. Travel Journey Dashboard
+![Travel Journey](Screenshots/Travel%20journey.png)
 
-### Tactical Analytics & Heatmaps
-![Tactics](Screenshots/tactics.png)
+### 4. Travel Journey Analytics
+![Travel Journey Analytics](Screenshots/Travel%20journey1.png)
 
-### Computer Vision Video tracking
-![Ingestion](Screenshots/vision.png)
+### 5. Exploratory Data Analysis (EDA)
+![EDA](Screenshots/EDA.png)
+
+### 6. Hotel EDA
+![Hotel EDA](Screenshots/hotel%20eda.png)
+
+### 7. User Data Analysis
+![User EDA](Screenshots/user%20eda.png)
+
+### 8. Flight Price Prediction
+![Flight Price Prediction](Screenshots/flight%20price.png)
+
+### 9. Gender Classifier
+![Gender Classifier](Screenshots/gender%20classifier.png)
+
+### 10. Hotel Recommender System
+![Hotel Recommender](Screenshots/hotel%20recommender.png)
+
+### 11. MLflow Summary
+![MLflow Summary](Screenshots/mlflow%20summary.png)
+
+### 12. Model Monitoring
+![Model Monitoring](Screenshots/monitoring.png)
+
+### 13. Data Quality Center
+![Data Quality Center](Screenshots/data%20quality%20center.png)
+
+### 14. MLflow Experiment Tracking
+![Experiment Tracking](Screenshots/experiment%20tracking.png)
+
+### 15. Machine Learning Pipeline
+![ML Pipeline](Screenshots/ml%20pipeline.png)
+
+### 16. Feature Engineering
+![Feature Engineering](Screenshots/feature.png)
+
+### 17. Feature Store
+![Feature Store](Screenshots/feature1.png)
+
 
 ---
 
