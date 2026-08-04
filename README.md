@@ -287,9 +287,6 @@ streamlit run dashboard/Overview.py
 mlflow ui --backend-store-uri sqlite:///mlflow/mlflow.db --port 5000
 ```
 
-* **API Endpoints:** [http://localhost:8000/docs](http://localhost:8000/docs)
-* **Streamlit UI:** [http://localhost:8501](http://localhost:8501)
-* **MLflow Registry:** [http://localhost:5000](http://localhost:5000)
 
 ### Option B — Launching via Docker
 Build and orchestrate all containers (API + Dashboard + MLflow + Prometheus + Grafana) in one command:
@@ -308,7 +305,7 @@ pytest tests/ -v --cov=src --cov=api
 
 ## 📡 API Documentation
 
-Interactive OpenAPI documentation is generated automatically by FastAPI at `http://localhost:8000/docs`.
+Interactive OpenAPI documentation is generated automatically by FastAPI at the `/docs` endpoint of your API service.
 
 ### Authentication
 All predictions endpoints require authorization using header keys:
