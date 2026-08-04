@@ -1,6 +1,6 @@
 # Voyage Analytics 2.0 — Production MLOps Travel Platform
 
-[![CI/CD](https://github.com/Alvira-Parveen/voyage-analytics/actions/workflows/ci_cd.yml/badge.svg)](https://github.com/Alvira-Parveen/voyage-analytics/actions)
+[![CI/CD](https://github.com/Alvira-Parveen/Voyage-Analytics_Production-MLOps-Travel-Platform/actions/workflows/ci_cd.yml/badge.svg)](https://github.com/Alvira-Parveen/Voyage-Analytics_Production-MLOps-Travel-Platform/actions)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.141-green.svg)](https://fastapi.tiangolo.com/)
 [![MLflow](https://img.shields.io/badge/MLflow-3.15-orange.svg)](https://mlflow.org/)
