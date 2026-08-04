@@ -1,7 +1,8 @@
 [theme]
 primaryColor = "#00f2fe"
-# Let Streamlit natively handle light/dark mode based on the user's browser/system settings, 
-# while keeping our brand cyan accent color.
+backgroundColor = "#0b0c10"
+secondaryBackgroundColor = "#1f2833"
+textColor = "#cbd5e1"
 font = "sans serif"
 
 [server]

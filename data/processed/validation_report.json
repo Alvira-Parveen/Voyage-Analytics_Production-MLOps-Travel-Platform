@@ -1,0 +1,87 @@
+{
+  "validation_run": "2026-08-04T15:05:41.363933",
+  "datasets": {
+    "flights": {
+      "dataset": "flights",
+      "validated_at": "2026-08-04T15:05:41.329182",
+      "shape": [
+        271888,
+        10
+      ],
+      "status": "PASSED",
+      "passed_checks": [
+        "required_columns \u2713",
+        "row_count (271888 rows) \u2713",
+        "missing_value_check \u2713",
+        "price_positive_check \u2713",
+        "time_positive_check \u2713",
+        "distance_positive_check \u2713",
+        "flightType_category_check \u2713",
+        "duplicate_check \u2713"
+      ],
+      "issues": [],
+      "summary": {
+        "total_checks": 8,
+        "passed": 8,
+        "warnings": 0,
+        "critical": 0
+      }
+    },
+    "hotels": {
+      "dataset": "hotels",
+      "validated_at": "2026-08-04T15:05:41.361086",
+      "shape": [
+        40552,
+        8
+      ],
+      "status": "PASSED",
+      "passed_checks": [
+        "required_columns \u2713",
+        "row_count (40552 rows) \u2713",
+        "missing_value_check \u2713",
+        "price_positive_check \u2713",
+        "total_positive_check \u2713",
+        "days_positive_check \u2713",
+        "duplicate_check \u2713"
+      ],
+      "issues": [],
+      "summary": {
+        "total_checks": 7,
+        "passed": 7,
+        "warnings": 0,
+        "critical": 0
+      }
+    },
+    "users": {
+      "dataset": "users",
+      "validated_at": "2026-08-04T15:05:41.363905",
+      "shape": [
+        1340,
+        5
+      ],
+      "status": "WARNING",
+      "passed_checks": [
+        "required_columns \u2713",
+        "row_count (1340 rows) \u2713",
+        "missing_value_check \u2713",
+        "age_positive_check \u2713",
+        "duplicate_check \u2713"
+      ],
+      "issues": [
+        {
+          "type": "UNEXPECTED_CATEGORIES",
+          "severity": "WARNING",
+          "column": "gender",
+          "detail": "gender has unexpected values: ['none']"
+        }
+      ],
+      "summary": {
+        "total_checks": 6,
+        "passed": 5,
+        "warnings": 1,
+        "critical": 0
+      }
+    }
+  },
+  "overall_status": "WARNING"
+}

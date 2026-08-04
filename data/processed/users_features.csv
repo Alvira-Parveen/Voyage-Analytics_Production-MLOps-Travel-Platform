@@ -1,0 +1,901 @@
+code,company,name,gender,age,gender_binary,travel_frequency,avg_flight_price,total_flight_spend,preferred_flight_type,hotel_bookings,avg_hotel_spend,age_group,spending_category,company_enc,preferred_flight_type_enc,age_group_enc,spending_category_enc
+0,4You,Roy Braun,male,21,1,178.0,989.0661235955056,176053.77,firstclass,27.0,593.1451851851851,young,premium,0,2,3,2
+1,4You,Joseph Holsten,male,37,1,12.0,818.8983333333334,9826.78,premium,2.0,193.36,adult,premium,0,3,0,2
+2,4You,Wilma Mcinnis,female,48,0,262.0,906.9218320610687,237613.52,firstclass,36.0,558.0033333333333,middle_aged,premium,0,2,1,2
+3,4You,Paula Daniel,female,23,0,398.0,936.9138944723618,372891.73,firstclass,60.0,499.56850000000003,young,premium,0,2,3,2
+4,4You,Patricia Carson,female,44,0,398.0,957.3934170854271,381042.58,firstclass,56.0,565.3160714285715,middle_aged,premium,0,2,1,2
+6,4You,Jesse Decelle,male,46,1,164.0,918.6263414634146,150654.72,firstclass,23.0,541.5626086956522,middle_aged,premium,0,2,1,2
+7,4You,Gregoria Gil,female,21,0,104.0,905.2106730769231,94141.91,firstclass,14.0,468.80428571428575,young,premium,0,2,3,2
+10,4You,Melvin Lovejoy,male,36,1,128.0,894.22109375,114460.3,firstclass,17.0,577.1241176470588,adult,premium,0,2,0,2
+11,4You,Virginia Roberts,female,61,0,384.0,923.7963802083333,354737.81,firstclass,54.0,545.7411111111111,senior,premium,0,2,2,2
+12,4You,David Thomas,male,53,1,140.0,926.8991428571429,129765.88,firstclass,26.0,512.8488461538461,middle_aged,premium,0,2,1,2
+14,4You,John Cody,male,37,1,80.0,933.1783750000001,74654.27,firstclass,9.0,548.8344444444444,adult,premium,0,2,0,2
+15,4You,Janice Cudney,female,56,0,296.0,924.2652364864865,273582.51,firstclass,47.0,469.36638297872344,middle_aged,premium,0,2,1,2
+16,4You,Shane Hubner,female,47,0,312.0,931.6523397435898,290675.53,firstclass,50.0,488.4086,middle_aged,premium,0,2,1,2
+19,4You,John Bennett,male,22,1,166.0,980.5706626506025,162774.73,firstclass,31.0,649.9677419354839,young,premium,0,2,3,2
+20,4You,Sally Roberts,female,65,0,154.0,917.0080519480518,141219.24,premium,25.0,531.1088,senior,premium,0,3,2,2
+21,4You,Julia Meinhart,female,56,0,398.0,975.4067839195981,388211.9,firstclass,53.0,500.7766037735849,middle_aged,premium,0,2,1,2
+22,4You,Michele Ashford,female,51,0,280.0,905.3252142857143,253491.06,firstclass,47.0,525.6017021276596,middle_aged,premium,0,2,1,2
+23,4You,Leslie Sandoval,male,35,1,292.0,909.2570205479452,265503.05,premium,39.0,567.2458974358974,adult,premium,0,3,0,2
+24,4You,Calvin Cuellar,male,60,1,82.0,962.3436585365853,78912.18,firstclass,11.0,630.7354545454546,senior,premium,0,2,2,2
+25,4You,Elizabeth Smith,female,64,0,186.0,938.4819354838711,174557.64,firstclass,27.0,501.66481481481486,senior,premium,0,2,2,2
+26,4You,Yolanda Connolly,female,49,0,186.0,948.3447849462366,176392.13,firstclass,27.0,475.3088888888889,middle_aged,premium,0,2,1,2
+27,4You,Sean Pearson,male,62,1,152.0,945.5133552631579,143718.03,firstclass,23.0,558.3765217391305,senior,premium,0,2,2,2
+28,4You,April Miller,female,46,0,20.0,924.3155,18486.31,firstclass,4.0,340.9025,middle_aged,premium,0,2,1,2
+29,4You,Lisa Natera,female,35,0,52.0,899.9646153846153,46798.159999999996,firstclass,6.0,609.9083333333333,adult,premium,0,2,0,2
+30,4You,Alberta Bornhorst,female,59,0,24.0,734.46375,17627.13,firstclass,4.0,547.97,middle_aged,economy,0,2,1,0
+32,4You,Wesley Locker,male,44,1,370.0,958.0029729729729,354461.1,firstclass,53.0,552.8928301886792,middle_aged,premium,0,2,1,2
+33,4You,Ida Turzak,female,56,0,6.0,1150.7883333333332,6904.73,premium,0.0,495.24,middle_aged,premium,0,3,1,2
+34,4You,Anita Petersen,female,21,0,322.0,927.8738198757763,298775.37,firstclass,39.0,530.0889743589744,young,premium,0,2,3,2
+38,4You,Nancy Dowdy,female,47,0,206.0,931.8699029126215,191965.2,firstclass,27.0,548.2737037037036,middle_aged,premium,0,2,1,2
+39,4You,Billie Dwight,female,48,0,290.0,927.0780689655173,268852.64,firstclass,43.0,560.453023255814,middle_aged,premium,0,2,1,2
+41,4You,Sandra Bissonnette,female,62,0,352.0,928.0351704545454,326668.38,firstclass,56.0,539.59375,senior,premium,0,2,2,2
+42,4You,Robert Collins,male,61,1,6.0,1072.5066666666667,6435.04,firstclass,0.0,495.24,senior,premium,0,2,2,2
+43,4You,Louise James,female,24,0,160.0,903.691375,144590.62,firstclass,34.0,498.4526470588235,young,premium,0,2,3,2
+44,4You,David Brisco,male,21,1,200.0,905.49735,181099.47,firstclass,31.0,516.908064516129,young,premium,0,2,3,2
+45,4You,Margaret Paul,female,54,0,230.0,978.2601739130434,224999.84,firstclass,28.0,405.76714285714286,middle_aged,premium,0,2,1,2
+46,4You,Bobby Garcia,male,42,1,286.0,990.7553496503496,283356.02999999997,firstclass,55.0,598.5907272727272,middle_aged,premium,0,2,1,2
+47,4You,Kevin Lindholm,male,28,1,272.0,888.3328676470588,241626.54,economic,41.0,557.5451219512195,adult,premium,0,0,0,2
+48,4You,Clyde Ruiz,male,46,1,84.0,1016.1477380952381,85356.41,firstclass,14.0,528.3778571428571,middle_aged,premium,0,2,1,2
+49,4You,Charles Wilenkin,male,55,1,306.0,895.9834640522876,274170.94,firstclass,49.0,501.6012244897959,middle_aged,premium,0,2,1,2
+50,4You,Monique Williams,female,56,0,224.0,941.4017857142857,210874.0,firstclass,31.0,480.30516129032253,middle_aged,premium,0,2,1,2
+51,4You,Jenell Torbus,female,39,0,4.0,575.8775,2303.51,premium,2.0,572.97,adult,economy,0,3,0,0
+52,4You,Joyce Jacobsen,female,55,0,378.0,923.4792328042329,349075.15,firstclass,52.0,507.36634615384617,middle_aged,premium,0,2,1,2
+53,4You,Carol Dixon,female,23,0,34.0,944.4767647058824,32112.21,firstclass,7.0,522.4371428571428,young,premium,0,2,3,2
+54,4You,Dorothea Delaney,female,21,0,198.0,959.0404545454546,189890.01,firstclass,29.0,612.5651724137931,young,premium,0,2,3,2
+57,4You,Dorothy Dyson,female,32,0,90.0,903.5497777777778,81319.48,firstclass,11.0,591.4527272727272,adult,premium,0,2,0,2
+58,4You,Ernie Walker,male,37,1,74.0,989.6986486486486,73237.7,firstclass,7.0,671.8142857142857,adult,premium,0,2,0,2
+60,4You,Fred Moreta,male,47,1,354.0,915.6720338983051,324147.9,firstclass,53.0,380.0632075471698,middle_aged,premium,0,2,1,2
+61,4You,Susan Armstrong,female,61,0,326.0,924.1160429447854,301261.83,firstclass,58.0,540.6687931034483,senior,premium,0,2,2,2
+63,4You,Robert Bell,male,22,1,280.0,925.855,259239.4,firstclass,47.0,491.55063829787235,young,premium,0,2,3,2
+64,4You,Ann Moore,female,41,0,366.0,921.0334153005464,337098.23,firstclass,58.0,530.1370689655173,middle_aged,premium,0,2,1,2
+67,4You,Melissa Long,female,41,0,300.0,913.4968666666666,274049.06,firstclass,45.0,577.1395555555555,middle_aged,premium,0,2,1,2
+68,4You,Lori Friedman,female,62,0,264.0,929.2086742424242,245311.09,firstclass,45.0,459.6428888888889,senior,premium,0,2,2,2
+70,4You,Charles Lutz,male,57,1,296.0,930.0483783783784,275294.32,firstclass,45.0,534.198,middle_aged,premium,0,2,1,2
+73,4You,Melissa Emch,female,46,0,264.0,908.418446969697,239822.47,economic,39.0,498.1920512820513,middle_aged,premium,0,0,1,2
+75,4You,Robert Wilhite,male,65,1,246.0,998.9459349593496,245740.7,firstclass,40.0,521.09925,senior,premium,0,2,2,2
+77,4You,Helen Gorman,female,57,0,198.0,875.7274242424243,173394.03,firstclass,26.0,562.5296153846155,middle_aged,premium,0,2,1,2
+79,4You,Margaret Bertholf,female,65,0,174.0,888.3274712643679,154568.98,premium,24.0,594.2170833333333,senior,premium,0,3,2,2
+80,4You,Elissa Hubbard,female,45,0,60.0,1005.1708333333333,60310.25,premium,8.0,678.075,middle_aged,premium,0,3,1,2
+81,4You,Angela Hill,female,21,0,162.0,885.3898765432099,143433.16,firstclass,27.0,546.2222222222222,young,premium,0,2,3,2
+82,4You,Matthew Middendorf,male,60,1,392.0,921.8807908163266,361377.27,firstclass,53.0,554.2724528301887,senior,premium,0,2,2,2
+85,4You,Peter Moon,male,39,1,6.0,1018.625,6111.75,premium,2.0,1152.48,adult,premium,0,3,0,2
+86,4You,Audrey Atwood,female,30,0,42.0,890.7345238095238,37410.85,premium,4.0,629.38,adult,premium,0,3,0,2
+87,4You,Marie Bowyer,female,30,0,12.0,983.7025,11804.43,economic,3.0,427.25333333333333,adult,premium,0,0,0,2
+89,4You,Dixie Perez,female,28,0,78.0,894.2483333333332,69751.37,economic,12.0,623.9091666666667,adult,premium,0,0,0,2
+91,4You,Christopher Madden,male,21,1,162.0,958.2173456790123,155231.21,firstclass,23.0,562.9934782608696,young,premium,0,2,3,2
+92,4You,Donna Day,female,43,0,44.0,987.1888636363636,43436.31,firstclass,8.0,477.98375,middle_aged,premium,0,2,1,2
+96,4You,Mary Clarke,female,40,0,242.0,837.8955785123967,202770.73,firstclass,30.0,551.7596666666667,middle_aged,premium,0,2,1,2
+98,4You,Marie Ruiz,female,23,0,62.0,928.9027419354838,57591.97,firstclass,7.0,257.5,young,premium,0,2,3,2
+100,4You,Carla Puskar,female,36,0,286.0,919.076958041958,262856.01,firstclass,36.0,545.5961111111111,adult,premium,0,2,0,2
+101,4You,James Banks,male,59,1,100.0,963.5249,96352.49,firstclass,18.0,509.7688888888889,middle_aged,premium,0,2,1,2
+102,4You,Henry Muhammad,male,43,1,60.0,892.8888333333333,53573.33,premium,7.0,476.01571428571424,middle_aged,premium,0,3,1,2
+103,4You,Judy Church,female,39,0,142.0,950.7815492957748,135010.98,firstclass,26.0,474.475,adult,premium,0,2,0,2
+104,4You,Stephen Naylor,male,32,1,282.0,938.279219858156,264594.74,firstclass,44.0,472.6695454545454,adult,premium,0,2,0,2
+105,4You,Richard Haugen,male,31,1,366.0,929.7813387978141,340299.97,firstclass,68.0,493.02191176470586,adult,premium,0,2,0,2
+107,4You,Lisa Martin,female,46,0,290.0,899.0854827586207,260734.79,firstclass,43.0,569.1272093023256,middle_aged,premium,0,2,1,2
+108,4You,Becky Gonzalez,female,58,0,88.0,902.8375,79449.7,firstclass,14.0,438.5642857142857,middle_aged,premium,0,2,1,2
+109,4You,Maria Averitt,female,24,0,296.0,905.1502027027028,267924.46,firstclass,50.0,535.9004,young,premium,0,2,3,2
+111,4You,Susan Streets,female,63,0,376.0,916.8779521276596,344746.11,firstclass,60.0,611.0665,senior,premium,0,2,2,2
+112,4You,Michael Benincase,male,53,1,388.0,910.0775515463919,353110.09,firstclass,62.0,588.8138709677419,middle_aged,premium,0,2,1,2
+114,4You,Wallace Tenney,male,47,1,52.0,886.3673076923077,46091.1,economic,11.0,488.4045454545454,middle_aged,premium,0,0,1,2
+116,4You,Shawn Pennachio,male,59,1,196.0,862.5736734693878,169064.44,firstclass,33.0,576.9375757575757,middle_aged,premium,0,2,1,2
+118,4You,Margaret Renfroe,female,45,0,202.0,953.9357920792079,192695.03,firstclass,32.0,517.7265625,middle_aged,premium,0,2,1,2
+119,4You,Justin Bedard,male,38,1,370.0,864.6201081081081,319909.44,firstclass,55.0,518.8232727272728,adult,premium,0,2,0,2
+121,4You,Kim Frederick,male,54,1,104.0,895.6008653846154,93142.49,firstclass,15.0,620.8813333333333,middle_aged,premium,0,2,1,2
+123,4You,Ralph Alzugaray,male,60,1,42.0,899.202380952381,37766.5,economic,10.0,460.535,senior,premium,0,0,2,2
+124,4You,Rae Austin,female,54,0,176.0,931.3836931818182,163923.53,firstclass,22.0,660.2945454545454,middle_aged,premium,0,2,1,2
+125,4You,Marshall Knight,male,61,1,98.0,845.145612244898,82824.27,economic,10.0,491.08599999999996,senior,premium,0,0,2,2
+128,4You,Alexander Carter,male,58,1,20.0,1097.287,21945.74,firstclass,0.0,495.24,middle_aged,premium,0,2,1,2
+129,4You,Angela Cooper,female,50,0,366.0,959.2331693989072,351079.34,firstclass,53.0,556.9011320754717,middle_aged,premium,0,2,1,2
+130,4You,Robin Greek,female,65,0,12.0,871.1758333333333,10454.11,premium,2.0,650.6300000000001,senior,premium,0,3,2,2
+131,4You,Terry Conteras,female,25,0,204.0,882.811862745098,180093.62,firstclass,29.0,619.6420689655172,adult,premium,0,2,0,2
+133,4You,Ma New,female,28,0,222.0,925.6453603603603,205493.27,firstclass,27.0,553.7951851851851,adult,premium,0,2,0,2
+134,4You,Anthony Mccaslin,male,54,1,264.0,978.7475757575758,258389.36,firstclass,41.0,515.5278048780488,middle_aged,premium,0,2,1,2
+135,4You,Jeanna Davis,female,45,0,170.0,926.5584117647059,157514.93,firstclass,28.0,523.4607142857143,middle_aged,premium,0,2,1,2
+136,4You,Sabrina Chance,female,53,0,36.0,854.4252777777779,30759.31,firstclass,5.0,377.256,middle_aged,premium,0,2,1,2
+138,4You,Kathryn Otsuka,female,27,0,56.0,948.1358928571428,53095.61,firstclass,11.0,562.1263636363636,adult,premium,0,2,0,2
+140,4You,Lillian Reyes,female,65,0,270.0,909.6705555555556,245611.05,firstclass,36.0,454.6336111111111,senior,premium,0,2,2,2
+142,4You,Richard Espericueta,male,39,1,94.0,971.5782978723404,91328.36,firstclass,12.0,433.30916666666667,adult,premium,0,2,0,2
+143,4You,Lisa Fitch,female,37,0,80.0,902.338625,72187.09,premium,15.0,503.46866666666665,adult,premium,0,3,0,2
+144,4You,Samantha Link,female,53,0,96.0,961.6992708333333,92323.13,firstclass,9.0,579.8499999999999,middle_aged,premium,0,2,1,2
+145,4You,Sandra Cruson,female,30,0,384.0,907.7253906249999,348566.55,firstclass,47.0,563.7736170212767,adult,premium,0,2,0,2
+146,4You,Ruben Flores,male,65,1,380.0,908.6709999999999,345294.98,firstclass,57.0,589.9889473684211,senior,premium,0,2,2,2
+148,4You,Marty Ferguson,male,57,1,354.0,953.7059604519774,337611.91,firstclass,47.0,571.6502127659575,middle_aged,premium,0,2,1,2
+149,4You,Mary Harkness,female,37,0,322.0,916.3213354037266,295055.47,firstclass,59.0,534.8086440677966,adult,premium,0,2,0,2
+152,4You,Elisa Vizcarra,female,42,0,312.0,934.1771474358975,291463.27,firstclass,51.0,490.00666666666666,middle_aged,premium,0,2,1,2
+153,4You,Tona Buri,female,65,0,202.0,955.9938613861386,193110.76,firstclass,28.0,635.0828571428572,senior,premium,0,2,2,2
+154,4You,Rex Velasquez,male,46,1,54.0,947.8725925925927,51185.12,firstclass,8.0,574.9137499999999,middle_aged,premium,0,2,1,2
+156,4You,Shannon Buitron,female,53,0,260.0,895.3788461538461,232798.5,firstclass,40.0,575.3415,middle_aged,premium,0,2,1,2
+158,4You,Benjamin Vanbuskirk,male,52,1,388.0,985.1561855670102,382240.6,firstclass,64.0,574.07140625,middle_aged,premium,0,2,1,2
+159,4You,Jack Harris,male,26,1,66.0,893.149090909091,58947.840000000004,premium,9.0,421.1766666666667,adult,premium,0,3,0,2
+161,4You,Abraham Smith,male,62,1,256.0,879.6633984375,225193.83,firstclass,44.0,541.7347727272728,senior,premium,0,2,2,2
+162,4You,Helen Jordan,female,21,0,222.0,964.9131981981983,214210.73,firstclass,34.0,525.9579411764706,young,premium,0,2,3,2
+163,4You,Derek Colburn,male,59,1,124.0,978.8091129032258,121372.33,firstclass,22.0,605.7554545454545,middle_aged,premium,0,2,1,2
+164,4You,Tyler Butler,male,35,1,80.0,942.1955,75375.64,economic,10.0,474.75200000000007,adult,premium,0,0,0,2
+167,4You,Robert Toney,male,65,1,28.0,1028.0564285714286,28785.579999999998,firstclass,5.0,647.6519999999999,senior,premium,0,2,2,2
+168,4You,Lynn Quirk,female,53,0,346.0,911.3764450867052,315336.25,firstclass,58.0,555.0725862068965,middle_aged,premium,0,2,1,2
+171,4You,Wade Cobb,male,49,1,188.0,935.7944680851064,175929.36,firstclass,26.0,457.1742307692308,middle_aged,premium,0,2,1,2
+173,4You,Devin Shaver,male,49,1,148.0,948.6091891891892,140394.16,firstclass,23.0,519.9308695652173,middle_aged,premium,0,2,1,2
+175,4You,Doris Marsh,female,48,0,274.0,896.5498540145985,245654.66,firstclass,41.0,588.310975609756,middle_aged,premium,0,2,1,2
+176,4You,Eva Grant,female,32,0,242.0,932.5781818181819,225683.92,firstclass,47.0,528.7927659574468,adult,premium,0,2,0,2
+177,4You,Brent Jaynes,male,55,1,304.0,934.8083552631579,284181.74,firstclass,42.0,575.6752380952381,middle_aged,premium,0,2,1,2
+178,4You,Bobby Rutledge,male,36,1,262.0,929.0256870229008,243404.73,firstclass,54.0,539.0905555555555,adult,premium,0,2,0,2
+179,4You,Ellen Brodowski,female,55,0,180.0,907.8513333333333,163413.24,firstclass,25.0,518.3864,middle_aged,premium,0,2,1,2
+180,4You,William Prahm,male,27,1,264.0,952.3568939393939,251422.22,firstclass,41.0,524.6600000000001,adult,premium,0,2,0,2
+182,4You,Donald Anderson,male,29,1,230.0,904.2076521739131,207967.76,firstclass,41.0,565.4070731707317,adult,premium,0,2,0,2
+183,4You,Dean Lindberg,male,42,1,378.0,945.6553174603175,357457.71,firstclass,54.0,457.0264814814815,middle_aged,premium,0,2,1,2
+184,4You,Ronald Giunta,male,60,1,74.0,1028.6458108108106,76119.79,firstclass,12.0,358.27833333333336,senior,premium,0,2,2,2
+185,4You,Robert Sherman,male,54,1,262.0,954.919465648855,250188.9,firstclass,34.0,539.6841176470588,middle_aged,premium,0,2,1,2
+186,4You,Doris Quinones,female,56,0,342.0,919.1362865497075,314344.61,firstclass,53.0,556.2647169811321,middle_aged,premium,0,2,1,2
+187,4You,Merle Gravatt,male,59,1,308.0,924.6112987012986,284780.27999999997,firstclass,47.0,486.251914893617,middle_aged,premium,0,2,1,2
+188,4You,Donald Kingsley,male,24,1,238.0,932.0658403361343,221831.66999999998,firstclass,36.0,519.4847222222222,young,premium,0,2,3,2
+189,4You,Nicholas Goodman,male,31,1,384.0,922.2453645833333,354142.22,firstclass,50.0,533.5362,adult,premium,0,2,0,2
+192,4You,Jordan Williams,male,41,1,106.0,920.4207547169812,97564.6,firstclass,13.0,490.3146153846154,middle_aged,premium,0,2,1,2
+193,4You,Jose Carr,male,62,1,328.0,962.1164634146342,315574.2,firstclass,57.0,566.9285964912281,senior,premium,0,2,2,2
+194,4You,William Douthitt,male,37,1,344.0,914.3689825581395,314542.93,firstclass,54.0,598.5053703703704,adult,premium,0,2,0,2
+195,4You,Richard Juarez,male,39,1,398.0,914.5020603015075,363971.82,firstclass,58.0,439.7789655172414,adult,premium,0,2,0,2
+196,4You,Ora Nunez,female,59,0,158.0,946.8812658227847,149607.24,firstclass,29.0,506.0572413793103,middle_aged,premium,0,2,1,2
+197,4You,Roger Chavers,male,23,1,212.0,898.4042924528302,190461.71,firstclass,24.0,511.8125,young,premium,0,2,3,2
+201,4You,Emerson Martindale,male,41,1,62.0,1035.0304838709678,64171.89,firstclass,5.0,795.046,middle_aged,premium,0,2,1,2
+202,4You,Christopher Schroeder,male,34,1,72.0,900.205,64814.76,premium,10.0,684.0889999999999,adult,premium,0,3,0,2
+203,4You,Gary Lamb,male,46,1,302.0,943.2270198675496,284854.56,firstclass,43.0,510.75581395348837,middle_aged,premium,0,2,1,2
+206,4You,Lisa Mottillo,female,33,0,278.0,946.4924100719425,263124.89,firstclass,43.0,536.7260465116279,adult,premium,0,2,0,2
+207,4You,Mary Breton,female,33,0,216.0,949.7036111111112,205135.98,firstclass,35.0,464.3225714285714,adult,premium,0,2,0,2
+208,4You,Gertrude Fowler,female,37,0,276.0,919.4980797101449,253781.47,firstclass,43.0,567.6123255813953,adult,premium,0,2,0,2
+209,4You,Elvin Wilhoit,male,51,1,250.0,896.2963199999999,224074.08,firstclass,32.0,588.3028125,middle_aged,premium,0,2,1,2
+211,4You,Jessica Shepard,female,57,0,132.0,907.3195454545455,119766.18000000001,firstclass,16.0,531.474375,middle_aged,premium,0,2,1,2
+212,4You,David Donovan,male,34,1,356.0,954.478286516854,339794.27,firstclass,52.0,565.9636538461539,adult,premium,0,2,0,2
+213,4You,Paulette Olney,female,44,0,208.0,898.4182211538462,186870.99,firstclass,27.0,563.73,middle_aged,premium,0,2,1,2
+214,4You,Bernice Martinez,female,62,0,64.0,1030.6590625,65962.18,firstclass,7.0,589.8028571428571,senior,premium,0,2,2,2
+218,4You,Marylee Hall,female,60,0,140.0,891.1847142857143,124765.86,firstclass,24.0,566.7695833333333,senior,premium,0,2,2,2
+221,4You,Ruth Nava,female,58,0,64.0,894.41171875,57242.35,firstclass,8.0,401.9825,middle_aged,premium,0,2,1,2
+222,4You,Kimberly Plumber,female,21,0,286.0,897.8175874125874,256775.83,firstclass,52.0,503.36673076923074,young,premium,0,2,3,2
+223,4You,Georgina Trevino,female,36,0,326.0,912.6184049079753,297513.6,firstclass,52.0,479.1392307692308,adult,premium,0,2,0,2
+224,4You,Lucille Merkle,female,65,0,200.0,909.9639500000001,181992.79,economic,36.0,450.5105555555556,senior,premium,0,0,2,2
+226,4You,Jennifer Ladner,female,29,0,142.0,926.6932394366197,131590.44,firstclass,24.0,379.1583333333333,adult,premium,0,2,0,2
+228,4You,Robert George,male,29,1,294.0,947.7791156462584,278647.06,firstclass,46.0,466.2508695652174,adult,premium,0,2,0,2
+230,4You,Patricia Pittman,female,35,0,326.0,926.9155828220859,302174.48,firstclass,43.0,580.8125581395349,adult,premium,0,2,0,2
+231,4You,Ronnie Stauffer,male,50,1,240.0,931.0985833333333,223463.66,firstclass,29.0,602.568275862069,middle_aged,premium,0,2,1,2
+232,4You,Linda Pelaez,female,29,0,50.0,985.7472,49287.36,firstclass,11.0,581.4472727272728,adult,premium,0,2,0,2
+233,4You,Anna Broyles,female,63,0,150.0,865.5464000000001,129831.96,firstclass,23.0,498.6747826086957,senior,premium,0,2,2,2
+234,4You,Antonia Mcrae,female,45,0,368.0,940.2426358695651,346009.29,firstclass,52.0,549.1948076923077,middle_aged,premium,0,2,1,2
+235,4You,Bonnie Martinez,female,49,0,22.0,1010.055,22221.21,firstclass,1.0,663.96,middle_aged,premium,0,2,1,2
+237,4You,Sylvia Etheridge,female,47,0,352.0,901.8090340909092,317436.78,firstclass,59.0,503.55983050847453,middle_aged,premium,0,2,1,2
+238,4You,Charles Baker,male,38,1,148.0,983.5599324324324,145566.87,firstclass,16.0,477.590625,adult,premium,0,2,0,2
+239,4You,Julie Berman,female,51,0,362.0,956.9040331491713,346399.26,firstclass,45.0,477.28111111111116,middle_aged,premium,0,2,1,2
+241,4You,Sonia Malaspina,female,63,0,400.0,920.508625,368203.45,firstclass,64.0,470.28796875,senior,premium,0,2,2,2
+242,4You,Ray Johnson,male,56,1,330.0,968.3776666666666,319564.63,firstclass,62.0,632.0662903225807,middle_aged,premium,0,2,1,2
+244,4You,Opal Valles,female,45,0,232.0,887.0022844827586,205784.53,firstclass,36.0,570.6975,middle_aged,premium,0,2,1,2
+245,4You,Jacqueline Sabir,female,40,0,266.0,867.6038721804512,230782.63,firstclass,49.0,585.1255102040817,middle_aged,premium,0,2,1,2
+246,4You,Dorothy Richardson,female,33,0,186.0,977.4427956989247,181804.36,firstclass,30.0,605.7389999999999,adult,premium,0,2,0,2
+248,4You,Monica Chafin,female,49,0,258.0,942.1210465116279,243067.23,firstclass,40.0,484.05600000000004,middle_aged,premium,0,2,1,2
+249,4You,George Sapp,male,26,1,146.0,899.7227397260273,131359.52,firstclass,15.0,377.12066666666664,adult,premium,0,2,0,2
+250,4You,Jeff Veno,male,38,1,324.0,931.5426543209877,301819.82,firstclass,43.0,554.2044186046512,adult,premium,0,2,0,2
+251,4You,Tommy Burns,male,25,1,380.0,900.5804210526316,342220.56,firstclass,69.0,509.2271014492753,adult,premium,0,2,0,2
+253,4You,Barbara Knight,female,41,0,114.0,900.0708771929825,102608.08,firstclass,20.0,597.992,middle_aged,premium,0,2,1,2
+255,4You,Arthur Hoag,male,31,1,36.0,1031.9052777777777,37148.59,firstclass,7.0,388.11571428571426,adult,premium,0,2,0,2
+257,4You,Carolyn Miller,female,39,0,88.0,881.5003409090909,77572.03,economic,7.0,565.9428571428572,adult,premium,0,0,0,2
+258,4You,Walter Letchworth,male,35,1,294.0,885.9839115646258,260479.27,firstclass,45.0,511.98822222222225,adult,premium,0,2,0,2
+262,4You,Ramon Santistevan,male,33,1,268.0,924.8291791044776,247854.22,firstclass,37.0,573.9327027027026,adult,premium,0,2,0,2
+264,4You,Prince Webster,male,40,1,380.0,908.8748947368422,345372.46,firstclass,62.0,491.5983870967742,middle_aged,premium,0,2,1,2
+265,4You,Patricia Ives,female,30,0,194.0,890.7306701030927,172801.75,firstclass,27.0,505.99185185185183,adult,premium,0,2,0,2
+266,4You,Larry Decker,male,45,1,274.0,939.4262408759124,257402.79,firstclass,45.0,553.1282222222222,middle_aged,premium,0,2,1,2
+267,4You,Patricia Elwell,female,40,0,270.0,946.0577777777778,255435.6,firstclass,35.0,604.4262857142857,middle_aged,premium,0,2,1,2
+270,4You,Dustin Owens,male,51,1,22.0,996.1772727272728,21915.9,firstclass,1.0,165.99,middle_aged,premium,0,2,1,2
+271,4You,Scott Schreyer,male,63,1,314.0,927.6673885350318,291287.56,firstclass,55.0,560.5401818181818,senior,premium,0,2,2,2
+272,4You,Genevieve May,female,56,0,128.0,897.74203125,114910.98,firstclass,16.0,571.73875,middle_aged,premium,0,2,1,2
+273,4You,John Evans,male,52,1,276.0,895.2601449275362,247091.8,firstclass,42.0,531.8714285714285,middle_aged,premium,0,2,1,2
+274,4You,Alejandro Perry,male,61,1,386.0,909.8885751295337,351216.99,firstclass,62.0,515.1453225806451,senior,premium,0,2,2,2
+278,4You,Willie Lopez,male,36,1,150.0,917.9041333333333,137685.62,firstclass,17.0,571.6670588235294,adult,premium,0,2,0,2
+279,4You,Mildred Jackson,female,49,0,172.0,895.627034883721,154047.85,firstclass,29.0,598.458275862069,middle_aged,premium,0,2,1,2
+280,4You,Stephen Diaz,male,26,1,232.0,921.1512931034483,213707.1,firstclass,29.0,587.1937931034482,adult,premium,0,2,0,2
+283,4You,Barbara Faust,female,42,0,80.0,1001.6182499999999,80129.45999999999,firstclass,19.0,612.2152631578947,middle_aged,premium,0,2,1,2
+284,4You,Adam Pittman,male,32,1,372.0,949.0231451612902,353036.61,firstclass,51.0,499.08000000000004,adult,premium,0,2,0,2
+286,4You,Ellen Hanks,female,43,0,40.0,916.8280000000001,36673.12,firstclass,6.0,563.6899999999999,middle_aged,premium,0,2,1,2
+289,4You,Ethel Duffy,female,34,0,280.0,915.8272857142857,256431.64,firstclass,39.0,443.4902564102564,adult,premium,0,2,0,2
+291,4You,Larry Dupree,male,36,1,126.0,995.7596825396826,125465.72,firstclass,15.0,569.4186666666666,adult,premium,0,2,0,2
+294,4You,Dawn Harris,female,22,0,168.0,898.8025595238095,150998.83,firstclass,19.0,523.2136842105263,young,premium,0,2,3,2
+295,4You,Jenna Center,female,60,0,128.0,969.8109375,124135.8,firstclass,24.0,559.3345833333334,senior,premium,0,2,2,2
+298,4You,Gary Schwab,male,29,1,10.0,938.176,9381.76,premium,0.0,495.24,adult,premium,0,3,0,2
+302,4You,Anne Brown,female,42,0,82.0,818.0712195121951,67081.84,premium,10.0,637.2529999999999,middle_aged,premium,0,3,1,2
+303,4You,Richard Gomez,male,56,1,46.0,1009.1504347826086,46420.92,firstclass,5.0,657.072,middle_aged,premium,0,2,1,2
+304,4You,James Lord,male,32,1,314.0,910.436433121019,285877.04,firstclass,41.0,554.8860975609756,adult,premium,0,2,0,2
+305,4You,Sarah Willis,female,50,0,76.0,952.0819736842104,72358.23,firstclass,10.0,513.8549999999999,middle_aged,premium,0,2,1,2
+307,4You,Robert Legros,male,59,1,370.0,944.792027027027,349573.05,firstclass,50.0,614.613,middle_aged,premium,0,2,1,2
+308,4You,Doris Ramirez,female,27,0,346.0,934.7092485549134,323409.4,firstclass,48.0,598.271875,adult,premium,0,2,0,2
+309,4You,David Robinson,male,33,1,150.0,840.3368,126050.52,economic,21.0,544.0066666666667,adult,premium,0,0,0,2
+312,4You,Ulysses Barker,male,40,1,348.0,932.4282471264366,324485.02999999997,firstclass,51.0,483.25882352941176,middle_aged,premium,0,2,1,2
+313,4You,Judith Pierce,female,23,0,94.0,884.5946808510638,83151.9,firstclass,10.0,598.201,young,premium,0,2,3,2
+314,4You,Matthew Johnson,male,50,1,316.0,935.7056329113924,295682.98,firstclass,53.0,547.5045283018868,middle_aged,premium,0,2,1,2
+316,4You,Charlotte Johnson,female,64,0,124.0,959.3601612903226,118960.66,firstclass,14.0,401.8257142857143,senior,premium,0,2,2,2
+317,4You,Adam Groome,male,54,1,256.0,914.6725390625,234156.17,firstclass,37.0,531.1575675675675,middle_aged,premium,0,2,1,2
+319,4You,Anthony Jarrett,male,28,1,330.0,947.1740606060606,312567.44,firstclass,36.0,412.40194444444444,adult,premium,0,2,0,2
+320,4You,Reginald Doherty,male,33,1,122.0,933.1958196721312,113849.89,firstclass,13.0,433.40769230769234,adult,premium,0,2,0,2
+322,4You,Wallace Gallardo,male,56,1,400.0,923.644675,369457.87,firstclass,67.0,588.1289552238806,middle_aged,premium,0,2,1,2
+323,4You,Jean Obrien,female,53,0,332.0,922.1760843373495,306162.46,firstclass,51.0,557.9419607843138,middle_aged,premium,0,2,1,2
+326,4You,Marian Dunn,female,63,0,384.0,951.084140625,365216.31,firstclass,55.0,520.36,senior,premium,0,2,2,2
+327,4You,Vanessa Nobles,female,32,0,114.0,862.7801754385965,98356.94,firstclass,19.0,465.6694736842105,adult,premium,0,2,0,2
+328,4You,Tracy Mccracken,female,53,0,300.0,933.6456333333333,280093.69,firstclass,51.0,630.713137254902,middle_aged,premium,0,2,1,2
+329,4You,Amanda Hanson,female,46,0,346.0,918.81274566474,317909.21,firstclass,60.0,500.1786666666667,middle_aged,premium,0,2,1,2
+331,4You,Edward Grayson,male,41,1,314.0,947.135796178344,297400.64,firstclass,40.0,564.23125,middle_aged,premium,0,2,1,2
+334,4You,Mitchell Goss,male,45,1,32.0,928.9115625,29725.17,firstclass,4.0,397.0475,middle_aged,premium,0,2,1,2
+336,4You,Edith Franco,female,22,0,168.0,904.9118452380952,152025.19,firstclass,25.0,514.3308000000001,young,premium,0,2,3,2
+338,4You,Randy Sao,male,65,1,368.0,905.9563315217391,333391.93,firstclass,55.0,541.0198181818182,senior,premium,0,2,2,2
+339,4You,Stephen Midgett,male,33,1,174.0,920.6807471264368,160198.45,firstclass,27.0,566.2203703703703,adult,premium,0,2,0,2
+342,4You,Tina Tomasek,female,22,0,338.0,980.1826627218935,331301.74,firstclass,45.0,564.8977777777778,young,premium,0,2,3,2
+343,4You,Eric Fuller,male,47,1,294.0,932.1472108843539,274051.28,firstclass,43.0,491.88674418604654,middle_aged,premium,0,2,1,2
+344,4You,Gary Hanson,male,33,1,160.0,926.670125,148267.22,firstclass,26.0,553.6861538461538,adult,premium,0,2,0,2
+346,4You,Jeffrey Forester,male,57,1,286.0,915.1903146853147,261744.43,firstclass,34.0,575.0164705882353,middle_aged,premium,0,2,1,2
+347,4You,Keith Sherman,male,35,1,46.0,828.8391304347825,38126.6,economic,5.0,590.346,adult,premium,0,0,0,2
+348,4You,Mathilde Boone,female,52,0,244.0,981.4165163934426,239465.63,firstclass,45.0,537.4446666666666,middle_aged,premium,0,2,1,2
+349,4You,Isabel Guthrie,female,36,0,328.0,972.1829268292682,318876.0,firstclass,51.0,508.6909803921569,adult,premium,0,2,0,2
+350,4You,Sam Abernathy,male,25,1,76.0,890.3588157894737,67667.27,firstclass,9.0,481.5477777777778,adult,premium,0,2,0,2
+352,4You,Alicia Watts,female,36,0,352.0,957.2049715909092,336936.15,firstclass,60.0,482.1441666666667,adult,premium,0,2,0,2
+353,4You,Ricky Baker,male,57,1,98.0,869.3466326530612,85195.97,firstclass,16.0,492.26625,middle_aged,premium,0,2,1,2
+355,4You,Debra Bailey,female,61,0,350.0,901.2023714285715,315420.83,firstclass,50.0,503.7126,senior,premium,0,2,2,2
+357,4You,Kathryn Childress,female,37,0,370.0,865.3194594594595,320168.2,firstclass,55.0,580.4552727272727,adult,premium,0,2,0,2
+358,4You,Rickey Orouke,male,46,1,44.0,889.9375,39157.25,firstclass,8.0,648.22875,middle_aged,premium,0,2,1,2
+359,4You,Virgil Hauck,male,48,1,106.0,901.6871698113207,95578.84,firstclass,25.0,737.0884,middle_aged,premium,0,2,1,2
+360,4You,William Williams,male,49,1,86.0,876.0953488372093,75344.2,premium,11.0,586.5772727272728,middle_aged,premium,0,3,1,2
+361,4You,Curtis Sexton,male,33,1,2.0,644.875,1289.75,economic,0.0,495.24,adult,economy,0,0,0,0
+362,4You,Kyle Young,male,59,1,378.0,912.2161111111111,344817.69,firstclass,59.0,559.2994915254237,middle_aged,premium,0,2,1,2
+363,4You,Abby Small,female,25,0,184.0,939.506902173913,172869.27,firstclass,30.0,520.0269999999999,adult,premium,0,2,0,2
+364,4You,Kristina Schuetz,female,48,0,6.0,1202.4616666666668,7214.77,firstclass,0.0,495.24,middle_aged,premium,0,2,1,2
+365,4You,Eunice Burns,female,24,0,68.0,915.6635294117648,62265.12,firstclass,10.0,526.1220000000001,young,premium,0,2,3,2
+368,4You,Mark Nemec,male,25,1,304.0,905.8434868421052,275376.42,firstclass,54.0,525.3398148148148,adult,premium,0,2,0,2
+369,4You,Bart Haverstock,male,21,1,314.0,949.7695222929937,298227.63,firstclass,48.0,468.99916666666667,young,premium,0,2,3,2
+373,4You,Jame Carter,female,65,0,46.0,983.6478260869566,45247.8,firstclass,8.0,511.4275,senior,premium,0,2,2,2
+374,4You,Kristopher Runyon,male,25,1,12.0,832.21,9986.52,firstclass,2.0,891.1400000000001,adult,premium,0,2,0,2
+376,4You,Dale Mazur,male,47,1,98.0,876.2472448979591,85872.23,firstclass,14.0,579.5735714285714,middle_aged,premium,0,2,1,2
+377,4You,Larry Faron,male,24,1,22.0,802.525,17655.55,economic,2.0,938.49,young,premium,0,0,3,2
+381,4You,Victor Remington,male,52,1,392.0,933.4395153061224,365908.29,firstclass,58.0,499.00275862068963,middle_aged,premium,0,2,1,2
+384,4You,Eulalia White,female,45,0,386.0,953.6255958549223,368099.48,firstclass,57.0,528.65,middle_aged,premium,0,2,1,2
+385,4You,Jeffery Gill,male,53,1,0.0,904.0,0.0,economyclass,0.0,495.24,middle_aged,premium,0,1,1,2
+386,4You,Katlyn Hsiao,female,44,0,96.0,949.3371874999999,91136.37,firstclass,14.0,514.0092857142857,middle_aged,premium,0,2,1,2
+388,4You,Virgie Humphrys,female,23,0,238.0,955.9961344537815,227527.08,firstclass,42.0,529.1069047619047,young,premium,0,2,3,2
+391,4You,Philip Robertson,male,49,1,268.0,958.3875373134327,256847.86,firstclass,31.0,605.5354838709677,middle_aged,premium,0,2,1,2
+392,4You,Cameron Williams,male,27,1,118.0,959.7122881355932,113246.05,firstclass,16.0,541.0575,adult,premium,0,2,0,2
+393,4You,Kelly Subido,female,23,0,60.0,931.5948333333333,55895.69,firstclass,12.0,355.9566666666667,young,premium,0,2,3,2
+395,4You,Caroline Eaton,female,49,0,158.0,911.8711392405062,144075.63999999998,premium,26.0,537.2042307692308,middle_aged,premium,0,3,1,2
+396,4You,Douglas Shields,male,39,1,266.0,895.2515789473684,238136.92,firstclass,40.0,518.88725,adult,premium,0,2,0,2
+397,4You,Robert Clark,male,28,1,50.0,987.2242,49361.21,premium,8.0,498.47125000000005,adult,premium,0,3,0,2
+398,4You,Christine Spillane,female,29,0,172.0,913.2567441860465,157080.16,firstclass,27.0,457.26148148148144,adult,premium,0,2,0,2
+399,4You,Shirley Blacklock,female,36,0,16.0,1056.244375,16899.91,firstclass,2.0,996.065,adult,premium,0,2,0,2
+400,4You,Cathy Childs,female,52,0,264.0,904.5782575757576,238808.66,firstclass,44.0,480.22022727272724,middle_aged,premium,0,2,1,2
+402,4You,Philip Rose,male,48,1,330.0,929.0342727272728,306581.31,firstclass,43.0,513.6274418604651,middle_aged,premium,0,2,1,2
+406,4You,William Jemmott,male,21,1,2.0,1358.815,2717.63,firstclass,1.0,526.82,young,premium,0,2,3,2
+407,4You,Fernande Conover,female,25,0,378.0,947.3224074074074,358087.87,firstclass,54.0,587.7631481481482,adult,premium,0,2,0,2
+411,4You,Debbie Green,female,24,0,130.0,925.7011538461538,120341.15,firstclass,18.0,523.2944444444444,young,premium,0,2,3,2
+413,4You,Clifford Fagen,male,63,1,56.0,998.5282142857143,55917.58,firstclass,4.0,787.1975,senior,premium,0,2,2,2
+416,4You,Mary Rivera,female,37,0,236.0,964.0428389830508,227514.11,firstclass,43.0,436.1786046511628,adult,premium,0,2,0,2
+420,4You,April Williams,female,46,0,56.0,972.2916071428572,54448.33,firstclass,8.0,693.4025,middle_aged,premium,0,2,1,2
+423,4You,Sandra Sawin,female,21,0,162.0,927.8283333333334,150308.19,firstclass,26.0,566.0976923076922,young,premium,0,2,3,2
+424,4You,Diana Mcelrath,female,59,0,100.0,902.24,90224.0,firstclass,11.0,690.4954545454545,middle_aged,premium,0,2,1,2
+425,4You,Dorothy Martin,female,61,0,286.0,946.9608391608391,270830.8,firstclass,43.0,467.0986046511628,senior,premium,0,2,2,2
+427,4You,Margaret Morley,female,63,0,12.0,873.295,10479.539999999999,firstclass,3.0,597.91,senior,premium,0,2,2,2
+429,4You,Brian Zimmermann,male,44,1,152.0,908.5788157894738,138103.98,economic,22.0,455.49363636363637,middle_aged,premium,0,0,1,2
+430,4You,Sharyl Simmons,female,36,0,390.0,892.4277692307693,348046.83,firstclass,55.0,562.8427272727273,adult,premium,0,2,0,2
+432,4You,Linda Speight,female,52,0,320.0,969.73415625,310314.93,firstclass,53.0,503.30018867924525,middle_aged,premium,0,2,1,2
+434,4You,Johnny Odom,male,29,1,324.0,920.346913580247,298192.4,firstclass,55.0,541.285090909091,adult,premium,0,2,0,2
+435,4You,Eric Barakat,male,57,1,174.0,951.0652873563217,165485.36,firstclass,23.0,476.07565217391306,middle_aged,premium,0,2,1,2
+438,4You,Michael Stroik,male,44,1,58.0,907.8208620689655,52653.61,firstclass,12.0,575.1850000000001,middle_aged,premium,0,2,1,2
+441,4You,Robert Coronado,male,32,1,324.0,975.1997222222222,315964.71,firstclass,46.0,486.63739130434783,adult,premium,0,2,0,2
+442,4You,Renee Brock,female,24,0,294.0,928.0574829931974,272848.9,firstclass,48.0,602.77375,young,premium,0,2,3,2
+443,4You,Alberto Hamner,male,24,1,62.0,913.9138709677419,56662.659999999996,firstclass,6.0,462.645,young,premium,0,2,3,2
+445,4You,Laura Burns,female,23,0,374.0,878.8327005347593,328683.43,firstclass,58.0,516.8168965517242,young,premium,0,2,3,2
+446,4You,Henry Burkhard,male,46,1,20.0,944.1630000000001,18883.260000000002,firstclass,3.0,664.1066666666667,middle_aged,premium,0,2,1,2
+448,4You,Marion Casey,female,28,0,378.0,918.1561375661377,347063.02,firstclass,59.0,554.6740677966102,adult,premium,0,2,0,2
+449,4You,Valerie Gonzalez,female,61,0,182.0,949.0222527472527,172722.05,firstclass,29.0,580.6744827586207,senior,premium,0,2,2,2
+451,4You,Derick Krausz,male,46,1,146.0,916.8373972602741,133858.26,firstclass,23.0,635.4586956521739,middle_aged,premium,0,2,1,2
+455,Monsters CYA,Dana Looney,female,56,0,318.0,891.6703459119497,283551.17,firstclass,51.0,610.3423529411765,middle_aged,premium,2,2,1,2
+456,Monsters CYA,Gertrude Rice,female,36,0,246.0,860.869512195122,211773.9,firstclass,34.0,537.780294117647,adult,premium,2,2,0,2
+457,Monsters CYA,Leonel Richardson,male,49,1,92.0,931.8586956521739,85731.0,firstclass,15.0,797.6666666666666,middle_aged,premium,2,2,1,2
+458,Monsters CYA,Donald Jansen,male,22,1,182.0,903.6743406593407,164468.73,firstclass,31.0,591.0751612903225,young,premium,2,2,3,2
+459,Monsters CYA,Joseph Silva,male,50,1,236.0,852.2969491525423,201142.08,firstclass,34.0,505.08411764705886,middle_aged,premium,2,2,1,2
+460,Monsters CYA,William Washington,male,63,1,226.0,881.8292920353983,199293.42,firstclass,32.0,605.9859375,senior,premium,2,2,2,2
+461,Monsters CYA,Ma Hall,female,63,0,374.0,880.6986096256685,329381.28,firstclass,51.0,545.0080392156863,senior,premium,2,2,2,2
+462,Monsters CYA,David Leone,male,43,1,342.0,911.3143859649124,311669.52,firstclass,49.0,642.1757142857143,middle_aged,premium,2,2,1,2
+464,Monsters CYA,Zachary Richardson,male,60,1,100.0,887.7991999999999,88779.92,firstclass,16.0,610.19125,senior,premium,2,2,2,2
+466,Monsters CYA,Walter Ortiz,male,52,1,70.0,755.7578571428572,52903.05,premium,13.0,595.72,middle_aged,economy,2,3,1,0
+467,Monsters CYA,Justin Emmons,male,31,1,66.0,870.2990909090909,57439.74,premium,3.0,321.52666666666664,adult,premium,2,3,0,2
+468,Monsters CYA,Robert Terrell,male,47,1,26.0,1011.2015384615386,26291.24,premium,3.0,847.36,middle_aged,premium,2,3,1,2
+470,Monsters CYA,Ima Borne,female,23,0,94.0,975.983085106383,91742.41,firstclass,17.0,581.1511764705882,young,premium,2,2,3,2
+471,Monsters CYA,Norma Brady,female,26,0,106.0,781.568679245283,82846.28,firstclass,10.0,479.48400000000004,adult,economy,2,2,0,0
+472,Monsters CYA,Helen Heavilin,female,28,0,182.0,869.4498351648351,158239.87,firstclass,25.0,438.7956,adult,premium,2,2,0,2
+473,Monsters CYA,Anita Smothers,female,48,0,4.0,736.8025,2947.21,economic,1.0,208.04,middle_aged,economy,2,0,1,0
+474,Monsters CYA,Dorothy Sample,female,48,0,170.0,896.6001764705883,152422.03,firstclass,21.0,596.8657142857143,middle_aged,premium,2,2,1,2
+475,Monsters CYA,Cindy Sullivan,female,44,0,96.0,950.4985416666667,91247.86,firstclass,14.0,501.0385714285714,middle_aged,premium,2,2,1,2
+476,Monsters CYA,Major Girard,male,31,1,54.0,969.8562962962963,52372.24,firstclass,5.0,360.62600000000003,adult,premium,2,2,0,2
+480,Monsters CYA,Donna Koonce,female,32,0,148.0,844.3904729729729,124969.79,firstclass,28.0,650.5339285714286,adult,premium,2,2,0,2
+482,Monsters CYA,William Northey,male,31,1,348.0,870.2858620689655,302859.48,firstclass,49.0,584.629387755102,adult,premium,2,2,0,2
+484,Monsters CYA,Julie Bourgeois,female,44,0,176.0,895.2266477272728,157559.89,firstclass,26.0,569.1184615384616,middle_aged,premium,2,2,1,2
+488,Monsters CYA,Sonja Bell,female,56,0,200.0,863.49365,172698.73,firstclass,30.0,490.09366666666665,middle_aged,premium,2,2,1,2
+491,Monsters CYA,Lazaro Jordan,male,65,1,350.0,880.8630285714286,308302.06,firstclass,50.0,597.7482,senior,premium,2,2,2,2
+492,Monsters CYA,Scott Chavez,male,36,1,304.0,885.577697368421,269215.62,firstclass,45.0,625.7768888888888,adult,premium,2,2,0,2
+493,Monsters CYA,Artie Ladner,female,48,0,308.0,919.7506168831169,283283.19,firstclass,42.0,634.8028571428572,middle_aged,premium,2,2,1,2
+494,Monsters CYA,Steven Colon,male,31,1,24.0,975.37875,23409.09,firstclass,3.0,525.0066666666667,adult,premium,2,2,0,2
+495,Monsters CYA,Robert Carpenter,male,44,1,78.0,937.5608974358975,73129.75,firstclass,13.0,554.38,middle_aged,premium,2,2,1,2
+497,Monsters CYA,Christopher Cooper,male,60,1,326.0,868.9640490797547,283282.28,firstclass,50.0,513.0454,senior,premium,2,2,2,2
+498,Monsters CYA,Melvin Wineland,male,64,1,192.0,951.1193750000001,182614.92,firstclass,30.0,573.216,senior,premium,2,2,2,2
+499,Monsters CYA,Andrew Sperdute,male,62,1,244.0,869.118975409836,212065.03,firstclass,28.0,546.8414285714285,senior,premium,2,2,2,2
+500,Monsters CYA,Edward Zahner,male,42,1,330.0,843.1468787878789,278238.47000000003,firstclass,55.0,600.1618181818183,middle_aged,premium,2,2,1,2
+501,Monsters CYA,Amy Ruff,female,21,0,222.0,870.9694144144144,193355.21,premium,30.0,617.2926666666666,young,premium,2,3,3,2
+503,Monsters CYA,Mark Smith,male,30,1,168.0,893.8397619047619,150165.08,premium,25.0,696.3988,adult,premium,2,3,0,2
+505,Monsters CYA,Arthur Acevedo,male,24,1,304.0,880.515822368421,267676.81,firstclass,52.0,682.8551923076923,young,premium,2,2,3,2
+506,Monsters CYA,David Grady,male,61,1,54.0,872.8914814814815,47136.14,firstclass,10.0,452.622,senior,premium,2,2,2,2
+507,Monsters CYA,Thomas Coleman,male,57,1,266.0,938.1383458646616,249544.8,firstclass,40.0,572.42325,middle_aged,premium,2,2,1,2
+508,Monsters CYA,Gwen Payne,female,64,0,56.0,1005.7510714285714,56322.06,firstclass,9.0,727.8688888888888,senior,premium,2,2,2,2
+511,Monsters CYA,Wilma Prescott,female,32,0,274.0,906.2165328467153,248303.33,firstclass,38.0,644.1265789473684,adult,premium,2,2,0,2
+512,Monsters CYA,Juanita Baker,female,52,0,374.0,883.0269518716578,330252.08,firstclass,57.0,488.73350877192985,middle_aged,premium,2,2,1,2
+513,Monsters CYA,Kia Rodriguez,female,64,0,134.0,925.4277611940299,124007.32,firstclass,22.0,640.3772727272727,senior,premium,2,2,2,2
+514,Monsters CYA,Myesha Taranto,female,41,0,324.0,856.0048148148148,277345.56,firstclass,50.0,597.732,middle_aged,premium,2,2,1,2
+516,Monsters CYA,Julie Hamson,female,47,0,344.0,861.4472965116279,296337.87,firstclass,56.0,581.1196428571428,middle_aged,premium,2,2,1,2
+518,Monsters CYA,James White,male,25,1,104.0,895.0776923076924,93088.08,premium,21.0,581.6680952380952,adult,premium,2,3,0,2
+519,Monsters CYA,Alan Ferebee,male,32,1,144.0,943.5417361111112,135870.01,firstclass,24.0,464.18666666666667,adult,premium,2,2,0,2
+520,Monsters CYA,Bobby Alex,male,30,1,16.0,940.754375,15052.07,economic,2.0,295.515,adult,premium,2,0,0,2
+521,Monsters CYA,Alicia Cedar,female,29,0,344.0,869.7893313953489,299207.53,firstclass,49.0,583.1787755102041,adult,premium,2,2,0,2
+522,Monsters CYA,Wilfred Briggs,male,55,1,154.0,916.1255194805194,141083.33,firstclass,27.0,715.0911111111111,middle_aged,premium,2,2,1,2
+524,Monsters CYA,Linda Parks,female,50,0,78.0,778.1253846153846,60693.78,firstclass,11.0,798.8172727272727,middle_aged,economy,2,2,1,0
+527,Monsters CYA,Elma Gonzales,female,40,0,2.0,591.5799999999999,1183.1599999999999,firstclass,0.0,495.24,middle_aged,economy,2,2,1,0
+528,Monsters CYA,Frances Kendall,female,34,0,24.0,767.105,18410.52,premium,7.0,526.1028571428571,adult,economy,2,3,0,0
+529,Monsters CYA,Gary Pietrafesa,male,34,1,188.0,957.1662234042553,179947.25,firstclass,27.0,476.722962962963,adult,premium,2,2,0,2
+532,Monsters CYA,Florence Wilson,female,42,0,256.0,912.3495703125,233561.49,firstclass,34.0,624.7270588235294,middle_aged,premium,2,2,1,2
+534,Monsters CYA,James Perez,male,21,1,224.0,851.124107142857,190651.8,firstclass,39.0,568.9223076923078,young,premium,2,2,3,2
+535,Monsters CYA,Joann Mccrossen,female,28,0,162.0,863.4138271604938,139873.04,firstclass,26.0,684.6653846153846,adult,premium,2,2,0,2
+538,Monsters CYA,Marlene Worrell,female,55,0,134.0,838.7369402985074,112390.75,firstclass,14.0,546.735,middle_aged,premium,2,2,1,2
+543,Monsters CYA,Bianca Fitz,female,51,0,160.0,848.6311874999999,135780.99,firstclass,28.0,589.2257142857143,middle_aged,premium,2,2,1,2
+545,Monsters CYA,Kenneth Jump,male,46,1,394.0,893.9505837563453,352216.53,firstclass,59.0,640.7452542372881,middle_aged,premium,2,2,1,2
+546,Monsters CYA,Abdul Vogus,male,46,1,196.0,843.1544897959184,165258.28,firstclass,27.0,456.27222222222224,middle_aged,premium,2,2,1,2
+548,Monsters CYA,Frances Vidal,female,29,0,164.0,913.1881707317073,149762.86,firstclass,16.0,744.469375,adult,premium,2,2,0,2
+549,Monsters CYA,Margaret Orellana,female,24,0,210.0,843.5859523809523,177153.05,firstclass,42.0,499.48023809523806,young,premium,2,2,3,2
+553,Monsters CYA,Diego Boday,male,50,1,352.0,832.8183806818182,293152.07,economic,55.0,627.4238181818181,middle_aged,premium,2,0,1,2
+554,Monsters CYA,Georgia King,female,27,0,238.0,877.6936974789916,208891.1,firstclass,39.0,636.9164102564102,adult,premium,2,2,0,2
+555,Monsters CYA,Yolanda Edwards,female,34,0,70.0,862.7814285714285,60394.7,premium,11.0,659.8018181818182,adult,premium,2,3,0,2
+556,Monsters CYA,Jonathan Dickens,male,48,1,70.0,804.8977142857143,56342.840000000004,firstclass,11.0,616.7736363636363,middle_aged,premium,2,2,1,2
+559,Monsters CYA,Betty Ollie,female,64,0,138.0,884.4339855072463,122051.89,firstclass,26.0,491.73923076923074,senior,premium,2,2,2,2
+560,Monsters CYA,Pedro Lewis,male,32,1,176.0,872.3013636363637,153525.04,firstclass,26.0,642.7388461538461,adult,premium,2,2,0,2
+561,Monsters CYA,Minnie Lesane,female,30,0,240.0,913.1025416666668,219144.61000000002,firstclass,34.0,580.2635294117647,adult,premium,2,2,0,2
+566,Monsters CYA,Elma Depaz,female,29,0,136.0,918.8263970588235,124960.39,firstclass,19.0,682.9305263157895,adult,premium,2,2,0,2
+567,Monsters CYA,Darlene Blosser,female,53,0,182.0,846.2511538461538,154017.71,firstclass,27.0,592.3714814814815,middle_aged,premium,2,2,1,2
+569,Monsters CYA,Timothy Grady,male,28,1,128.0,882.016171875,112898.07,firstclass,15.0,541.638,adult,premium,2,2,0,2
+571,Monsters CYA,Nathan Ponder,male,43,1,400.0,907.5190249999999,363007.61,firstclass,56.0,551.0028571428571,middle_aged,premium,2,2,1,2
+572,Monsters CYA,Robert Carrell,male,64,1,362.0,884.435138121547,320165.52,firstclass,46.0,567.7558695652174,senior,premium,2,2,2,2
+575,Monsters CYA,Lucy Pagel,female,42,0,382.0,890.3619633507853,340118.27,firstclass,67.0,557.16,middle_aged,premium,2,2,1,2
+576,Monsters CYA,Chad Langevin,male,22,1,204.0,919.1668137254902,187510.03,firstclass,28.0,583.9960714285714,young,premium,2,2,3,2
+578,Monsters CYA,Naomi Bartz,female,22,0,318.0,924.6737421383648,294046.25,firstclass,45.0,609.6077777777778,young,premium,2,2,3,2
+579,Monsters CYA,Ruby Lewis,female,31,0,22.0,838.169090909091,18439.72,firstclass,5.0,614.098,adult,premium,2,2,0,2
+580,Monsters CYA,Javier Anthony,male,24,1,334.0,900.7514371257485,300850.98,firstclass,50.0,565.5079999999999,young,premium,2,2,3,2
+581,Monsters CYA,Jennie Klein,female,35,0,222.0,924.0364414414414,205136.09,firstclass,36.0,559.6688888888889,adult,premium,2,2,0,2
+582,Monsters CYA,Irene Land,female,62,0,306.0,876.6883660130719,268266.64,firstclass,48.0,531.179375,senior,premium,2,2,2,2
+584,Monsters CYA,Michael Jenkins,male,37,1,372.0,956.9873387096774,355999.29,firstclass,58.0,598.8310344827586,adult,premium,2,2,0,2
+585,Monsters CYA,Clara Taylor,female,63,0,134.0,835.5366417910448,111961.91,firstclass,15.0,583.006,senior,premium,2,2,2,2
+586,Monsters CYA,Gregory Thiboutot,male,39,1,276.0,891.8919565217391,246162.18,firstclass,32.0,670.92875,adult,premium,2,2,0,2
+587,Monsters CYA,David Edelson,male,34,1,382.0,878.5110994764398,335591.24,firstclass,62.0,604.9482258064517,adult,premium,2,2,0,2
+590,Monsters CYA,Jennifer Cargo,female,22,0,18.0,801.5488888888889,14427.88,firstclass,3.0,221.97333333333336,young,premium,2,2,3,2
+591,Monsters CYA,Veronica Salgado,female,65,0,112.0,852.0282142857143,95427.16,economic,16.0,504.625,senior,premium,2,0,2,2
+593,Monsters CYA,Matthew Kellogg,male,38,1,70.0,934.2109999999999,65394.77,firstclass,10.0,418.701,adult,premium,2,2,0,2
+594,Monsters CYA,Jason Woods,male,30,1,92.0,992.0896739130435,91272.25,firstclass,15.0,532.0093333333333,adult,premium,2,2,0,2
+595,Monsters CYA,Maureen Burns,female,34,0,8.0,813.79875,6510.39,premium,0.0,495.24,adult,premium,2,3,0,2
+596,Monsters CYA,Dolores Huffman,female,55,0,144.0,926.3111805555556,133388.81,firstclass,26.0,576.2973076923076,middle_aged,premium,2,2,1,2
+597,Monsters CYA,Raymond Varner,male,36,1,40.0,747.3315,29893.26,premium,9.0,610.5688888888889,adult,economy,2,3,0,0
+598,Monsters CYA,Amy Baumann,female,57,0,56.0,921.2567857142857,51590.38,firstclass,10.0,681.142,middle_aged,premium,2,2,1,2
+599,Monsters CYA,Leroy Harris,male,47,1,368.0,894.3460054347827,329119.33,firstclass,60.0,583.9451666666666,middle_aged,premium,2,2,1,2
+601,Monsters CYA,Seth Mcclellan,male,32,1,388.0,881.0953092783504,341864.98,firstclass,67.0,563.9050746268657,adult,premium,2,2,0,2
+602,Monsters CYA,Renita Smith,female,50,0,62.0,901.4793548387097,55891.72,firstclass,8.0,772.0025,middle_aged,premium,2,2,1,2
+605,Monsters CYA,Robert Santos,male,36,1,284.0,905.8910915492958,257273.07,firstclass,35.0,625.7834285714285,adult,premium,2,2,0,2
+606,Monsters CYA,David Evans,male,54,1,240.0,898.7482916666667,215699.59,firstclass,34.0,594.4958823529412,middle_aged,premium,2,2,1,2
+607,Monsters CYA,Laurie Fine,female,65,0,364.0,876.5122252747253,319050.45,firstclass,55.0,562.5550909090908,senior,premium,2,2,2,2
+609,Monsters CYA,Kerri Jones,female,57,0,44.0,833.2259090909091,36661.94,premium,6.0,489.0733333333333,middle_aged,premium,2,3,1,2
+611,Monsters CYA,Heather Chambers,female,47,0,312.0,903.7653846153846,281974.8,firstclass,53.0,630.6811320754716,middle_aged,premium,2,2,1,2
+612,Monsters CYA,Myra Rivera,female,57,0,350.0,872.4812571428572,305368.44,premium,56.0,558.6217857142857,middle_aged,premium,2,3,1,2
+613,Monsters CYA,Isiah Enriquez,male,53,1,230.0,929.1270434782609,213699.22,firstclass,35.0,628.2054285714286,middle_aged,premium,2,2,1,2
+614,Monsters CYA,Anna Zurita,female,41,0,142.0,905.7493661971831,128616.41,firstclass,20.0,625.5405,middle_aged,premium,2,2,1,2
+615,Monsters CYA,Stanley Norris,male,64,1,248.0,864.233870967742,214330.0,firstclass,27.0,648.3851851851853,senior,premium,2,2,2,2
+616,Monsters CYA,Jessica Kinsey,female,40,0,324.0,911.5798148148148,295351.86,firstclass,46.0,613.5897826086957,middle_aged,premium,2,2,1,2
+617,Monsters CYA,William Miller,male,57,1,262.0,915.8947709923664,239964.43,firstclass,38.0,588.3813157894738,middle_aged,premium,2,2,1,2
+618,Monsters CYA,Juanita Deno,female,58,0,192.0,898.9927604166666,172606.61,firstclass,19.0,549.1863157894737,middle_aged,premium,2,2,1,2
+619,Monsters CYA,Clifton Parsons,male,45,1,290.0,884.3511034482759,256461.82,firstclass,45.0,567.8173333333333,middle_aged,premium,2,2,1,2
+621,Monsters CYA,Kenneth Vue,male,55,1,184.0,875.0447826086956,161008.24,firstclass,20.0,464.78100000000006,middle_aged,premium,2,2,1,2
+622,Monsters CYA,Daniel Bollman,male,38,1,262.0,936.2891221374045,245307.75,firstclass,38.0,606.1894736842105,adult,premium,2,2,0,2
+624,Monsters CYA,Tracy Brown,female,44,0,26.0,788.7692307692307,20508.0,firstclass,5.0,510.196,middle_aged,economy,2,2,1,0
+625,Monsters CYA,Elizabeth Srinvasan,female,61,0,380.0,880.0277105263159,334410.53,firstclass,48.0,560.7204166666667,senior,premium,2,2,2,2
+626,Monsters CYA,Lora Jarman,female,22,0,118.0,830.3042372881356,97975.9,firstclass,20.0,622.191,young,premium,2,2,3,2
+627,Monsters CYA,Michael Sigmon,male,47,1,138.0,871.3534782608696,120246.78,firstclass,23.0,559.1117391304348,middle_aged,premium,2,2,1,2
+628,Monsters CYA,Anthony Watson,male,53,1,12.0,908.9233333333333,10907.08,firstclass,2.0,661.23,middle_aged,premium,2,2,1,2
+630,Monsters CYA,Mary Depalma,female,47,0,224.0,834.2461607142858,186871.14,firstclass,27.0,557.7659259259259,middle_aged,premium,2,2,1,2
+633,Monsters CYA,Lori Mcknight,female,44,0,352.0,891.0287215909091,313642.11,premium,51.0,566.8882352941176,middle_aged,premium,2,3,1,2
+634,Monsters CYA,Frank Papa,male,33,1,386.0,892.4011658031087,344466.85,firstclass,49.0,606.8746938775511,adult,premium,2,2,0,2
+635,Monsters CYA,Kimberly Barclay,female,48,0,210.0,914.6538095238095,192077.3,firstclass,31.0,535.4135483870967,middle_aged,premium,2,2,1,2
+637,Monsters CYA,Robert Pratt,male,28,1,10.0,951.052,9510.52,firstclass,2.0,775.8050000000001,adult,premium,2,2,0,2
+639,Monsters CYA,Edna Boyette,female,43,0,148.0,851.5121621621622,126023.8,firstclass,16.0,502.82625,middle_aged,premium,2,2,1,2
+641,Monsters CYA,Ashley Servais,female,26,0,370.0,894.982972972973,331143.7,firstclass,57.0,632.6743859649123,adult,premium,2,2,0,2
+642,Monsters CYA,Gary Kearney,male,55,1,364.0,883.5861263736263,321625.35,firstclass,50.0,486.9702,middle_aged,premium,2,2,1,2
+643,Monsters CYA,David Lucas,male,50,1,140.0,942.9780714285714,132016.93,firstclass,28.0,595.8614285714285,middle_aged,premium,2,2,1,2
+644,Monsters CYA,Rita Field,female,49,0,6.0,1224.8316666666667,7348.99,firstclass,1.0,497.97,middle_aged,premium,2,2,1,2
+648,Wonka Company,Ethel Dalton,female,31,0,202.0,918.1700495049505,185470.35,firstclass,28.0,500.4789285714286,adult,premium,4,2,0,2
+651,Wonka Company,Brett Ahart,male,34,1,378.0,847.9308994708995,320517.88,firstclass,45.0,561.2913333333333,adult,premium,4,2,0,2
+655,Wonka Company,Aaron Feliciano,male,60,1,234.0,896.0484615384615,209675.34,firstclass,40.0,525.8177499999999,senior,premium,4,2,2,2
+656,Wonka Company,Kenneth Quick,male,33,1,156.0,837.8178846153846,130699.59,economic,22.0,520.7995454545454,adult,premium,4,0,0,2
+657,Wonka Company,Leta Garber,female,45,0,112.0,841.8805357142857,94290.62,firstclass,13.0,389.17384615384617,middle_aged,premium,4,2,1,2
+658,Wonka Company,Bryce Gearing,male,22,1,202.0,906.9646534653465,183206.86,firstclass,34.0,590.1241176470588,young,premium,4,2,3,2
+659,Wonka Company,Juan Kloke,male,57,1,346.0,923.9679479768786,319692.91,firstclass,45.0,517.2564444444445,middle_aged,premium,4,2,1,2
+661,Wonka Company,David Michl,male,30,1,268.0,871.0014552238806,233428.39,firstclass,32.0,495.98875,adult,premium,4,2,0,2
+662,Wonka Company,Everett Schlesener,male,57,1,342.0,851.9888011695906,291380.17,firstclass,42.0,512.2954761904762,middle_aged,premium,4,2,1,2
+663,Wonka Company,Michelle Richey,female,49,0,114.0,909.4327192982456,103675.33,firstclass,14.0,487.43571428571425,middle_aged,premium,4,2,1,2
+664,Wonka Company,Janet Romero,female,28,0,330.0,905.5949999999999,298846.35,firstclass,45.0,616.0577777777778,adult,premium,4,2,0,2
+666,Wonka Company,Ronald Barrett,male,22,1,348.0,915.2963793103448,318523.14,firstclass,48.0,533.4570833333333,young,premium,4,2,3,2
+667,Wonka Company,Clayton Cline,male,39,1,92.0,848.6645652173913,78077.14,premium,13.0,518.4361538461538,adult,premium,4,3,0,2
+669,Wonka Company,Shari Reynolds,female,54,0,282.0,855.3237943262411,241201.31,firstclass,39.0,555.5302564102565,middle_aged,premium,4,2,1,2
+671,Wonka Company,Pedro Woodbury,male,65,1,286.0,904.5446503496503,258699.77,firstclass,41.0,569.530731707317,senior,premium,4,2,2,2
+672,Wonka Company,Patricia Mcdonald,female,45,0,74.0,837.3793243243243,61966.07,premium,14.0,583.4078571428571,middle_aged,premium,4,3,1,2
+675,Wonka Company,Carol Cobb,female,39,0,172.0,847.2776162790698,145731.75,firstclass,23.0,623.9334782608695,adult,premium,4,2,0,2
+676,Wonka Company,Mary Burkett,female,22,0,180.0,886.5802777777778,159584.45,firstclass,25.0,600.4892,young,premium,4,2,3,2
+677,Wonka Company,Bernard Park,male,48,1,302.0,874.5181125827813,264104.47,firstclass,48.0,513.5079166666667,middle_aged,premium,4,2,1,2
+679,Wonka Company,Tim Ransom,male,47,1,62.0,980.5091935483871,60791.57,firstclass,9.0,630.701111111111,middle_aged,premium,4,2,1,2
+681,Wonka Company,Myrtle Churchill,female,51,0,12.0,933.1841666666666,11198.21,firstclass,1.0,241.56,middle_aged,premium,4,2,1,2
+683,Wonka Company,Loma Walker,female,25,0,348.0,901.6566091954023,313776.5,firstclass,51.0,618.9427450980392,adult,premium,4,2,0,2
+684,Wonka Company,Robert Mitchell,male,49,1,378.0,877.4773544973546,331686.44,firstclass,54.0,577.6325925925926,middle_aged,premium,4,2,1,2
+685,Wonka Company,Michael Shields,male,33,1,208.0,911.2721634615384,189544.61,firstclass,29.0,517.6279310344827,adult,premium,4,2,0,2
+686,Wonka Company,Joyce Seifert,female,56,0,222.0,920.1434234234234,204271.84,firstclass,25.0,456.74840000000006,middle_aged,premium,4,2,1,2
+687,Wonka Company,Lora Perez,female,23,0,92.0,845.7294565217392,77807.11,economic,15.0,680.7266666666667,young,premium,4,0,3,2
+688,Wonka Company,John Orr,male,27,1,180.0,907.4375555555556,163338.76,firstclass,25.0,482.908,adult,premium,4,2,0,2
+690,Wonka Company,William Glancy,male,64,1,334.0,891.242994011976,297675.16,firstclass,48.0,533.6233333333333,senior,premium,4,2,2,2
+691,Wonka Company,Rhonda Hauck,female,25,0,56.0,892.6035714285715,49985.8,firstclass,13.0,525.9284615384615,adult,premium,4,2,0,2
+692,Wonka Company,Mike Grimmett,male,50,1,16.0,982.945625,15727.13,firstclass,1.0,312.83,middle_aged,premium,4,2,1,2
+693,Wonka Company,Pauline Huff,female,59,0,360.0,893.2248055555556,321560.93,firstclass,54.0,480.3855555555555,middle_aged,premium,4,2,1,2
+695,Wonka Company,Clement Johnson,male,59,1,174.0,842.5762643678161,146608.27,economic,24.0,448.7379166666667,middle_aged,premium,4,0,1,2
+696,Wonka Company,Michael Nutt,male,21,1,326.0,892.9382515337423,291097.87,firstclass,49.0,500.23734693877554,young,premium,4,2,3,2
+697,Wonka Company,Donald Clairmont,male,62,1,42.0,744.47,31267.74,economic,7.0,627.5185714285715,senior,economy,4,0,2,0
+698,Wonka Company,Susan Anderson,female,51,0,94.0,853.6507446808511,80243.17,economic,20.0,580.8644999999999,middle_aged,premium,4,0,1,2
+699,Wonka Company,Kevin Lamb,male,43,1,88.0,845.8563636363637,74435.36,firstclass,14.0,621.4285714285714,middle_aged,premium,4,2,1,2
+700,Wonka Company,John Mcvey,male,28,1,200.0,833.9833,166796.66,firstclass,22.0,602.5618181818182,adult,premium,4,2,0,2
+701,Wonka Company,Evelyn Murawski,female,41,0,214.0,893.0122897196262,191104.63,firstclass,27.0,487.10037037037034,middle_aged,premium,4,2,1,2
+702,Wonka Company,Joseph Clymer,male,38,1,332.0,915.5733433734939,303970.35,firstclass,38.0,548.6673684210526,adult,premium,4,2,0,2
+704,Wonka Company,Kevin Chiang,male,52,1,18.0,737.5122222222222,13275.220000000001,economic,3.0,840.5866666666667,middle_aged,economy,4,0,1,0
+705,Wonka Company,Shirley Smith,female,32,0,358.0,900.1871787709498,322267.01,firstclass,49.0,543.3385714285714,adult,premium,4,2,0,2
+707,Wonka Company,Arthur Hendrix,male,37,1,306.0,918.7884640522876,281149.27,firstclass,42.0,548.325,adult,premium,4,2,0,2
+708,Wonka Company,Gary Heard,male,53,1,270.0,890.6432962962963,240473.69,firstclass,37.0,638.8432432432433,middle_aged,premium,4,2,1,2
+710,Wonka Company,Cynthia Mekee,female,31,0,330.0,909.5252121212121,300143.32,firstclass,53.0,633.7364150943396,adult,premium,4,2,0,2
+711,Wonka Company,Esther Odonnell,female,32,0,296.0,919.1047635135135,272055.01,firstclass,35.0,557.9654285714286,adult,premium,4,2,0,2
+712,Wonka Company,Kristin Davis,female,45,0,196.0,868.9056632653062,170305.51,firstclass,29.0,470.548275862069,middle_aged,premium,4,2,1,2
+713,Wonka Company,Harvey Craig,male,42,1,164.0,873.5620731707317,143264.18,economic,26.0,642.6273076923078,middle_aged,premium,4,0,1,2
+715,Wonka Company,Martha Smith,female,27,0,336.0,888.8076785714286,298639.38,firstclass,49.0,581.8787755102042,adult,premium,4,2,0,2
+716,Wonka Company,Charles Mullins,male,46,1,196.0,877.8195918367346,172052.63999999998,firstclass,32.0,508.265,middle_aged,premium,4,2,1,2
+717,Wonka Company,Mary Kelly,female,41,0,186.0,915.7794086021505,170334.97,firstclass,23.0,546.2986956521738,middle_aged,premium,4,2,1,2
+718,Wonka Company,Brooke Gilbert,female,57,0,288.0,847.1423263888888,243976.99,firstclass,41.0,469.6553658536585,middle_aged,premium,4,2,1,2
+719,Wonka Company,Cory Ruiz,male,64,1,196.0,888.2762755102041,174102.15,firstclass,30.0,550.3639999999999,senior,premium,4,2,2,2
+721,Wonka Company,Gregory Huntington,male,41,1,128.0,890.71640625,114011.7,firstclass,16.0,548.0825,middle_aged,premium,4,2,1,2
+723,Wonka Company,Charles Morgan,male,34,1,180.0,933.5027222222221,168030.49,firstclass,29.0,542.0306896551724,adult,premium,4,2,0,2
+724,Wonka Company,Elizabeth Gastelum,female,34,0,222.0,877.5151801801802,194808.37,premium,31.0,488.8454838709677,adult,premium,4,3,0,2
+726,Wonka Company,David Bowers,male,34,1,176.0,924.4003977272728,162694.47,firstclass,25.0,558.854,adult,premium,4,2,0,2
+727,Wonka Company,Jeffrey Collazo,male,25,1,382.0,882.5708638743456,337142.07,firstclass,61.0,504.6718032786885,adult,premium,4,2,0,2
+729,Wonka Company,Hattie Martin,female,55,0,128.0,926.62890625,118608.5,firstclass,24.0,504.8233333333333,middle_aged,premium,4,2,1,2
+730,Wonka Company,Lori Gonzalez,female,32,0,206.0,908.3662135922331,187123.44,firstclass,36.0,572.3288888888889,adult,premium,4,2,0,2
+731,Wonka Company,Linda Goodson,female,51,0,288.0,883.2393055555555,254372.91999999998,firstclass,43.0,496.88674418604654,middle_aged,premium,4,2,1,2
+732,Wonka Company,Vickie Nave,female,42,0,164.0,890.5828048780487,146055.58,firstclass,21.0,669.8914285714286,middle_aged,premium,4,2,1,2
+734,Wonka Company,Ronald Pierson,male,34,1,8.0,1074.80625,8598.45,firstclass,1.0,1251.32,adult,premium,4,2,0,2
+735,Wonka Company,William Mckay,male,36,1,132.0,870.6418939393939,114924.73,firstclass,28.0,551.4710714285715,adult,premium,4,2,0,2
+736,Wonka Company,Shawn Hacker,female,57,0,176.0,842.4625,148273.4,firstclass,25.0,523.6236,middle_aged,premium,4,2,1,2
+738,Wonka Company,Luciano Harris,male,58,1,230.0,905.3695652173913,208235.0,firstclass,27.0,516.0951851851852,middle_aged,premium,4,2,1,2
+739,Wonka Company,Adrianne Pierre,female,53,0,152.0,920.1067105263159,139856.22,firstclass,29.0,629.2927586206896,middle_aged,premium,4,2,1,2
+740,Wonka Company,Milton Stanley,male,50,1,102.0,902.2950980392158,92034.1,firstclass,14.0,454.0592857142857,middle_aged,premium,4,2,1,2
+742,Wonka Company,Anna Willis,female,22,0,324.0,870.3173456790124,281982.82,firstclass,47.0,536.2391489361703,young,premium,4,2,3,2
+743,Wonka Company,Mckenzie Dougherty,female,60,0,266.0,859.7028947368422,228680.97,firstclass,37.0,545.7337837837838,senior,premium,4,2,2,2
+744,Wonka Company,Carmen Delisi,male,26,1,384.0,877.2038020833334,336846.26,firstclass,49.0,597.2016326530612,adult,premium,4,2,0,2
+745,Wonka Company,Elizabeth Hewitt,female,53,0,244.0,867.281024590164,211616.57,firstclass,37.0,557.6683783783784,middle_aged,premium,4,2,1,2
+747,Wonka Company,Ruth Bennett,female,51,0,274.0,878.5679562043796,240727.62,firstclass,53.0,538.9318867924528,middle_aged,premium,4,2,1,2
+748,Wonka Company,Bradley Rhodes,male,47,1,152.0,870.8943421052631,132375.94,firstclass,23.0,582.9978260869566,middle_aged,premium,4,2,1,2
+749,Wonka Company,Ernest Reyes,male,55,1,132.0,940.2827272727272,124117.31999999999,firstclass,15.0,560.9633333333334,middle_aged,premium,4,2,1,2
+750,Wonka Company,Kathleen Tsang,female,41,0,92.0,862.8267391304347,79380.06,premium,17.0,440.11,middle_aged,premium,4,3,1,2
+752,Wonka Company,James Pizarro,male,64,1,348.0,840.8773563218391,292625.32,firstclass,56.0,475.6333928571429,senior,premium,4,2,2,2
+753,Wonka Company,Eric Capps,male,51,1,48.0,889.3710416666667,42689.81,firstclass,8.0,489.08000000000004,middle_aged,premium,4,2,1,2
+754,Wonka Company,Barry Smithers,male,49,1,146.0,902.5450684931506,131771.58,firstclass,21.0,448.35571428571427,middle_aged,premium,4,2,1,2
+756,Wonka Company,Connie Stokes,female,27,0,338.0,915.0963905325444,309302.58,firstclass,46.0,577.4399999999999,adult,premium,4,2,0,2
+757,Wonka Company,Muriel Booth,female,38,0,348.0,881.3072126436781,306694.91,firstclass,60.0,580.6318333333332,adult,premium,4,2,0,2
+758,Wonka Company,William Garcia,male,64,1,198.0,854.5512626262625,169201.15,firstclass,25.0,489.1728,senior,premium,4,2,2,2
+759,Wonka Company,Robert Schrader,male,27,1,110.0,901.0948181818181,99120.43,firstclass,9.0,417.12,adult,premium,4,2,0,2
+760,Wonka Company,Andrew Stoddard,male,44,1,252.0,887.3515079365079,223612.58,firstclass,44.0,497.62613636363636,middle_aged,premium,4,2,1,2
+761,Wonka Company,Ralph Paquin,male,31,1,226.0,823.095,186019.47,firstclass,31.0,482.76419354838714,adult,premium,4,2,0,2
+762,Wonka Company,Viola Munoz,female,35,0,88.0,906.4310227272726,79765.93,firstclass,13.0,503.3115384615385,adult,premium,4,2,0,2
+765,Wonka Company,Nancy Fanno,female,40,0,276.0,907.796231884058,250551.76,firstclass,37.0,593.4799999999999,middle_aged,premium,4,2,1,2
+766,Wonka Company,Anthony Young,male,30,1,400.0,860.5283000000001,344211.32,firstclass,55.0,520.8812727272727,adult,premium,4,2,0,2
+767,Wonka Company,Keely Rice,female,25,0,16.0,748.1775,11970.84,firstclass,6.0,431.11833333333334,adult,economy,4,2,0,0
+769,Wonka Company,Susan Lacy,female,50,0,106.0,907.1297169811321,96155.75,firstclass,10.0,639.2909999999999,middle_aged,premium,4,2,1,2
+770,Wonka Company,Bobbie Murray,female,51,0,136.0,852.8639705882352,115989.5,firstclass,17.0,531.9111764705882,middle_aged,premium,4,2,1,2
+773,Wonka Company,Edna Clyne,female,56,0,254.0,909.7570078740157,231078.28,premium,35.0,461.0702857142857,middle_aged,premium,4,3,1,2
+774,Wonka Company,Micheal Blakely,male,43,1,30.0,983.9356666666666,29518.07,firstclass,4.0,386.41499999999996,middle_aged,premium,4,2,1,2
+775,Wonka Company,Frances Bass,female,27,0,314.0,930.5821656050955,292202.8,firstclass,47.0,586.4140425531915,adult,premium,4,2,0,2
+776,Wonka Company,Sharon Fontenot,female,48,0,306.0,903.1564379084967,276365.87,firstclass,44.0,564.6261363636363,middle_aged,premium,4,2,1,2
+780,Wonka Company,Ashley Moon,female,40,0,206.0,877.9340291262137,180854.41,firstclass,28.0,526.4260714285714,middle_aged,premium,4,2,1,2
+781,Wonka Company,James Sanchez,male,30,1,190.0,907.2776315789474,172382.75,firstclass,25.0,665.8675999999999,adult,premium,4,2,0,2
+785,Wonka Company,James Wells,male,24,1,70.0,790.4314285714286,55330.2,firstclass,14.0,530.0735714285714,young,economy,4,2,3,0
+786,Wonka Company,Krista Vandyke,female,29,0,274.0,917.1386131386862,251295.98,firstclass,35.0,549.5945714285714,adult,premium,4,2,0,2
+787,Wonka Company,Jessie Tu,female,43,0,202.0,864.0746534653465,174543.08,firstclass,37.0,468.25864864864866,middle_aged,premium,4,2,1,2
+789,Wonka Company,Katharine Perry,female,54,0,342.0,871.7144152046784,298126.33,firstclass,50.0,518.7836,middle_aged,premium,4,2,1,2
+791,Wonka Company,Donald Hysmith,male,50,1,106.0,882.8733962264151,93584.58,firstclass,22.0,622.8013636363637,middle_aged,premium,4,2,1,2
+792,Wonka Company,Brent Williams,male,44,1,108.0,863.5614814814815,93264.64,firstclass,17.0,514.0835294117647,middle_aged,premium,4,2,1,2
+793,Wonka Company,Regina Garza,female,29,0,398.0,932.7652512562814,371240.57,firstclass,55.0,518.6741818181818,adult,premium,4,2,0,2
+794,Wonka Company,Beatrice Curtis,female,31,0,214.0,891.1701401869159,190710.41,firstclass,31.0,503.64451612903224,adult,premium,4,2,0,2
+795,Wonka Company,Eric Ison,male,52,1,92.0,795.8059782608696,73214.15,economic,7.0,568.1885714285714,middle_aged,economy,4,0,1,0
+797,Wonka Company,Andre Harris,male,22,1,198.0,820.1981313131314,162399.23,firstclass,30.0,497.5286666666667,young,premium,4,2,3,2
+798,Wonka Company,John Byrne,male,64,1,382.0,872.618167539267,333340.14,firstclass,56.0,620.8796428571429,senior,premium,4,2,2,2
+799,Wonka Company,Edwina Zamora,female,56,0,262.0,890.6885114503816,233360.38999999998,firstclass,40.0,617.23975,middle_aged,premium,4,2,1,2
+800,Wonka Company,Linda Hixon,female,42,0,118.0,892.3902542372881,105302.05,firstclass,19.0,624.9105263157894,middle_aged,premium,4,2,1,2
+801,Wonka Company,Ronald Foley,male,63,1,28.0,906.0267857142857,25368.75,premium,7.0,352.6557142857143,senior,premium,4,3,2,2
+803,Wonka Company,Charlotte Foster,female,40,0,106.0,873.2693396226415,92566.55,firstclass,10.0,574.23,middle_aged,premium,4,2,1,2
+806,Wonka Company,Amy Coppage,female,52,0,54.0,909.7377777777779,49125.840000000004,firstclass,8.0,726.46875,middle_aged,premium,4,2,1,2
+807,Wonka Company,John Isaksen,male,23,1,8.0,743.09,5944.72,premium,1.0,181.17,young,economy,4,3,3,0
+808,Wonka Company,Judy Williams,female,27,0,356.0,893.5868820224719,318116.93,firstclass,46.0,604.4419565217391,adult,premium,4,2,0,2
+809,Wonka Company,Davina Tyler,female,22,0,314.0,883.4044904458599,277389.01,firstclass,51.0,524.8258823529411,young,premium,4,2,3,2
+810,Wonka Company,Louise Hoffman,female,58,0,250.0,924.23372,231058.43,firstclass,36.0,548.7047222222222,middle_aged,premium,4,2,1,2
+811,Wonka Company,Therese Behne,female,59,0,48.0,1010.6435416666667,48510.89,firstclass,6.0,630.6550000000001,middle_aged,premium,4,2,1,2
+812,Wonka Company,Allan Mclaughlin,male,46,1,54.0,876.7511111111111,47344.56,premium,13.0,619.8053846153846,middle_aged,premium,4,3,1,2
+813,Wonka Company,Shani Stutz,female,64,0,234.0,855.9189743589744,200285.04,firstclass,40.0,581.58125,senior,premium,4,2,2,2
+814,Wonka Company,Martha Powell,female,46,0,362.0,860.0520718232043,311338.85,firstclass,61.0,495.30688524590164,middle_aged,premium,4,2,1,2
+815,Wonka Company,Monica Mcintyre,female,45,0,62.0,813.1056451612903,50412.55,economic,7.0,799.8528571428571,middle_aged,premium,4,0,1,2
+817,Wonka Company,Charlotte Mcneal,female,44,0,54.0,909.3005555555557,49102.23,premium,14.0,550.7571428571429,middle_aged,premium,4,3,1,2
+818,Wonka Company,Ralph Macdonald,male,60,1,96.0,814.4438541666667,78186.61,economic,17.0,556.3417647058823,senior,premium,4,0,2,2
+819,Wonka Company,Linda Cunningham,female,55,0,8.0,985.9237499999999,7887.389999999999,premium,1.0,495.24,middle_aged,premium,4,3,1,2
+820,Wonka Company,Walter Johnson,male,44,1,346.0,881.7323121387284,305079.38,firstclass,62.0,506.59693548387094,middle_aged,premium,4,2,1,2
+821,Wonka Company,Deborah Ryan,female,35,0,10.0,875.308,8753.08,firstclass,3.0,764.4933333333333,adult,premium,4,2,0,2
+822,Wonka Company,Frankie Ortega,female,54,0,156.0,937.0055128205128,146172.86,firstclass,15.0,533.9446666666666,middle_aged,premium,4,2,1,2
+825,Wonka Company,Karen Gilley,female,35,0,114.0,939.2012280701755,107068.94,firstclass,20.0,606.8555,adult,premium,4,2,0,2
+826,Wonka Company,Chris Gregory,male,44,1,188.0,896.6887765957447,168577.49,firstclass,27.0,587.9162962962963,middle_aged,premium,4,2,1,2
+827,Wonka Company,James Lubin,male,54,1,34.0,917.3702941176471,31190.59,firstclass,5.0,534.03,middle_aged,premium,4,2,1,2
+828,Wonka Company,Thomas Chary,male,23,1,238.0,868.1533193277311,206620.49,firstclass,43.0,455.0306976744186,young,premium,4,2,3,2
+829,Wonka Company,William Johnson,male,50,1,48.0,692.1839583333334,33224.83,economic,5.0,553.204,middle_aged,economy,4,0,1,0
+830,Wonka Company,Carlos Hernandez,male,32,1,270.0,889.599,240191.73,firstclass,39.0,481.34820512820517,adult,premium,4,2,0,2
+831,Wonka Company,Dorothy Lawrence,female,28,0,252.0,874.744484126984,220435.61,firstclass,31.0,562.9083870967742,adult,premium,4,2,0,2
+832,Wonka Company,Richard Ware,male,55,1,190.0,863.8221578947368,164126.21,firstclass,31.0,587.7345161290323,middle_aged,premium,4,2,1,2
+834,Wonka Company,Carlos Lanier,male,58,1,80.0,849.3842500000001,67950.74,economic,11.0,476.6036363636364,middle_aged,premium,4,0,1,2
+835,Wonka Company,Phyllis Morse,female,46,0,306.0,860.0283986928105,263168.69,premium,49.0,550.6820408163265,middle_aged,premium,4,3,1,2
+836,Wonka Company,Edward Amsterdam,male,36,1,314.0,893.611337579618,280593.96,firstclass,44.0,508.09272727272725,adult,premium,4,2,0,2
+837,Wonka Company,Harold Uren,male,50,1,292.0,891.1353082191781,260211.51,firstclass,45.0,555.4751111111111,middle_aged,premium,4,2,1,2
+838,Wonka Company,Rosemary Kelly,female,23,0,254.0,867.86,220436.44,firstclass,36.0,528.1288888888889,young,premium,4,2,3,2
+839,Wonka Company,Ben Brummer,male,55,1,54.0,1014.1912962962963,54766.33,firstclass,12.0,693.2466666666666,middle_aged,premium,4,2,1,2
+842,Wonka Company,Lavinia Hankey,female,32,0,82.0,937.7414634146342,76894.8,firstclass,6.0,551.8533333333334,adult,premium,4,2,0,2
+843,Wonka Company,Michael Dabbs,male,29,1,254.0,862.796062992126,219150.2,firstclass,35.0,586.6028571428571,adult,premium,4,2,0,2
+844,Wonka Company,Brian Morales,male,56,1,10.0,796.8109999999999,7968.11,firstclass,2.0,561.815,middle_aged,economy,4,2,1,0
+846,Wonka Company,Thomas Cagle,male,42,1,328.0,900.9235975609756,295502.94,firstclass,49.0,544.9285714285714,middle_aged,premium,4,2,1,2
+848,Wonka Company,Patrick Henderson,male,37,1,390.0,900.6997435897437,351272.9,firstclass,52.0,704.2238461538461,adult,premium,4,2,0,2
+849,Wonka Company,Lisa Castro,female,25,0,36.0,885.8583333333333,31890.9,premium,5.0,567.826,adult,premium,4,3,0,2
+850,Wonka Company,Mike Williamson,male,63,1,238.0,877.2616806722689,208788.28,firstclass,37.0,439.5067567567568,senior,premium,4,2,2,2
+852,Wonka Company,Kaitlyn Wood,female,57,0,382.0,843.6297643979058,322266.57,firstclass,61.0,587.8101639344262,middle_aged,premium,4,2,1,2
+853,Wonka Company,Fred Bergeson,male,40,1,106.0,900.1365094339623,95414.47,firstclass,14.0,609.9607142857143,middle_aged,premium,4,2,1,2
+856,Wonka Company,Jake Rollo,male,60,1,302.0,862.3912251655629,260442.15,firstclass,48.0,617.2881249999999,senior,premium,4,2,2,2
+858,Wonka Company,Helen Baker,female,31,0,220.0,886.5568181818181,195042.5,firstclass,39.0,511.2361538461538,adult,premium,4,2,0,2
+859,Wonka Company,Reyna Nelson,female,32,0,364.0,875.4170054945055,318651.79,firstclass,47.0,520.721914893617,adult,premium,4,2,0,2
+860,Wonka Company,Trent Hughes,male,33,1,194.0,886.1968556701031,171922.19,firstclass,25.0,573.5436,adult,premium,4,2,0,2
+865,Wonka Company,Gary Thurston,male,49,1,238.0,885.423487394958,210730.79,firstclass,29.0,556.3858620689655,middle_aged,premium,4,2,1,2
+866,Wonka Company,Yvonne Ahmad,female,46,0,154.0,855.3244155844155,131719.96,firstclass,26.0,495.38846153846157,middle_aged,premium,4,2,1,2
+867,Wonka Company,John Rivera,male,40,1,44.0,849.0611363636364,37358.69,firstclass,9.0,474.12777777777774,middle_aged,premium,4,2,1,2
+868,Wonka Company,Eric Galioto,male,37,1,260.0,951.2759615384615,247331.75,firstclass,39.0,582.7297435897435,adult,premium,4,2,0,2
+869,Wonka Company,Jose Bowen,male,65,1,276.0,852.7549637681159,235360.37,firstclass,41.0,490.7490243902439,senior,premium,4,2,2,2
+871,Wonka Company,Ruben Beezley,male,21,1,138.0,884.0049275362319,121992.68,firstclass,18.0,624.2655555555556,young,premium,4,2,3,2
+873,Wonka Company,William Lindsey,male,27,1,306.0,923.5407516339868,282603.47,firstclass,45.0,564.4066666666666,adult,premium,4,2,0,2
+875,Wonka Company,John White,male,61,1,314.0,908.314203821656,285210.66,firstclass,42.0,511.1166666666667,senior,premium,4,2,2,2
+876,Wonka Company,John Harris,male,22,1,24.0,790.4525,18970.86,economic,3.0,673.6733333333333,young,economy,4,0,3,0
+877,Wonka Company,Kevin Gay,male,48,1,142.0,888.7310563380281,126199.81,firstclass,26.0,535.9965384615384,middle_aged,premium,4,2,1,2
+879,Wonka Company,Tyler Eddy,male,65,1,374.0,856.9433422459892,320496.81,firstclass,57.0,554.2533333333333,senior,premium,4,2,2,2
+880,Wonka Company,Alejandro Hess,male,61,1,166.0,856.1101204819277,142114.28,firstclass,24.0,686.5241666666666,senior,premium,4,2,2,2
+881,Wonka Company,Marlene Williams,female,42,0,266.0,878.7622180451128,233750.75,firstclass,41.0,632.1719512195122,middle_aged,premium,4,2,1,2
+882,Wonka Company,Kimberlee Knipper,female,58,0,388.0,891.9359536082475,346071.15,firstclass,64.0,559.14203125,middle_aged,premium,4,2,1,2
+883,Wonka Company,Laura Webb,female,46,0,2.0,888.28,1776.56,economic,0.0,495.24,middle_aged,premium,4,0,1,2
+885,Acme Factory,Erma Smith,female,28,0,154.0,1056.942207792208,162769.1,firstclass,20.0,492.36100000000005,adult,premium,1,2,0,2
+887,Acme Factory,Candida Marrs,female,46,0,194.0,1118.5134020618557,216991.6,firstclass,25.0,571.2823999999999,middle_aged,premium,1,2,1,2
+888,Acme Factory,James Ayala,male,23,1,320.0,1086.35625,347634.0,firstclass,47.0,525.7529787234042,young,premium,1,2,3,2
+890,Acme Factory,Tyler Jones,male,58,1,132.0,1032.603787878788,136303.7,firstclass,10.0,459.09499999999997,middle_aged,premium,1,2,1,2
+891,Acme Factory,Carolyn Caldwell,female,31,0,328.0,1063.0831402439026,348691.27,firstclass,40.0,481.34525,adult,premium,1,2,0,2
+892,Acme Factory,Tanya Norman,female,23,0,100.0,970.3981,97039.81,economic,13.0,442.6776923076923,young,premium,1,0,3,2
+894,Acme Factory,Ashley Miller,female,24,0,124.0,1092.8187903225805,135509.53,firstclass,16.0,501.62,young,premium,1,2,3,2
+895,Acme Factory,Alex Fratta,male,33,1,214.0,1069.822242990654,228941.96,firstclass,37.0,558.5478378378378,adult,premium,1,2,0,2
+896,Acme Factory,Josephine Sigmon,female,50,0,380.0,1039.8699210526315,395150.57,firstclass,52.0,442.4138461538462,middle_aged,premium,1,2,1,2
+897,Acme Factory,Thomas Smith,male,59,1,308.0,1046.3494155844155,322275.62,firstclass,48.0,498.27479166666666,middle_aged,premium,1,2,1,2
+898,Acme Factory,Edwin Miller,male,29,1,378.0,1066.438835978836,403113.88,firstclass,60.0,558.1201666666667,adult,premium,1,2,0,2
+900,Acme Factory,Darin Lopez,male,35,1,394.0,1039.6094162436548,409606.11,firstclass,66.0,467.8510606060606,adult,premium,1,2,0,2
+905,Acme Factory,John Curtiss,male,53,1,370.0,1054.3463783783784,390108.16,firstclass,41.0,508.0382926829268,middle_aged,premium,1,2,1,2
+906,Acme Factory,Mario Mendoza,male,41,1,294.0,1080.8231292517007,317762.0,firstclass,43.0,512.8879069767441,middle_aged,premium,1,2,1,2
+908,Acme Factory,Mary Worley,female,56,0,384.0,1057.1286458333334,405937.4,firstclass,62.0,536.0987096774194,middle_aged,premium,1,2,1,2
+910,Acme Factory,William Anderson,male,59,1,2.0,1654.54,3309.08,firstclass,1.0,526.82,middle_aged,luxury,1,2,1,1
+911,Acme Factory,Eric Starkey,male,47,1,10.0,1173.7069999999999,11737.07,firstclass,2.0,1041.74,middle_aged,premium,1,2,1,2
+912,Acme Factory,Nicole Gray,female,43,0,338.0,1048.8042899408283,354495.85,firstclass,48.0,510.44395833333334,middle_aged,premium,1,2,1,2
+913,Acme Factory,Elsa Wagner,female,37,0,60.0,1092.0775,65524.65,firstclass,9.0,577.5822222222222,adult,premium,1,2,0,2
+914,Acme Factory,Jeffrey Ramage,male,40,1,398.0,1056.438366834171,420462.47,firstclass,57.0,563.2133333333334,middle_aged,premium,1,2,1,2
+915,Acme Factory,Beau Butler,male,56,1,340.0,1057.1531764705883,359432.08,firstclass,55.0,641.4149090909091,middle_aged,premium,1,2,1,2
+916,Acme Factory,Clifford Gonzalez,male,33,1,92.0,1101.7966304347826,101365.29,firstclass,23.0,540.8195652173913,adult,premium,1,2,0,2
+917,Acme Factory,Claude Ramos,male,46,1,156.0,1038.6746794871794,162033.25,firstclass,23.0,599.6826086956522,middle_aged,premium,1,2,1,2
+918,Acme Factory,Jennifer Gray,female,24,0,70.0,1044.403,73108.21,firstclass,11.0,397.06454545454545,young,premium,1,2,3,2
+919,Acme Factory,Robert Luther,male,52,1,346.0,1046.1976011560694,361984.37,firstclass,55.0,450.3190909090909,middle_aged,premium,1,2,1,2
+920,Acme Factory,Vincent Reyna,male,65,1,238.0,1061.2726890756303,252582.9,firstclass,28.0,411.19428571428574,senior,premium,1,2,2,2
+922,Acme Factory,Earl Collins,male,31,1,350.0,1022.7121428571429,357949.25,firstclass,56.0,450.1717857142857,adult,premium,1,2,0,2
+924,Acme Factory,Marie Witt,female,45,0,204.0,1063.992205882353,217054.41,firstclass,34.0,528.5797058823529,middle_aged,premium,1,2,1,2
+926,Acme Factory,Bertha Garcia,female,28,0,40.0,940.93425,37637.37,economic,4.0,473.055,adult,premium,1,0,0,2
+927,Acme Factory,Dolores Chambers,female,55,0,10.0,837.576,8375.76,economic,1.0,60.39,middle_aged,premium,1,0,1,2
+928,Acme Factory,Sonia Walsh,female,24,0,174.0,1051.9540229885058,183040.0,firstclass,26.0,605.2873076923078,young,premium,1,2,3,2
+929,Acme Factory,Ann Pope,female,37,0,68.0,1085.2513235294118,73797.09,firstclass,9.0,504.46999999999997,adult,premium,1,2,0,2
+930,Acme Factory,Juan Steinberg,male,39,1,334.0,1048.732125748503,350276.52999999997,firstclass,52.0,554.1828846153846,adult,premium,1,2,0,2
+931,Acme Factory,Michael Whitmire,male,56,1,356.0,1096.3825561797753,390312.19,firstclass,50.0,556.6419999999999,middle_aged,premium,1,2,1,2
+932,Acme Factory,Theresa Smith,female,43,0,24.0,1050.5604166666667,25213.45,firstclass,1.0,181.17,middle_aged,premium,1,2,1,2
+934,Acme Factory,Harvey Violette,male,25,1,50.0,1050.1712,52508.56,firstclass,7.0,505.5385714285714,adult,premium,1,2,0,2
+935,Acme Factory,Santo Christ,male,46,1,322.0,1071.3797204968944,344984.27,firstclass,44.0,513.2318181818182,middle_aged,premium,1,2,1,2
+936,Acme Factory,Mary Everts,female,51,0,366.0,1053.4618852459016,385567.05,firstclass,52.0,502.17499999999995,middle_aged,premium,1,2,1,2
+939,Acme Factory,Timothy Taylor,male,37,1,120.0,1020.8755833333332,122505.06999999999,economic,19.0,464.14526315789476,adult,premium,1,0,0,2
+941,Acme Factory,Wendy Ferguson,female,57,0,302.0,1042.5042715231787,314836.29,firstclass,42.0,502.6559523809524,middle_aged,premium,1,2,1,2
+945,Acme Factory,Kirk Mccormick,male,55,1,280.0,1033.3481785714284,289337.49,firstclass,53.0,399.2079245283019,middle_aged,premium,1,2,1,2
+947,Acme Factory,Beth Bloodsaw,female,43,0,30.0,1000.7103333333333,30021.31,economic,4.0,382.09999999999997,middle_aged,premium,1,0,1,2
+948,Acme Factory,Phyllis Flynn,female,36,0,192.0,1098.2061979166667,210855.59,firstclass,30.0,590.284,adult,premium,1,2,0,2
+949,Acme Factory,Regan Edwards,female,54,0,310.0,1074.2884516129031,333029.42,firstclass,47.0,441.581914893617,middle_aged,premium,1,2,1,2
+950,Acme Factory,Ivan Henton,male,32,1,14.0,1124.2907142857143,15740.07,premium,3.0,638.46,adult,premium,1,3,0,2
+951,Acme Factory,Kathleen Glass,female,35,0,146.0,1029.477602739726,150303.73,firstclass,22.0,504.8504545454545,adult,premium,1,2,0,2
+952,Acme Factory,Nathan Binder,male,30,1,334.0,1052.7345808383234,351613.35,firstclass,52.0,474.8473076923077,adult,premium,1,2,0,2
+953,Acme Factory,Jeffrey Sutton,male,55,1,122.0,1089.2409016393444,132887.39,firstclass,23.0,511.46043478260873,middle_aged,premium,1,2,1,2
+954,Acme Factory,James Potts,male,52,1,12.0,1146.0991666666666,13753.19,firstclass,2.0,150.975,middle_aged,premium,1,2,1,2
+955,Acme Factory,Tad Corry,male,27,1,316.0,1053.4037974683545,332875.6,firstclass,50.0,572.0348,adult,premium,1,2,0,2
+956,Acme Factory,Clarence Gracely,male,51,1,216.0,1055.3537037037038,227956.4,firstclass,37.0,472.2489189189189,middle_aged,premium,1,2,1,2
+957,Acme Factory,Charles Zoutte,male,64,1,310.0,1043.3644516129032,323442.98,firstclass,48.0,462.404375,senior,premium,1,2,2,2
+958,Acme Factory,Glenn Jenkins,male,51,1,276.0,1039.4328985507245,286883.48,firstclass,46.0,505.90173913043475,middle_aged,premium,1,2,1,2
+960,Acme Factory,Theresa Guttmann,female,33,0,248.0,1048.8000806451614,260102.42,firstclass,37.0,559.9102702702703,adult,premium,1,2,0,2
+961,Acme Factory,Howard Price,male,34,1,142.0,1070.661971830986,152034.0,firstclass,22.0,597.9940909090909,adult,premium,1,2,0,2
+962,Acme Factory,Tiffany Behm,female,46,0,398.0,1112.8166331658292,442901.02,firstclass,63.0,540.504761904762,middle_aged,premium,1,2,1,2
+963,Acme Factory,Robert Taylor,male,54,1,90.0,1046.249,94162.41,firstclass,13.0,521.5976923076923,middle_aged,premium,1,2,1,2
+964,Acme Factory,Ernest Bybee,male,62,1,74.0,1061.872162162162,78578.54,firstclass,8.0,478.515,senior,premium,1,2,2,2
+966,Acme Factory,Steven Armstrong,male,54,1,140.0,1075.773642857143,150608.31,firstclass,20.0,498.8935,middle_aged,premium,1,2,1,2
+968,Acme Factory,Martha Cole,female,41,0,162.0,971.627901234568,157403.72,premium,23.0,607.9826086956522,middle_aged,premium,1,3,1,2
+969,Acme Factory,Christopher Marquez,male,27,1,106.0,1073.1878301886793,113757.91,firstclass,19.0,517.501052631579,adult,premium,1,2,0,2
+970,Acme Factory,Juan Flood,male,35,1,8.0,851.4024999999999,6811.219999999999,premium,2.0,734.86,adult,premium,1,3,0,2
+971,Acme Factory,Mona Wilson,female,58,0,180.0,1034.5654444444444,186221.78,firstclass,23.0,490.4347826086956,middle_aged,premium,1,2,1,2
+973,Acme Factory,Kathleen Fernandez,female,64,0,344.0,1057.833604651163,363894.76,firstclass,42.0,544.0385714285715,senior,premium,1,2,2,2
+974,Acme Factory,Katina Filion,female,50,0,238.0,1042.228361344538,248050.35,firstclass,33.0,563.77,middle_aged,premium,1,2,1,2
+976,Acme Factory,Maria Peterson,female,62,0,94.0,999.1256382978723,93917.81,economic,8.0,482.9675,senior,premium,1,0,2,2
+978,Acme Factory,Melanie Mcquistion,female,35,0,104.0,1030.9141346153847,107215.07,firstclass,17.0,501.61882352941177,adult,premium,1,2,0,2
+979,Acme Factory,Joshua Hurdle,male,42,1,110.0,1058.6433636363636,116450.77,firstclass,13.0,352.1453846153846,middle_aged,premium,1,2,1,2
+980,Acme Factory,Bill Cotton,male,42,1,218.0,1088.763623853211,237350.47,firstclass,27.0,488.54148148148147,middle_aged,premium,1,2,1,2
+982,Acme Factory,Clarence Mcintosh,male,57,1,108.0,1080.214074074074,116663.12,firstclass,22.0,538.6063636363637,middle_aged,premium,1,2,1,2
+983,Acme Factory,Daniel Marin,male,43,1,0.0,904.0,0.0,economyclass,0.0,495.24,middle_aged,premium,1,1,1,2
+985,Acme Factory,Laura Ramirez,female,42,0,306.0,997.5735620915033,305257.51,economic,53.0,424.28641509433965,middle_aged,premium,1,0,1,2
+988,Acme Factory,Tosha Hilton,female,36,0,96.0,1064.4298958333334,102185.27,firstclass,17.0,387.5147058823529,adult,premium,1,2,0,2
+989,Acme Factory,William Battey,male,28,1,280.0,1047.9996071428573,293439.89,firstclass,40.0,542.85525,adult,premium,1,2,0,2
+990,Acme Factory,Lorriane Potts,female,48,0,172.0,1113.1313372093023,191458.59,firstclass,24.0,625.9358333333333,middle_aged,premium,1,2,1,2
+991,Acme Factory,Daniel Kraham,male,62,1,84.0,1149.5983333333334,96566.26,firstclass,12.0,435.5508333333333,senior,premium,1,2,2,2
+992,Acme Factory,Claudia Liang,female,27,0,396.0,1055.4300757575757,417950.31,firstclass,63.0,437.6661904761905,adult,premium,1,2,0,2
+993,Acme Factory,Shirley Baldwin,female,38,0,318.0,1023.6235849056603,325512.3,firstclass,46.0,533.8176086956522,adult,premium,1,2,0,2
+994,Acme Factory,Marion Deleon,female,26,0,34.0,962.740294117647,32733.17,economic,5.0,605.2059999999999,adult,premium,1,0,0,2
+997,Acme Factory,Shirley Rowles,female,39,0,118.0,1018.9552542372882,120236.72,firstclass,15.0,455.5013333333334,adult,premium,1,2,0,2
+1001,Acme Factory,Josephine Strasser,female,21,0,366.0,1066.7396994535518,390426.73,firstclass,53.0,548.7745283018868,young,premium,1,2,3,2
+1002,Acme Factory,Nancy Kramer,female,55,0,334.0,1068.0594311377245,356731.85,firstclass,50.0,492.2882,middle_aged,premium,1,2,1,2
+1003,Acme Factory,Wanda Underwood,female,38,0,374.0,1057.7192513368984,395587.0,firstclass,59.0,564.5979661016949,adult,premium,1,2,0,2
+1005,Acme Factory,Tara Moore,female,54,0,358.0,1095.6337709497207,392236.89,firstclass,55.0,583.7681818181818,middle_aged,premium,1,2,1,2
+1007,Acme Factory,Shirley Barnhill,female,51,0,138.0,1056.0015217391303,145728.21,firstclass,15.0,498.75600000000003,middle_aged,premium,1,2,1,2
+1010,Acme Factory,Donald Bennett,male,61,1,66.0,1045.2895454545455,68989.11,firstclass,13.0,431.6,senior,premium,1,2,2,2
+1012,Acme Factory,Marvel Gill,female,46,0,306.0,1043.8755555555556,319425.92,firstclass,43.0,395.1518604651163,middle_aged,premium,1,2,1,2
+1013,Acme Factory,Lydia Estrella,female,31,0,196.0,1085.7144897959183,212800.04,firstclass,27.0,573.0096296296297,adult,premium,1,2,0,2
+1016,Acme Factory,Nola Harris,female,54,0,2.0,907.31,1814.62,economic,0.0,495.24,middle_aged,premium,1,0,1,2
+1017,Acme Factory,Duane Norton,male,47,1,120.0,1001.63675,120196.41,firstclass,17.0,423.50529411764705,middle_aged,premium,1,2,1,2
+1018,Acme Factory,Elke Cavallaro,female,31,0,10.0,1176.339,11763.39,firstclass,3.0,541.09,adult,premium,1,2,0,2
+1019,Acme Factory,Doris Irby,female,31,0,384.0,1054.856484375,405064.89,firstclass,48.0,420.848125,adult,premium,1,2,0,2
+1020,Acme Factory,Trina Smith,female,34,0,98.0,1076.0365306122449,105451.58,firstclass,10.0,518.755,adult,premium,1,2,0,2
+1021,Acme Factory,Martha Calhoun,female,58,0,154.0,1048.274025974026,161434.2,firstclass,27.0,728.0300000000001,middle_aged,premium,1,2,1,2
+1023,Acme Factory,Robert Avila,male,54,1,60.0,1086.3588333333332,65181.53,firstclass,7.0,444.76142857142855,middle_aged,premium,1,2,1,2
+1025,Acme Factory,Steven Napier,male,57,1,4.0,952.0074999999999,3808.0299999999997,economic,0.0,495.24,middle_aged,premium,1,0,1,2
+1026,Acme Factory,Ted Bonneau,male,44,1,400.0,1020.816375,408326.55,firstclass,51.0,572.623137254902,middle_aged,premium,1,2,1,2
+1028,Acme Factory,Jonathan Crawford,male,59,1,212.0,1097.4239150943397,232653.87,firstclass,29.0,515.9603448275863,middle_aged,premium,1,2,1,2
+1029,Acme Factory,Steven Carlisle,male,43,1,374.0,1059.6168983957218,396296.72,firstclass,62.0,492.13403225806456,middle_aged,premium,1,2,1,2
+1033,Acme Factory,Chad Treisch,male,53,1,286.0,1053.4343706293705,301282.23,firstclass,42.0,504.9264285714286,middle_aged,premium,1,2,1,2
+1034,Acme Factory,Alton Jastrebski,male,32,1,116.0,1001.1486206896552,116133.24,firstclass,16.0,310.749375,adult,premium,1,2,0,2
+1036,Acme Factory,Helen Hammond,female,60,0,182.0,1046.5315384615385,190468.74,firstclass,31.0,462.14451612903224,senior,premium,1,2,2,2
+1037,Acme Factory,Amanda Kohn,female,40,0,202.0,1011.3649009900989,204295.71,firstclass,39.0,554.4617948717948,middle_aged,premium,1,2,1,2
+1038,Acme Factory,Alice Hernandez,female,46,0,76.0,1018.7140789473684,77422.27,economic,12.0,533.9525,middle_aged,premium,1,0,1,2
+1039,Acme Factory,Laura Jaynes,female,44,0,352.0,1024.6424431818182,360674.14,firstclass,44.0,506.97681818181815,middle_aged,premium,1,2,1,2
+1040,Acme Factory,Jean Duke,male,36,1,332.0,1052.4515060240965,349413.9,firstclass,48.0,595.303125,adult,premium,1,2,0,2
+1041,Acme Factory,Mike Casillas,male,33,1,386.0,1055.295829015544,407344.19,firstclass,60.0,487.8581666666667,adult,premium,1,2,0,2
+1042,Acme Factory,Juan Pearson,male,65,1,152.0,1075.5065131578947,163476.99,firstclass,18.0,609.2172222222222,senior,premium,1,2,2,2
+1044,Acme Factory,Adam Clasen,male,27,1,58.0,1078.6768965517242,62563.26,firstclass,7.0,574.3242857142857,adult,premium,1,2,0,2
+1048,Acme Factory,Grace Martin,female,27,0,312.0,1057.3464423076923,329892.09,firstclass,42.0,557.2640476190476,adult,premium,1,2,0,2
+1049,Acme Factory,Nannie Warren,female,53,0,270.0,1006.8072222222223,271837.95,economic,48.0,505.3929166666667,middle_aged,premium,1,0,1,2
+1051,Acme Factory,Catalina Rosario,female,57,0,160.0,1024.2126875,163874.03,economic,23.0,474.15086956521736,middle_aged,premium,1,0,1,2
+1053,Acme Factory,Paul Hovermale,male,46,1,214.0,1052.6485046728972,225266.78,firstclass,26.0,511.9676923076923,middle_aged,premium,1,2,1,2
+1054,Acme Factory,Leslie Rosas,female,38,0,58.0,1059.0058620689654,61422.34,firstclass,11.0,553.7781818181818,adult,premium,1,2,0,2
+1056,Acme Factory,Guy Love,male,37,1,378.0,1074.7908994708996,406270.96,firstclass,62.0,490.1545161290323,adult,premium,1,2,0,2
+1057,Acme Factory,Mark Harris,male,50,1,128.0,1072.05484375,137223.02,firstclass,14.0,616.0257142857143,middle_aged,premium,1,2,1,2
+1058,Acme Factory,Charles Gibbons,male,44,1,252.0,1062.0865873015873,267645.82,firstclass,35.0,385.9402857142857,middle_aged,premium,1,2,1,2
+1061,Acme Factory,Lisa Treadway,female,31,0,326.0,1033.0327607361962,336768.68,firstclass,40.0,485.696,adult,premium,1,2,0,2
+1062,Acme Factory,Gilbert Burroughs,male,27,1,110.0,1071.9648181818181,117916.13,firstclass,17.0,446.9441176470588,adult,premium,1,2,0,2
+1064,Acme Factory,Mark Brownfield,male,63,1,244.0,1020.6962704918033,249049.88999999998,firstclass,35.0,450.3588571428571,senior,premium,1,2,2,2
+1065,Acme Factory,Casey Joos,male,60,1,202.0,1047.0928712871287,211512.76,firstclass,32.0,479.0071875,senior,premium,1,2,2,2
+1066,Acme Factory,Virginia Walker,female,43,0,342.0,1035.4253508771928,354115.47,firstclass,55.0,454.3483636363636,middle_aged,premium,1,2,1,2
+1067,Acme Factory,Rosita Dorsch,female,36,0,186.0,1031.4996774193548,191858.94,firstclass,28.0,508.6114285714286,adult,premium,1,2,0,2
+1068,Acme Factory,Melissa Morrison,female,61,0,12.0,1091.6850000000002,13100.220000000001,firstclass,2.0,245.25,senior,premium,1,2,2,2
+1069,Acme Factory,Luther Campbell,male,49,1,288.0,1048.6979861111113,302025.02,firstclass,44.0,533.2286363636364,middle_aged,premium,1,2,1,2
+1070,Acme Factory,Darren Rice,male,26,1,288.0,1071.4555208333334,308579.19,firstclass,50.0,558.8844,adult,premium,1,2,0,2
+1072,Acme Factory,Glenna Ernst,female,47,0,90.0,1077.7654444444445,96998.89,firstclass,19.0,418.0647368421053,middle_aged,premium,1,2,1,2
+1073,Acme Factory,Monika Lightner,female,62,0,182.0,1054.3006593406594,191882.72,premium,26.0,504.4392307692308,senior,premium,1,3,2,2
+1074,Acme Factory,Judy Dickie,female,34,0,342.0,1094.792192982456,374418.93,firstclass,56.0,436.45678571428573,adult,premium,1,2,0,2
+1076,Acme Factory,Camille Bosley,female,47,0,306.0,1023.4754901960785,313183.5,firstclass,47.0,470.2655319148936,middle_aged,premium,1,2,1,2
+1079,Acme Factory,Hortensia Finch,female,62,0,232.0,1124.1378448275862,260799.98,firstclass,35.0,570.5022857142858,senior,premium,1,2,2,2
+1080,Acme Factory,Ramon Shoji,male,53,1,364.0,1044.6835164835165,380264.8,firstclass,59.0,568.2628813559322,middle_aged,premium,1,2,1,2
+1081,Acme Factory,Albert Sparks,male,58,1,42.0,919.9092857142857,38636.19,firstclass,10.0,367.921,middle_aged,premium,1,2,1,2
+1082,Acme Factory,Jonathan Partlow,male,37,1,204.0,1033.8619607843136,210907.84,firstclass,28.0,473.0003571428571,adult,premium,1,2,0,2
+1084,Acme Factory,Gregory Clay,male,59,1,12.0,913.5916666666667,10963.1,firstclass,4.0,492.19,middle_aged,premium,1,2,1,2
+1085,Acme Factory,Rose Snow,female,23,0,294.0,1057.2244217687073,310823.98,firstclass,49.0,447.624693877551,young,premium,1,2,3,2
+1087,Acme Factory,Sona Paolucci,female,52,0,60.0,1081.8028333333334,64908.17,firstclass,10.0,496.514,middle_aged,premium,1,2,1,2
+1088,Acme Factory,Jack Gold,male,24,1,96.0,1047.8603125,100594.59,firstclass,13.0,430.21999999999997,young,premium,1,2,3,2
+1091,Acme Factory,Richard Mcdaries,male,22,1,364.0,1070.8052472527472,389773.11,firstclass,60.0,527.0901666666666,young,premium,1,2,3,2
+1092,Acme Factory,Bryon Denton,male,38,1,154.0,1011.5266233766234,155775.1,firstclass,19.0,665.9610526315789,adult,premium,1,2,0,2
+1093,Acme Factory,Todd Morgan,male,24,1,74.0,999.6856756756757,73976.74,firstclass,7.0,474.02714285714285,young,premium,1,2,3,2
+1094,Acme Factory,Arlene Suk,female,25,0,40.0,973.39175,38935.67,economic,3.0,691.7566666666667,adult,premium,1,0,0,2
+1095,Acme Factory,Sam Donnelly,male,26,1,316.0,1074.3664556962026,339499.8,firstclass,45.0,513.9511111111111,adult,premium,1,2,0,2
+1096,Acme Factory,Rosemary Finnell,female,29,0,190.0,1022.9581052631579,194362.04,firstclass,23.0,502.6826086956522,adult,premium,1,2,0,2
+1098,Acme Factory,Lyman Aguinaldo,male,61,1,102.0,1035.9801960784314,105669.98,firstclass,14.0,526.9764285714285,senior,premium,1,2,2,2
+1099,Acme Factory,Joseph Nitz,male,36,1,122.0,1115.7928688524592,136126.73,firstclass,20.0,537.249,adult,premium,1,2,0,2
+1101,Acme Factory,Kristin Gaiser,female,58,0,326.0,1055.4700920245398,344083.25,firstclass,52.0,498.13750000000005,middle_aged,premium,1,2,1,2
+1103,Acme Factory,Bernice Baker,female,23,0,274.0,1053.5707299270073,288678.38,firstclass,48.0,442.99916666666667,young,premium,1,2,3,2
+1106,Acme Factory,Dwight Hammers,male,34,1,104.0,1053.1019230769232,109522.6,firstclass,16.0,561.531875,adult,premium,1,2,0,2
+1107,Acme Factory,Hildegard Gerlach,female,40,0,52.0,994.5428846153845,51716.229999999996,economic,10.0,646.234,middle_aged,premium,1,0,1,2
+1108,Acme Factory,Jennifer Ferrer,female,65,0,302.0,1028.0495364238411,310470.96,firstclass,48.0,455.5577083333333,senior,premium,1,2,2,2
+1109,Acme Factory,Gregory Fiorini,male,28,1,98.0,1076.0980612244898,105457.61,firstclass,13.0,636.0038461538461,adult,premium,1,2,0,2
+1111,Acme Factory,Agnes Allen,female,61,0,256.0,1082.760625,277186.72,firstclass,29.0,615.3237931034482,senior,premium,1,2,2,2
+1113,Acme Factory,Travis Cordell,male,44,1,204.0,1024.7244607843138,209043.79,premium,33.0,453.81545454545454,middle_aged,premium,1,3,1,2
+1114,Acme Factory,Sandra Wang,female,50,0,104.0,1039.6047115384615,108118.89,firstclass,12.0,268.49583333333334,middle_aged,premium,1,2,1,2
+1115,Acme Factory,Naomi Varner,female,58,0,72.0,950.8826388888889,68463.55,economic,7.0,593.7228571428572,middle_aged,premium,1,0,1,2
+1116,Acme Factory,Henry Korczynski,male,21,1,278.0,1052.9420503597123,292717.89,firstclass,41.0,477.4587804878049,young,premium,1,2,3,2
+1118,Acme Factory,Emanuel Ross,male,47,1,140.0,1021.3971428571429,142995.6,premium,23.0,514.4573913043479,middle_aged,premium,1,3,1,2
+1120,Acme Factory,Josephine Underwood,female,56,0,238.0,1047.2259243697479,249239.77,firstclass,36.0,502.4983333333333,middle_aged,premium,1,2,1,2
+1121,Acme Factory,Carrie Weir,female,43,0,230.0,1044.9056956521738,240328.31,firstclass,33.0,565.710909090909,middle_aged,premium,1,2,1,2
+1122,Acme Factory,Kevin Summers,male,43,1,104.0,1090.4699038461538,113408.87,firstclass,20.0,494.23999999999995,middle_aged,premium,1,2,1,2
+1123,Acme Factory,Heath Lapierre,male,33,1,222.0,1023.7966666666666,227282.86,firstclass,31.0,444.35677419354835,adult,premium,1,2,0,2
+1124,Acme Factory,Claude Hiatt,male,24,1,18.0,1021.9566666666667,18395.22,premium,6.0,501.2583333333334,young,premium,1,3,3,2
+1125,Acme Factory,Rebecca Englert,female,50,0,120.0,1086.0710000000001,130328.52,firstclass,18.0,599.0638888888889,middle_aged,premium,1,2,1,2
+1126,Acme Factory,Walter Bernat,male,27,1,282.0,1067.30109929078,300978.91,firstclass,43.0,554.1818604651163,adult,premium,1,2,0,2
+1127,Acme Factory,Holly Payton,female,46,0,374.0,1025.517245989305,383543.45,firstclass,61.0,533.6583606557377,middle_aged,premium,1,2,1,2
+1129,Acme Factory,Melvin Griggs,male,48,1,80.0,1022.949625,81835.97,premium,15.0,591.6853333333333,middle_aged,premium,1,3,1,2
+1131,Acme Factory,Aaron Dyson,male,28,1,228.0,1051.8478947368421,239821.32,firstclass,34.0,446.834705882353,adult,premium,1,2,0,2
+1132,Acme Factory,Shannon Venegas,female,38,0,172.0,1056.3362790697674,181689.84,firstclass,30.0,574.626,adult,premium,1,2,0,2
+1133,Acme Factory,Brady Harris,male,57,1,64.0,1052.3365625,67349.54,firstclass,7.0,574.3857142857142,middle_aged,premium,1,2,1,2
+1135,Acme Factory,Jessica Sancho,female,38,0,364.0,1081.892967032967,393809.04,firstclass,54.0,569.1248148148148,adult,premium,1,2,0,2
+1137,Acme Factory,Jessica Christensen,female,47,0,84.0,990.6126190476191,83211.46,firstclass,12.0,532.9733333333334,middle_aged,premium,1,2,1,2
+1138,Acme Factory,Leonora Davis,female,26,0,348.0,1038.2704022988505,361318.1,premium,69.0,478.64507246376814,adult,premium,1,3,0,2
+1139,Acme Factory,Marcos Kirk,male,34,1,264.0,1085.0716287878786,286458.91,firstclass,39.0,589.7841025641026,adult,premium,1,2,0,2
+1140,Acme Factory,Nathan Robertson,male,58,1,302.0,1099.2604304635763,331976.65,firstclass,47.0,521.1793617021277,middle_aged,premium,1,2,1,2
+1141,Acme Factory,Anthony Doggett,male,28,1,268.0,1000.0352985074628,268009.46,firstclass,47.0,551.4840425531914,adult,premium,1,2,0,2
+1142,Acme Factory,Larry Gonzales,male,36,1,110.0,1009.8163636363637,111079.8,economic,11.0,439.7627272727273,adult,premium,1,0,0,2
+1144,Acme Factory,Norbert Covington,male,30,1,58.0,1146.1682758620689,66477.76,firstclass,7.0,564.4557142857143,adult,premium,1,2,0,2
+1146,Umbrella LTDA,Cynthia Espinal,female,63,0,222.0,991.5517117117117,220124.48,economic,38.0,562.5718421052632,senior,premium,3,0,2,2
+1147,Umbrella LTDA,Bradley Slaughter,male,33,1,354.0,1053.5203389830508,372946.2,firstclass,45.0,467.7457777777778,adult,premium,3,2,0,2
+1148,Umbrella LTDA,Laurel Rodriguez,female,45,0,396.0,1070.5460606060606,423936.24,firstclass,56.0,503.03839285714287,middle_aged,premium,3,2,1,2
+1149,Umbrella LTDA,Troy Gates,male,59,1,334.0,1059.725479041916,353948.31,firstclass,53.0,499.3088679245283,middle_aged,premium,3,2,1,2
+1151,Umbrella LTDA,Kathy Le,female,29,0,188.0,987.8524468085106,185716.26,economic,20.0,453.821,adult,premium,3,0,0,2
+1152,Umbrella LTDA,Daniel Swanger,male,31,1,128.0,1043.436484375,133559.87,firstclass,23.0,580.3978260869565,adult,premium,3,2,0,2
+1153,Umbrella LTDA,Joyce Holsten,female,42,0,318.0,1027.5974528301886,326775.99,firstclass,46.0,458.91782608695655,middle_aged,premium,3,2,1,2
+1154,Umbrella LTDA,Amy Miller,female,28,0,150.0,1072.9442666666666,160941.63999999998,firstclass,23.0,565.1891304347827,adult,premium,3,2,0,2
+1155,Umbrella LTDA,Megan Anderson,female,59,0,366.0,1042.6134699453553,381596.53,firstclass,62.0,522.6670967741935,middle_aged,premium,3,2,1,2
+1156,Umbrella LTDA,Michael Mitchell,male,31,1,358.0,1060.246592178771,379568.28,firstclass,57.0,476.2685964912281,adult,premium,3,2,0,2
+1157,Umbrella LTDA,Vilma Gehring,female,58,0,180.0,1063.6730555555555,191461.15,firstclass,24.0,559.3183333333333,middle_aged,premium,3,2,1,2
+1158,Umbrella LTDA,Kristyn Vincent,female,39,0,170.0,1059.151294117647,180055.72,firstclass,37.0,466.5078378378379,adult,premium,3,2,0,2
+1159,Umbrella LTDA,Crystal Fontaine,female,40,0,286.0,1005.0746503496503,287451.35,firstclass,41.0,479.50634146341457,middle_aged,premium,3,2,1,2
+1160,Umbrella LTDA,Garth Alvarez,male,47,1,138.0,1093.6158695652173,150918.99,firstclass,19.0,526.6310526315789,middle_aged,premium,3,2,1,2
+1161,Umbrella LTDA,Mildred Correa,female,47,0,128.0,989.937578125,126712.01,firstclass,19.0,467.74684210526317,middle_aged,premium,3,2,1,2
+1162,Umbrella LTDA,Donnie Taylor,male,36,1,260.0,1077.4051153846156,280125.33,firstclass,37.0,625.6178378378379,adult,premium,3,2,0,2
+1163,Umbrella LTDA,Robert Chalker,male,44,1,176.0,1063.5117045454544,187178.06,firstclass,25.0,489.56880000000007,middle_aged,premium,3,2,1,2
+1164,Umbrella LTDA,John Brooks,male,39,1,326.0,1056.9650000000001,344570.59,firstclass,42.0,443.39238095238096,adult,premium,3,2,0,2
+1165,Umbrella LTDA,Shonna Humpherys,female,61,0,354.0,1074.2077401129943,380269.54,firstclass,54.0,442.86981481481484,senior,premium,3,2,2,2
+1166,Umbrella LTDA,John Watson,male,32,1,274.0,1033.7949270072993,283259.81,firstclass,36.0,540.1063888888889,adult,premium,3,2,0,2
+1167,Umbrella LTDA,Richard Kiani,male,21,1,180.0,1023.8422777777779,184291.61000000002,firstclass,30.0,459.94800000000004,young,premium,3,2,3,2
+1168,Umbrella LTDA,Myrtle Johnson,female,31,0,32.0,950.2840625,30409.09,premium,4.0,532.0675,adult,premium,3,3,0,2
+1169,Umbrella LTDA,Edward Jablonski,male,50,1,82.0,1061.2634146341463,87023.6,firstclass,12.0,355.57916666666665,middle_aged,premium,3,2,1,2
+1170,Umbrella LTDA,William Henslee,male,62,1,342.0,1060.274941520468,362614.03,firstclass,61.0,505.74409836065576,senior,premium,3,2,2,2
+1171,Umbrella LTDA,Nichelle Kercher,female,38,0,2.0,667.585,1335.17,economic,0.0,495.24,adult,economy,3,0,0,0
+1172,Umbrella LTDA,Margaret Lee,female,21,0,114.0,1055.7731578947369,120358.14,firstclass,14.0,569.8371428571428,young,premium,3,2,3,2
+1176,Umbrella LTDA,Christopher Allred,male,31,1,324.0,1056.0553703703704,342161.94,firstclass,49.0,448.7630612244898,adult,premium,3,2,0,2
+1177,Umbrella LTDA,Brenda Faulk,female,59,0,122.0,1075.867295081967,131255.81,firstclass,18.0,519.99,middle_aged,premium,3,2,1,2
+1178,Umbrella LTDA,Matthew Sell,male,37,1,202.0,1063.0082673267327,214727.67,firstclass,30.0,558.846,adult,premium,3,2,0,2
+1179,Umbrella LTDA,Veronica Mcnear,female,43,0,162.0,1024.5475308641976,165976.7,firstclass,20.0,516.052,middle_aged,premium,3,2,1,2
+1183,Umbrella LTDA,Robin Taylor,male,28,1,298.0,1077.1807046979866,320999.85,firstclass,50.0,438.6986,adult,premium,3,2,0,2
+1185,Umbrella LTDA,Andrew Neely,male,47,1,282.0,1113.6164539007093,314039.84,firstclass,51.0,558.026862745098,middle_aged,premium,3,2,1,2
+1186,Umbrella LTDA,Wilson Kellam,male,56,1,238.0,1031.2025210084034,245426.2,premium,32.0,561.793125,middle_aged,premium,3,3,1,2
+1187,Umbrella LTDA,Cody Foster,male,27,1,96.0,1040.9035416666668,99926.74,firstclass,17.0,612.3788235294118,adult,premium,3,2,0,2
+1189,Umbrella LTDA,Jame Weber,male,50,1,214.0,1079.097336448598,230926.83,firstclass,37.0,531.7364864864865,middle_aged,premium,3,2,1,2
+1190,Umbrella LTDA,Matthew Lewis,male,21,1,112.0,1115.994375,124991.37,firstclass,13.0,569.16,young,premium,3,2,3,2
+1191,Umbrella LTDA,Charles Plotkin,male,51,1,306.0,1051.1346732026145,321647.21,firstclass,42.0,588.955,middle_aged,premium,3,2,1,2
+1192,Umbrella LTDA,Danny Henderson,male,32,1,28.0,1093.2392857142856,30610.7,firstclass,3.0,306.24666666666667,adult,premium,3,2,0,2
+1195,Umbrella LTDA,Sandra Newsome,female,35,0,220.0,1104.2251363636365,242929.53,firstclass,28.0,606.6725,adult,premium,3,2,0,2
+1200,Umbrella LTDA,Alicia Gilchrist,female,62,0,32.0,1032.6140625,33043.65,economic,4.0,536.4775,senior,premium,3,0,2,2
+1201,Umbrella LTDA,Samuel Bejarano,male,36,1,304.0,1049.8780263157894,319162.92,firstclass,40.0,502.77625,adult,premium,3,2,0,2
+1204,Umbrella LTDA,Andrew Gonzales,male,35,1,256.0,1014.3775,259680.64,firstclass,40.0,512.832,adult,premium,3,2,0,2
+1205,Umbrella LTDA,Julee Ruper,female,36,0,360.0,1055.1063055555555,379838.27,firstclass,54.0,479.3059259259259,adult,premium,3,2,0,2
+1206,Umbrella LTDA,Richard Warren,male,64,1,180.0,1047.2033333333334,188496.6,firstclass,21.0,536.9709523809523,senior,premium,3,2,2,2
+1207,Umbrella LTDA,Robert Fulcher,male,25,1,66.0,1061.1713636363636,70037.31,firstclass,6.0,475.945,adult,premium,3,2,0,2
+1208,Umbrella LTDA,Kyle Jewell,male,42,1,160.0,1014.9151250000001,162386.42,firstclass,28.0,614.7521428571429,middle_aged,premium,3,2,1,2
+1211,Umbrella LTDA,Keely Richardson,female,31,0,88.0,1057.4032954545455,93051.49,premium,7.0,469.5028571428571,adult,premium,3,3,0,2
+1212,Umbrella LTDA,Frances Workman,female,39,0,310.0,980.4312580645161,303933.69,firstclass,51.0,594.7225490196079,adult,premium,3,2,0,2
+1214,Umbrella LTDA,Lydia Goff,female,28,0,296.0,1006.5184121621622,297929.45,economic,55.0,509.82072727272725,adult,premium,3,0,0,2
+1215,Umbrella LTDA,Zoe Ruiz,female,24,0,106.0,1097.2431132075471,116307.77,firstclass,15.0,631.856,young,premium,3,2,3,2
+1219,Umbrella LTDA,Brian Walker,male,26,1,258.0,1079.305503875969,278460.82,firstclass,40.0,483.46875,adult,premium,3,2,0,2
+1221,Umbrella LTDA,Clifton Phillips,male,33,1,232.0,1073.4296982758622,249035.69,firstclass,34.0,419.28470588235297,adult,premium,3,2,0,2
+1222,Umbrella LTDA,Steven Smith,male,64,1,392.0,1087.074056122449,426133.03,firstclass,60.0,578.7623333333333,senior,premium,3,2,2,2
+1225,Umbrella LTDA,Danielle Williams,female,27,0,152.0,1018.4726973684211,154807.85,firstclass,22.0,511.20363636363635,adult,premium,3,2,0,2
+1226,Umbrella LTDA,Sandy Ayala,male,22,1,328.0,1048.7724085365853,343997.35,firstclass,59.0,553.5933898305085,young,premium,3,2,3,2
+1227,Umbrella LTDA,Danny Pitpitan,male,35,1,300.0,1027.3396,308201.88,firstclass,53.0,544.4667924528302,adult,premium,3,2,0,2
+1228,Umbrella LTDA,Jerry Warman,male,22,1,354.0,1068.6094915254237,378287.76,firstclass,48.0,505.2308333333333,young,premium,3,2,3,2
+1229,Umbrella LTDA,Wilson Lawler,male,35,1,82.0,1086.9810975609755,89132.45,firstclass,12.0,459.90000000000003,adult,premium,3,2,0,2
+1230,Umbrella LTDA,Daniel Terry,male,32,1,224.0,1094.642544642857,245199.93,firstclass,33.0,484.1748484848485,adult,premium,3,2,0,2
+1231,Umbrella LTDA,Clarence Carleton,male,53,1,362.0,1057.0183425414366,382640.64,firstclass,51.0,511.09450980392154,middle_aged,premium,3,2,1,2
+1232,Umbrella LTDA,Christine Fuller,female,63,0,164.0,1106.0930487804878,181399.26,firstclass,16.0,519.421875,senior,premium,3,2,2,2
+1233,Umbrella LTDA,Betty Amos,female,60,0,270.0,1020.8527407407407,275630.24,firstclass,47.0,556.5372340425532,senior,premium,3,2,2,2
+1234,Umbrella LTDA,Kayla Henkes,female,62,0,138.0,1063.2391304347825,146727.0,firstclass,25.0,482.05800000000005,senior,premium,3,2,2,2
+1237,Umbrella LTDA,Kathryn Allen,female,55,0,100.0,1062.4814999999999,106248.15,firstclass,13.0,541.7138461538461,middle_aged,premium,3,2,1,2
+1239,Umbrella LTDA,Vanessa Mckay,female,23,0,292.0,1047.646198630137,305912.69,firstclass,37.0,605.3289189189188,young,premium,3,2,3,2
+1240,Umbrella LTDA,Scott Evans,male,48,1,202.0,1101.1644554455445,222435.22,firstclass,32.0,503.575,middle_aged,premium,3,2,1,2
+1241,Umbrella LTDA,Frances Anderson,female,62,0,38.0,1065.528947368421,40490.1,firstclass,7.0,532.3457142857143,senior,premium,3,2,2,2
+1243,Umbrella LTDA,Terri Mario,female,64,0,180.0,1021.9409444444444,183949.37,firstclass,25.0,458.644,senior,premium,3,2,2,2
+1245,Umbrella LTDA,Sandra Fisher,female,39,0,90.0,1129.7104444444444,101673.94,firstclass,14.0,661.9471428571429,adult,premium,3,2,0,2
+1248,Umbrella LTDA,Mathew Marin,male,23,1,322.0,1075.7088819875776,346378.26,firstclass,49.0,565.4842857142858,young,premium,3,2,3,2
+1249,Umbrella LTDA,Eleanor Washington,female,42,0,318.0,1057.4946226415093,336283.29,firstclass,55.0,541.9641818181818,middle_aged,premium,3,2,1,2
+1250,Umbrella LTDA,Lisa Beaman,female,53,0,136.0,1065.7052205882353,144935.91,firstclass,24.0,512.5379166666667,middle_aged,premium,3,2,1,2
+1251,Umbrella LTDA,Patrick Warfield,male,58,1,96.0,1052.6270833333333,101052.2,firstclass,6.0,490.56166666666667,middle_aged,premium,3,2,1,2
+1254,Umbrella LTDA,Lorraine Langston,female,59,0,276.0,1057.864384057971,291970.57,firstclass,29.0,450.9051724137931,middle_aged,premium,3,2,1,2
+1255,Umbrella LTDA,Addie Jones,female,37,0,378.0,1085.9300793650793,410481.57,firstclass,42.0,534.6373809523809,adult,premium,3,2,0,2
+1256,Umbrella LTDA,Francisco Sierra,male,28,1,284.0,1041.399753521127,295757.53,firstclass,50.0,528.8138,adult,premium,3,2,0,2
+1257,Umbrella LTDA,Andre Chambers,male,31,1,358.0,1067.3400558659218,382107.74,firstclass,54.0,598.4188888888889,adult,premium,3,2,0,2
+1258,Umbrella LTDA,Daniel Williams,male,32,1,156.0,1046.1167307692308,163194.21,firstclass,27.0,494.05703703703705,adult,premium,3,2,0,2
+1263,Umbrella LTDA,Susan Fassino,female,29,0,288.0,1092.7347569444444,314707.61,firstclass,38.0,468.9789473684211,adult,premium,3,2,0,2
+1264,Umbrella LTDA,George Herring,male,28,1,150.0,1113.6156,167042.34,firstclass,25.0,429.624,adult,premium,3,2,0,2
+1265,Umbrella LTDA,Lisa Strickland,female,50,0,204.0,1039.0550980392156,211967.24,firstclass,36.0,420.1383333333333,middle_aged,premium,3,2,1,2
+1266,Umbrella LTDA,Patricia Albino,female,58,0,100.0,1042.318,104231.8,firstclass,14.0,512.7078571428572,middle_aged,premium,3,2,1,2
+1267,Umbrella LTDA,Robert Leek,male,44,1,66.0,1094.440303030303,72233.06,firstclass,10.0,487.51900000000006,middle_aged,premium,3,2,1,2
+1268,Umbrella LTDA,Kathleen Heller,female,46,0,336.0,1073.5643452380953,360717.62,firstclass,51.0,589.0582352941177,middle_aged,premium,3,2,1,2
+1269,Umbrella LTDA,Debra Stubbs,female,60,0,374.0,1067.1684759358288,399121.01,firstclass,60.0,566.4146666666667,senior,premium,3,2,2,2
+1271,Umbrella LTDA,Jessica Hoskins,female,61,0,250.0,1073.14844,268287.11,firstclass,40.0,466.15775,senior,premium,3,2,2,2
+1272,Umbrella LTDA,Deborah Keiser,female,61,0,322.0,1044.8183229813665,336431.5,firstclass,55.0,440.8943636363636,senior,premium,3,2,2,2
+1273,Umbrella LTDA,Mary Cline,female,36,0,308.0,1037.7780194805196,319635.63,firstclass,49.0,523.1428571428571,adult,premium,3,2,0,2
+1275,Umbrella LTDA,Randall Vanhoose,male,39,1,14.0,908.7571428571429,12722.6,economic,1.0,120.78,adult,premium,3,0,0,2
+1276,Umbrella LTDA,David Mankey,male,49,1,52.0,1055.1711538461539,54868.9,firstclass,7.0,421.23285714285714,middle_aged,premium,3,2,1,2
+1277,Umbrella LTDA,Paul Shields,male,37,1,170.0,1109.745294117647,188656.7,firstclass,26.0,575.0642307692308,adult,premium,3,2,0,2
+1278,Umbrella LTDA,Wayne Williams,male,35,1,310.0,1028.5027419354838,318835.85,firstclass,50.0,561.5166,adult,premium,3,2,0,2
+1281,Umbrella LTDA,Shirley Ortiz,female,63,0,346.0,1064.6954624277457,368384.63,firstclass,46.0,570.8589130434782,senior,premium,3,2,2,2
+1282,Umbrella LTDA,John Martindale,male,30,1,274.0,1025.627591240876,281021.96,firstclass,45.0,500.80355555555553,adult,premium,3,2,0,2
+1284,Umbrella LTDA,June Chynoweth,female,47,0,80.0,1134.8332500000001,90786.66,firstclass,12.0,650.5266666666666,middle_aged,premium,3,2,1,2
+1285,Umbrella LTDA,Bill Wright,male,37,1,40.0,1115.17225,44606.89,firstclass,3.0,419.78333333333336,adult,premium,3,2,0,2
+1286,Umbrella LTDA,Beverly Campbell,female,64,0,380.0,1054.6618684210528,400771.51,firstclass,64.0,565.62359375,senior,premium,3,2,2,2
+1287,Umbrella LTDA,Lorene Mason,female,58,0,102.0,1000.6786274509805,102069.22,economic,14.0,395.1021428571429,middle_aged,premium,3,0,1,2
+1289,Umbrella LTDA,Shirley Oneal,female,24,0,182.0,1065.7163736263738,193960.38,firstclass,27.0,468.7814814814815,young,premium,3,2,3,2
+1290,Umbrella LTDA,William Sabir,male,32,1,342.0,1048.339590643275,358532.14,firstclass,55.0,525.46,adult,premium,3,2,0,2
+1291,Umbrella LTDA,Bonnie Miller,female,56,0,54.0,990.3661111111111,53479.77,firstclass,9.0,436.8488888888889,middle_aged,premium,3,2,1,2
+1292,Umbrella LTDA,Nicole Conroy,female,32,0,4.0,763.595,3054.38,premium,1.0,241.56,adult,economy,3,3,0,0
+1294,Umbrella LTDA,John Moroney,male,34,1,28.0,1033.4682142857143,28937.11,firstclass,5.0,346.698,adult,premium,3,2,0,2
+1295,Umbrella LTDA,Lauren Reynolds,female,46,0,362.0,1083.2457182320443,392134.95,firstclass,52.0,538.194423076923,middle_aged,premium,3,2,1,2
+1296,Umbrella LTDA,Julie Lefebvre,female,59,0,136.0,1072.4200735294119,145849.13,firstclass,16.0,531.84875,middle_aged,premium,3,2,1,2
+1297,Umbrella LTDA,Kathleen Griggs,female,49,0,128.0,1076.38140625,137776.82,firstclass,18.0,503.3277777777778,middle_aged,premium,3,2,1,2
+1298,Umbrella LTDA,Lori Barbour,female,32,0,240.0,1008.9070416666667,242137.69,firstclass,33.0,519.3766666666667,adult,premium,3,2,0,2
+1300,Umbrella LTDA,Cynthia Noguera,female,30,0,136.0,1009.00875,137225.19,premium,19.0,520.8042105263158,adult,premium,3,3,0,2
+1301,Umbrella LTDA,Joseph Turner,male,57,1,30.0,1067.276,32018.28,firstclass,3.0,605.9666666666667,middle_aged,premium,3,2,1,2
+1302,Umbrella LTDA,Marilee Thompson,female,63,0,344.0,1076.9421511627907,370468.1,firstclass,55.0,588.7605454545454,senior,premium,3,2,2,2
+1303,Umbrella LTDA,Douglas Kreider,male,59,1,96.0,1040.8472916666667,99921.34,firstclass,10.0,517.342,middle_aged,premium,3,2,1,2
+1304,Umbrella LTDA,Daniel Chobot,male,57,1,78.0,1057.9601282051283,82520.89,firstclass,16.0,549.845,middle_aged,premium,3,2,1,2
+1305,Umbrella LTDA,Sandra Cutlip,female,51,0,364.0,1084.3661538461538,394709.27999999997,firstclass,63.0,515.7149206349206,middle_aged,premium,3,2,1,2
+1306,Umbrella LTDA,David Trost,male,40,1,330.0,1101.5689393939394,363517.75,firstclass,45.0,649.6237777777777,middle_aged,premium,3,2,1,2
+1307,Umbrella LTDA,Carl Branch,male,56,1,158.0,1084.0454430379746,171279.18,firstclass,25.0,432.44879999999995,middle_aged,premium,3,2,1,2
+1308,Umbrella LTDA,Yolanda Perry,female,25,0,34.0,1176.394117647059,39997.4,firstclass,8.0,496.98875,adult,premium,3,2,0,2
+1310,Umbrella LTDA,Billy Polly,male,46,1,236.0,1045.4199576271185,246719.11,firstclass,35.0,497.3011428571429,middle_aged,premium,3,2,1,2
+1311,Umbrella LTDA,Timothy Boyce,male,65,1,328.0,1025.9434756097562,336509.46,firstclass,50.0,553.8618,senior,premium,3,2,2,2
+1312,Umbrella LTDA,Matthew Eskridge,male,38,1,240.0,1082.7389583333334,259857.35,firstclass,32.0,506.185625,adult,premium,3,2,0,2
+1313,Umbrella LTDA,Milton Thompson,male,61,1,32.0,1075.3434375,34410.99,firstclass,6.0,378.345,senior,premium,3,2,2,2
+1314,Umbrella LTDA,Janet Bufkin,female,43,0,282.0,1059.4688652482268,298770.22,firstclass,44.0,572.4506818181818,middle_aged,premium,3,2,1,2
+1315,Umbrella LTDA,Annabel Loughran,female,23,0,324.0,1010.3439197530864,327351.43,firstclass,44.0,393.65000000000003,young,premium,3,2,3,2
+1316,Umbrella LTDA,Joseph Colvin,male,50,1,300.0,1032.9867333333334,309896.02,firstclass,44.0,440.0925,middle_aged,premium,3,2,1,2
+1320,Umbrella LTDA,Trevor Robinson,male,26,1,396.0,1056.4325505050504,418347.29,firstclass,59.0,521.633220338983,adult,premium,3,2,0,2
+1323,Umbrella LTDA,Helen Warner,female,24,0,398.0,1034.8063316582914,411852.92,firstclass,74.0,554.0521621621622,young,premium,3,2,3,2
+1325,Umbrella LTDA,Doris Wendt,female,51,0,208.0,986.8266826923077,205259.95,premium,35.0,468.5682857142857,middle_aged,premium,3,3,1,2
+1326,Umbrella LTDA,Phillip Sarni,male,60,1,32.0,1047.2009375,33510.43,firstclass,9.0,380.9266666666667,senior,premium,3,2,2,2
+1327,Umbrella LTDA,Joseph Mccoy,male,42,1,100.0,1016.4392,101643.92,firstclass,19.0,537.5673684210527,middle_aged,premium,3,2,1,2
+1328,Umbrella LTDA,Cheryl Avila,female,51,0,158.0,1080.6613924050632,170744.5,firstclass,17.0,443.0035294117647,middle_aged,premium,3,2,1,2
+1329,Umbrella LTDA,Alva Johnson,male,59,1,4.0,916.25,3665.0,economic,0.0,495.24,middle_aged,premium,3,0,1,2
+1331,Umbrella LTDA,Nathan Kyle,male,37,1,284.0,1047.343133802817,297445.45,firstclass,33.0,493.4657575757576,adult,premium,3,2,0,2
+1332,Umbrella LTDA,Kimberly Jessica,female,37,0,352.0,1051.3370454545454,370070.64,firstclass,48.0,558.3647916666666,adult,premium,3,2,0,2
+1333,Umbrella LTDA,Misty Littlefield,female,21,0,226.0,1072.411460176991,242364.99,firstclass,30.0,556.3676666666667,young,premium,3,2,3,2
+1334,Umbrella LTDA,Tina Lancaster,female,60,0,30.0,1042.6073333333334,31278.22,firstclass,4.0,570.265,senior,premium,3,2,2,2
+1335,Umbrella LTDA,Albert Garroutte,male,23,1,396.0,1061.6112626262627,420398.06,firstclass,60.0,503.64233333333334,young,premium,3,2,3,2
+1336,Umbrella LTDA,Kim Shores,female,40,0,8.0,872.62,6980.96,economic,1.0,495.24,middle_aged,premium,3,0,1,2
+1337,Umbrella LTDA,James Gimenez,male,28,1,60.0,1041.5449999999998,62492.7,firstclass,11.0,663.9909090909091,adult,premium,3,2,0,2
+1338,Umbrella LTDA,Viola Agosta,female,52,0,14.0,1027.217142857143,14381.04,economic,1.0,990.48,middle_aged,premium,3,0,1,2
+1339,Umbrella LTDA,Paul Rodriguez,male,35,1,88.0,1015.9706818181818,89405.42,firstclass,13.0,462.2638461538462,adult,premium,3,2,0,2

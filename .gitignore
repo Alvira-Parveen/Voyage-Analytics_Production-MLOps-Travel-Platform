@@ -9,9 +9,7 @@ env/
 # Interview Prep Reference (Local study only)
 INTERVIEW_GUIDE.md
 
-# Data directory cache (excluding raw inputs if needed, keeping raw data)
-data/processed/*.json
-data/processed/*.csv
+# Data directory (keeping raw and processed data)
 !data/processed/.gitkeep
 
 # MLflow artifacts & database
