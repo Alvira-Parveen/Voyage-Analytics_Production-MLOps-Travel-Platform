@@ -21,11 +21,12 @@ st.markdown("""
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
 .step-container {
-    background: rgba(255,255,255,0.04);
-    border: 1px solid rgba(255,255,255,0.08);
+    background: var(--secondary-background-color);
+    border: 1px solid rgba(128, 128, 128, 0.2);
     border-radius: 16px;
     padding: 24px;
     margin-bottom: 24px;
+    color: var(--text-color);
 }
 .highlight-val {
     font-size: 1.6rem;
@@ -33,18 +34,20 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
     color: #4facfe;
 }
 .summary-card {
-    background: linear-gradient(135deg, rgba(79, 172, 254, 0.1), rgba(0, 242, 254, 0.1));
-    border: 1px solid rgba(79, 172, 254, 0.3);
+    background: var(--secondary-background-color);
+    border: 1px solid rgba(79, 172, 254, 0.4);
     border-radius: 16px;
     padding: 24px;
     margin-top: 24px;
+    color: var(--text-color);
 }
 .netflix-card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--secondary-background-color);
+    border: 1px solid rgba(128, 128, 128, 0.2);
     border-radius: 12px;
     padding: 16px;
     text-align: center;
+    color: var(--text-color);
 }
 .match-badge {
     background: #2e7d32;

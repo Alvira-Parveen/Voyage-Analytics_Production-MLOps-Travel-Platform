@@ -53,12 +53,13 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
 
 /* Custom premium KPI card */
 .kpi-card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--secondary-background-color);
+    border: 1px solid rgba(128, 128, 128, 0.2);
     border-radius: 12px;
     padding: 20px;
     text-align: center;
     transition: all 0.3s ease;
+    color: var(--text-color);
 }
 .kpi-card:hover {
     transform: translateY(-4px);
@@ -66,7 +67,7 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
     box-shadow: 0 8px 30px rgba(79, 172, 254, 0.15);
 }
 .kpi-val { font-size: 2.2rem; font-weight: 700; color: #4facfe; margin: 4px 0; }
-.kpi-lbl { font-size: 0.8rem; color: #cbd5e1; text-transform: uppercase; letter-spacing: 0.08em; }
+.kpi-lbl { font-size: 0.8rem; color: var(--text-color); text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.85; }
 
 .status-ok { color: #38ef7d; font-weight: 600; }
 .status-warn { color: #f6d365; font-weight: 600; }

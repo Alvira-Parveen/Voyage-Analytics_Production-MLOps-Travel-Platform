@@ -20,12 +20,13 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
 
 /* Premium Recommender Card */
 .hotel-card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--secondary-background-color);
+    border: 1px solid rgba(128, 128, 128, 0.2);
     border-radius: 16px;
     padding: 24px;
     margin-bottom: 20px;
     transition: all 0.3s ease;
+    color: var(--text-color);
 }
 .hotel-card:hover {
     transform: translateY(-4px);
@@ -33,7 +34,7 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
     box-shadow: 0 8px 30px rgba(56, 239, 125, 0.15);
 }
 .hotel-name { font-size: 1.4rem; font-weight: 700; color: #38ef7d; }
-.hotel-place { font-size: 0.9rem; color: #94a3b8; margin: 4px 0 16px 0; }
+.hotel-place { font-size: 0.9rem; color: var(--text-color); margin: 4px 0 16px 0; opacity: 0.85; }
 .hotel-badge {
     background: #11998e;
     color: #ffffff;

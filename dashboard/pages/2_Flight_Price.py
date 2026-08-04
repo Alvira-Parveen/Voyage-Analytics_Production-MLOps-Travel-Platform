@@ -23,20 +23,22 @@ st.markdown("""
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
 .pred-card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--secondary-background-color);
+    border: 1px solid rgba(128, 128, 128, 0.2);
     border-radius: 16px;
     padding: 24px;
     margin-bottom: 20px;
+    color: var(--text-color);
 }
-.pred-title { font-size: 1.1rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; }
+.pred-title { font-size: 1.1rem; color: var(--text-color); text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.85; }
 .pred-val { font-size: 2.8rem; font-weight: 700; color: #00f2fe; margin: 8px 0; }
 .ai-summary {
-    background: rgba(0, 242, 254, 0.08);
+    background: var(--secondary-background-color);
     border-left: 4px solid #00f2fe;
     padding: 16px;
     border-radius: 4px;
     margin-top: 15px;
+    color: var(--text-color);
 }
 </style>
 """, unsafe_allow_html=True)

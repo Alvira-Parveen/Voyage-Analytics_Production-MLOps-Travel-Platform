@@ -23,28 +23,31 @@ st.markdown("""
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
 .pred-card {
-    background: rgba(240, 147, 251, 0.08);
-    border: 1px solid rgba(240, 147, 251, 0.3);
+    background: var(--secondary-background-color);
+    border: 1px solid rgba(240, 147, 251, 0.4);
     border-radius: 16px;
     padding: 24px;
     margin-bottom: 20px;
     text-align: center;
+    color: var(--text-color);
 }
-.pred-title { font-size: 1.1rem; color: #cbd5e1; text-transform: uppercase; letter-spacing: 0.05em; }
+.pred-title { font-size: 1.1rem; color: var(--text-color); text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.85; }
 .pred-val { font-size: 2.8rem; font-weight: 700; color: #f093fb; margin: 8px 0; }
 .persona-card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: var(--secondary-background-color);
+    border: 1px solid rgba(128, 128, 128, 0.2);
     border-radius: 12px;
     padding: 20px;
     margin-top: 15px;
+    color: var(--text-color);
 }
 .ai-summary {
-    background: rgba(240, 147, 251, 0.08);
+    background: var(--secondary-background-color);
     border-left: 4px solid #f093fb;
     padding: 16px;
     border-radius: 4px;
     margin-top: 15px;
+    color: var(--text-color);
 }
 </style>
 """, unsafe_allow_html=True)
