@@ -53,53 +53,49 @@ To build a secure, enterprise-grade AI Operations platform that demonstrates the
 ### 1. Dashboard Overview
 ![Overview Dashboard](Screenshots/Overview.png)
 
-## 2. API Performance Metrics
-
-![API Performance Metrics](Screenshots/API.png)
-
-### 3. Travel Journey Dashboard
+### 2. Travel Journey Dashboard
 ![Travel Journey](Screenshots/Travel%20journey.png)
 
-### 4. Travel Journey Analytics
+### 3. Travel Journey Analytics
 ![Travel Journey Analytics](Screenshots/Travel%20journey1.png)
 
-### 5. Exploratory Data Analysis (EDA)
+### 4. Exploratory Data Analysis (EDA)
 ![EDA](Screenshots/EDA.png)
 
-### 6. Hotel EDA
+### 5. Hotel EDA
 ![Hotel EDA](Screenshots/hotel%20eda.png)
 
-### 7. User Data Analysis
+### 6. User Data Analysis
 ![User EDA](Screenshots/user%20eda.png)
 
-### 8. Flight Price Prediction
+### 7. Flight Price Prediction
 ![Flight Price Prediction](Screenshots/flight%20price.png)
 
-### 9. Gender Classifier
+### 8. Gender Classifier
 ![Gender Classifier](Screenshots/gender%20classifier.png)
 
-### 10. Hotel Recommender System
+### 9. Hotel Recommender System
 ![Hotel Recommender](Screenshots/hotel%20recommender.png)
 
-### 11. MLflow Summary
+### 10. MLflow Summary
 ![MLflow Summary](Screenshots/mlflow%20summary.png)
 
-### 12. Model Monitoring
+### 11. Model Monitoring
 ![Model Monitoring](Screenshots/monitoring.png)
 
-### 13. Data Quality Center
+### 12. Data Quality Center
 ![Data Quality Center](Screenshots/data%20quality%20center.png)
 
-### 14. MLflow Experiment Tracking
+### 13. MLflow Experiment Tracking
 ![Experiment Tracking](Screenshots/experiment%20tracking.png)
 
-### 15. Machine Learning Pipeline
+### 14. Machine Learning Pipeline
 ![ML Pipeline](Screenshots/ml%20pipeline.png)
 
-### 16. Feature Engineering
+### 15. Feature Engineering
 ![Feature Engineering](Screenshots/feature.png)
 
-### 17. Feature Store
+### 16. Feature Store
 ![Feature Store](Screenshots/feature1.png)
 
 
