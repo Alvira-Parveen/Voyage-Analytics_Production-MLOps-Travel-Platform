@@ -1,0 +1,23 @@
+{
+  "model_name": "HotelRecommender",
+  "version": "1.0",
+  "algorithm": "HybridSVD+ContentBased",
+  "training_date": "2026-08-04T15:06:21.132229",
+  "dataset_version": "v1.0",
+  "metrics": {
+    "unique_hotels": 9,
+    "unique_users": 1310,
+    "svd_rmse": 0.4857994936233895,
+    "svd_mae": 0.3550293134272448
+  },
+  "mlflow_run_id": "7c09eafa4647479ca7bee8cba66719b1",
+  "mlflow_experiment_id": "3",
+  "feature_columns": [
+    "userCode",
+    "name",
+    "total",
+    "place",
+    "days"
+  ],
+  "deployment_stage": "Production"
+}

@@ -1,0 +1,30 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Environment Config (Sensitive parameters)
+.env
+
+# Interview Prep Reference (Local study only)
+INTERVIEW_GUIDE.md
+
+# Data directory cache (excluding raw inputs if needed, keeping raw data)
+data/processed/*.json
+data/processed/*.csv
+!data/processed/.gitkeep
+
+# MLflow artifacts & database
+mlflow/mlflow.db
+mlruns/
+mlflow/mlruns/
+
+# Python Cache & Testing
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# OS specific files
+.DS_Store
+Thumps.db

@@ -1,0 +1,226 @@
+{"timestamp": "2026-08-04T09:13:34.211620", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-04T09:13:35.142297", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-04T09:13:35.351025", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-04T09:13:35.351605", "level": "ERROR", "logger": "api", "message": "Failed to load recommender: module '__main__' has no attribute 'HybridRecommender'"}
+{"timestamp": "2026-08-04T09:13:35.351641", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender']"}
+{"timestamp": "2026-08-04T09:13:56.211156", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T09:15:17.363129", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-04T09:15:17.409463", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-04T09:15:17.431202", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-04T09:15:17.431854", "level": "ERROR", "logger": "api", "message": "Failed to load recommender: module '__main__' has no attribute 'HybridRecommender'"}
+{"timestamp": "2026-08-04T09:15:17.431892", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender']"}
+{"timestamp": "2026-08-04T09:15:49.181844", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T09:15:49.231439", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T09:15:49.367418", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T09:15:49.383686", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T09:18:21.977580", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-04T09:18:22.016921", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-04T09:18:22.039593", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-04T09:18:22.098013", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-04T09:18:22.098068", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-04T09:18:47.958801", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T09:18:48.009834", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T09:18:48.037851", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T09:20:04.432563", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T09:20:20.468228", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:30:36.198239", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:32:29.348463", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:32:51.836406", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:33:02.621430", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:33:14.586518", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:33:17.544948", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:33:37.241927", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:33:37.265443", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:34:02.889113", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:50:27.440967", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-04T14:50:28.529606", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:50:28.795667", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:50:28.858926", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:50:28.858984", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-04T14:50:56.166213", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:50:56.206121", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:50:56.282370", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:50:56.316649", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:51:30.788810", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-04T14:51:30.819602", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:30.838556", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:30.901092", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:30.901135", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-04T14:51:30.903936", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:51:30.904964", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-04T14:51:30.909417", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-04T14:51:30.910839", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:30.927988", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:30.950107", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:30.950159", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-04T14:51:30.951723", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:51:30.952548", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-04T14:51:30.954332", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-04T14:51:30.955488", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:30.972254", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:30.994807", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:30.994862", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-04T14:51:30.996051", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:51:30.996846", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-04T14:51:30.998640", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-04T14:51:30.999812", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.016544", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.038938", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.038993", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-04T14:51:31.043800", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:51:31.044695", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-04T14:51:31.046563", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-04T14:51:31.047813", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.067862", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.090623", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.090689", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-04T14:51:31.092960", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:51:31.093747", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-04T14:51:31.095720", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-04T14:51:31.096923", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.138410", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.179201", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.179265", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-04T14:51:31.182181", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:51:31.184174", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-04T14:51:31.187278", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-04T14:51:31.188623", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.208966", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.232162", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.232229", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-04T14:51:31.233696", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:51:31.234648", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-04T14:51:31.236730", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-04T14:51:31.237918", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.256653", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.279458", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.279510", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-04T14:51:31.281135", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:51:31.281887", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-04T14:51:31.283843", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-04T14:51:31.285056", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.302325", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.325258", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.325314", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-04T14:51:31.365169", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:51:31.366847", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-04T14:51:31.369097", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-04T14:51:31.370746", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.388458", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.411891", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.411948", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-04T14:51:31.440267", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:51:31.441287", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-04T14:51:31.443191", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-04T14:51:31.444541", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.463234", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.487368", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.487424", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-04T14:51:31.517146", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:51:31.518193", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-04T14:51:31.520125", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-04T14:51:31.521503", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.541927", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.565115", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.565170", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-04T14:51:31.594746", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:51:31.595715", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-04T14:51:31.597488", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-04T14:51:31.598733", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.617780", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.640519", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.640581", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-04T14:51:31.654993", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:51:31.656106", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-04T14:51:31.658186", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-04T14:51:31.659403", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.676091", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.698094", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.698147", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-04T14:51:31.706826", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:51:31.707854", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-04T14:51:31.709679", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-04T14:51:31.710820", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.727407", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.749984", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.750037", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-04T14:51:31.751249", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:51:31.751990", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-04T14:51:31.753699", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-04T14:51:31.754887", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.771528", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.793928", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-04T14:51:31.793990", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-04T14:51:31.795188", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:51:31.795894", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-04T14:57:46.752937", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:57:53.365573", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:57:53.389634", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:57:53.411603", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T14:57:56.391402", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:00:52.407114", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:01:02.442490", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:01:02.462860", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:01:02.487123", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:01:23.388819", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:01:26.913119", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:01:32.289002", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:01:34.410187", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:01:43.149282", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:07:33.056752", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:08:15.982058", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:08:16.004545", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:08:16.024936", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:08:19.255108", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:08:19.264626", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:08:19.285968", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:08:21.720375", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:08:21.727326", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:08:21.741636", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:08:23.110759", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:08:23.116364", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:08:23.130404", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:08:25.379769", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:08:25.385391", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:08:25.398109", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:09:09.518078", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:09:18.876990", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:09:25.964484", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:09:40.391021", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:20:24.571161", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:20:25.721007", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:20:28.109611", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:20:41.405632", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:20:41.432002", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:20:41.473144", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:20:59.351655", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:21:05.708678", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:21:12.371941", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:21:29.077001", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:21:32.050408", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:21:57.527660", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:21:57.550428", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:21:57.577494", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:22:29.943667", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:22:54.329953", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:23:07.783456", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:23:33.135280", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:23:50.024532", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:30:55.575746", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:31:10.130882", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:31:10.151482", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:31:10.170264", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:31:18.280109", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:31:23.885268", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:31:28.103974", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:31:32.145597", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:59:00.625302", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:59:01.983666", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:59:08.473849", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:59:08.498395", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:59:08.528845", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:59:17.736349", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:59:21.448437", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:59:25.702434", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:59:29.822544", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T15:59:40.713390", "level": "INFO", "logger": "api", "message": "Request"}

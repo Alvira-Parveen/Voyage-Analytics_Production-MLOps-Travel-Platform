@@ -1,0 +1,108 @@
+# Voyage Analytics 2.0 — Docker Compose
+# Runs: API + Dashboard + MLflow UI + Prometheus + Grafana
+# Usage: docker-compose up
+
+version: "3.9"
+
+services:
+
+  #  FastAPI — Prediction API 
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: voyage-api
+    ports:
+      - "8000:8000"
+    environment:
+      - API_KEY=voyage-dev-key-2024
+      - MLFLOW_TRACKING_URI=http://mlflow:5000
+      - MODELS_PATH=models
+      - LOG_LEVEL=INFO
+    volumes:
+      - ./models:/app/models
+      - ./logs:/app/logs
+      - ./data/processed:/app/data/processed
+    depends_on:
+      - mlflow
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c",
+             "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  #  Streamlit — Analytics Dashboard 
+  dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile.dashboard
+    container_name: voyage-dashboard
+    ports:
+      - "8501:8501"
+    environment:
+      - API_BASE_URL=http://api:8000
+      - API_KEY=voyage-dev-key-2024
+    volumes:
+      - ./data/processed:/app/data/processed
+      - ./models/registry:/app/models/registry
+    depends_on:
+      - api
+    restart: unless-stopped
+
+  #  MLflow — Experiment Tracking UI 
+  mlflow:
+    image: python:3.10-slim
+    container_name: voyage-mlflow
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./mlflow/mlruns:/mlruns
+    command: >
+      bash -c "pip install mlflow -q &&
+               mlflow server
+               --backend-store-uri /mlruns
+               --default-artifact-root /mlruns
+               --host 0.0.0.0
+               --port 5000"
+    restart: unless-stopped
+
+  #  Prometheus — Metrics Collection 
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: voyage-prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml
+    command:
+      - "--config.file=/etc/prometheus/prometheus.yml"
+      - "--storage.tsdb.retention.time=7d"
+    depends_on:
+      - api
+    restart: unless-stopped
+
+  # Grafana — Metrics Dashboard 
+  grafana:
+    image: grafana/grafana:latest
+    container_name: voyage-grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=voyage2024
+      - GF_USERS_ALLOW_SIGN_UP=false
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./monitoring/grafana/dashboards:/etc/grafana/provisioning/dashboards
+    depends_on:
+      - prometheus
+    restart: unless-stopped
+
+volumes:
+  grafana_data:
+
+networks:
+  default:
+    name: voyage-network

@@ -1,0 +1,13 @@
+# Development & Testing Requirements
+-r requirements.txt
+
+pytest==7.4.4
+pytest-asyncio==0.23.3
+httpx==0.26.0
+flake8==7.0.0
+black==24.1.1
+isort==5.13.2
+pytest-cov==4.1.0
+jupyter==1.0.0
+ipykernel==6.29.0
+notebook==7.0.7

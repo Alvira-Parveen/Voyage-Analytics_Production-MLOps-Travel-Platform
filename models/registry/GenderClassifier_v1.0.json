@@ -1,0 +1,27 @@
+{
+  "model_name": "GenderClassifier",
+  "version": "1.0",
+  "algorithm": "RandomForest",
+  "training_date": "2026-08-04T15:06:16.208160",
+  "dataset_version": "v1.0",
+  "metrics": {
+    "accuracy": 0.5722222222222222,
+    "f1_macro": 0.5722090187968765,
+    "roc_auc": 0.5862962962962963
+  },
+  "mlflow_run_id": "f8632407fb774bfb95f383f559a32d3b",
+  "mlflow_experiment_id": "2",
+  "feature_columns": [
+    "age",
+    "company_enc",
+    "travel_frequency",
+    "avg_flight_price",
+    "total_flight_spend",
+    "preferred_flight_type_enc",
+    "hotel_bookings",
+    "avg_hotel_spend",
+    "age_group_enc",
+    "spending_category_enc"
+  ],
+  "deployment_stage": "Production"
+}

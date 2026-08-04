@@ -1,0 +1,40 @@
+# Voyage Analytics 2.0 — Production Requirements
+
+#  Core Data  
+pandas==2.3.3
+numpy==2.5.1
+scipy==1.18.0
+
+#  Machine Learning 
+scikit-learn==1.9.0
+xgboost==3.3.0
+lightgbm==4.7.0
+scikit-surprise==1.1.5
+joblib==1.5.3
+
+#  Experiment Tracking
+mlflow==3.15.1
+mlflow-skinny==3.15.1
+mlflow-tracing==3.15.1
+
+#  API Layer 
+fastapi==0.141.1
+uvicorn==0.52.1
+pydantic==2.13.4
+python-multipart==0.0.32
+slowapi==0.1.10
+
+#  Client & Networking 
+requests==2.34.2
+httpx==0.28.1
+python-dotenv==1.2.2
+
+#  Presentation Layer 
+streamlit==1.60.0
+plotly==6.9.0
+matplotlib==3.11.1
+seaborn==0.13.2
+
+#  Monitoring & Metrics 
+prometheus-fastapi-instrumentator==8.1.0
+prometheus-client==0.26.0

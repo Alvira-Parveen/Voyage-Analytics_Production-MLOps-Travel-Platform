@@ -1,0 +1,32 @@
+{
+  "model_name": "FlightPricePredictor",
+  "version": "1.0",
+  "algorithm": "XGBoost",
+  "training_date": "2026-08-04T15:06:10.696580",
+  "dataset_version": "v1.0",
+  "metrics": {
+    "rmse": 18.95570461727277,
+    "mae": 13.83263368050617,
+    "r2": 0.9972731205220656,
+    "cv_r2_mean": 0.9970938796404496
+  },
+  "mlflow_run_id": "083100c968074fcfab0808240d32a60f",
+  "mlflow_experiment_id": "1",
+  "feature_columns": [
+    "flightType_enc",
+    "agency_enc",
+    "from_enc",
+    "to_enc",
+    "distance",
+    "time",
+    "speed_proxy",
+    "month",
+    "weekday",
+    "year",
+    "season_enc",
+    "is_weekend",
+    "is_holiday",
+    "agency_popularity"
+  ],
+  "deployment_stage": "Production"
+}

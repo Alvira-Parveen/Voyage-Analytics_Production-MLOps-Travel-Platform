@@ -1,0 +1,49 @@
+# Voyage Analytics 2.0 — Render Deployment Configuration
+# Infrastructure as Code for Render.com
+
+services:
+
+  #  FastAPI — Prediction API
+  - type: web
+    name: voyage-api
+    runtime: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn api.main:app --host 0.0.0.0 --port $PORT --workers 1
+    envVars:
+      - key: API_KEY
+        sync: false            
+      - key: MODELS_PATH
+        value: models
+      - key: LOG_LEVEL
+        value: INFO
+      - key: PYTHON_VERSION
+        value: "3.10.0"
+    healthCheckPath: /health
+    autoDeploy: true
+
+  #  Streamlit — Analytics Dashboard 
+  - type: web
+    name: voyage-dashboard
+    runtime: python
+    region: oregon
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: >
+      streamlit run dashboard/app.py
+      --server.port $PORT
+      --server.address 0.0.0.0
+      --server.headless true
+      --browser.gatherUsageStats false
+    envVars:
+      - key: API_BASE_URL
+        fromService:
+          name: voyage-api
+          type: web
+          property: host
+      - key: API_KEY
+        sync: false
+      - key: PYTHON_VERSION
+        value: "3.10.0"
+    autoDeploy: true
