@@ -9,24 +9,25 @@
 
 Voyage Analytics 2.0 is a production-grade, end-to-end MLOps travel platform. It validates raw relational data, engineers features inside an enterprise Feature Store, runs 5-fold cross-validated hyperparameter optimization grids, registers models in MLflow, serves sub-10ms predictions via a FastAPI Gateway, and monitors real-time feature drift (PSI/KS).
 
+🌐 **Live Demo :** [Voyage-Analytics_Production-MLOps-Travel-Platform.streamlit.app](https://voyage-analyticsappuction-mlops-travel-platform.streamlit.app/) 
 ---
 
 ## ❓ Problem Statement
 
 Modern travel platforms face three critical bottlenecks:
-1. **Isolated Data Silos:** Flight prices, hotel bookings, and user profiles are stored in disconnected databases. This makes it impossible to personalize a traveler's journey end-to-end.
-2. **Pricing Instability:** Flight ticket prices fluctuate dynamically based on routes, seasons, and agencies, leading to user booking abandonment due to price uncertainty.
-3. **Noisy User Signal (Cold Start):** Demographic attributes are often missing or highly noisy (e.g. unknown genders). Recommending hotels to brand new users without prior ratings (Cold Start) causes static, generic recommendations that lower conversion.
+1. **Isolated Data Silos :** Flight prices, hotel bookings, and user profiles are stored in disconnected databases. This makes it impossible to personalize a traveler's journey end-to-end.
+2. **Pricing Instability :** Flight ticket prices fluctuate dynamically based on routes, seasons, and agencies, leading to user booking abandonment due to price uncertainty.
+3. **Noisy User Signal (Cold Start) :** Demographic attributes are often missing or highly noisy (e.g. unknown genders). Recommending hotels to brand new users without prior ratings (Cold Start) causes static, generic recommendations that lower conversion.
 
 ---
 
 ## 💡 Solution
 
-We resolve these issues with an **integrated AI pipeline**:
-* **Flight Price Regression:** Forecasts ticket prices with a **95% prediction interval** (BRL error variance of $\pm19.3$ BRL) so travelers know exactly when to buy.
-* **Traveler Classification:** Classifies demographic categories (gender profiling and travel persona tags) from sparse behavioral travel logs.
-* **Hybrid Hotel Recommendation:** Learns user-hotel rating matrices using **SVD matrix factorization** and automatically falls back to **Cosine Similarity Content-Filtering** if SVD encounters a cold start.
-* **MLOps Governance:** Unifies this stack with validation checks, MLflow experiment registry runs, and drift monitoring.
+We resolve these issues with an **integrated AI pipeline** :-
+* **Flight Price Regression :** Forecasts ticket prices with a **95% prediction interval** (BRL error variance of $\pm19.3$ BRL) so travelers know exactly when to buy.
+* **Traveler Classification :** Classifies demographic categories (gender profiling and travel persona tags) from sparse behavioral travel logs.
+* **Hybrid Hotel Recommendation :** Learns user-hotel rating matrices using **SVD matrix factorization** and automatically falls back to **Cosine Similarity Content-Filtering** if SVD encounters a cold start.
+* **MLOps Governance :** Unifies this stack with validation checks, MLflow experiment registry runs, and drift monitoring.
 
 ---
 
@@ -38,11 +39,11 @@ To build a secure, enterprise-grade AI Operations platform that demonstrates the
 
 ## ✨ Project Objectives
 
-* **Robust Data Validation:** Enforce strict schema, type, and range validation checks prior to training.
-* **Zero Target Leakage:** Protect data splits by isolating feature scaling to train-folds and auditing features.
-* **Reproducible Experimentation:** Log every run parameter, metric, and weight in MLflow.
-* **High Efficiency serving:** Deploy a FastAPI gateway serving predictions in under 10 milliseconds.
-* **Continuous Monitoring:** Calculate Population Stability Index (PSI) and Kolmogorov-Smirnov (KS) metrics to detect input drift.
+* **Robust Data Validation :** Enforce strict schema, type, and range validation checks prior to training.
+* **Zero Target Leakage :** Protect data splits by isolating feature scaling to train-folds and auditing features.
+* **Reproducible Experimentation :** Log every run parameter, metric, and weight in MLflow.
+* **High Efficiency serving :** Deploy a FastAPI gateway serving predictions in under 10 milliseconds.
+* **Continuous Monitoring :** Calculate Population Stability Index (PSI) and Kolmogorov-Smirnov (KS) metrics to detect input drift.
 
 ---
 
@@ -67,11 +68,11 @@ To build a secure, enterprise-grade AI Operations platform that demonstrates the
 
 ## 🌟 Features
 
-* **Real Feature Importances:** Extracted dynamically from serialized model artifacts (XGBoost/RandomForest) to power serving charts.
-* **95% Prediction Interval:** Forecasts realistic ticket ranges instead of a single, static value.
-* **MLflow Run Leaderboard:** Automated winner selection based on 5-fold cross-validation.
-* **Data Quality Center:** Reports row counts, missing values, duplicates, and category replacements.
-* **Interactive Simulator:** End-to-end booking simulator taking a user from persona prediction to flight booking and customized hotel matching.
+* **Real Feature Importances :** Extracted dynamically from serialized model artifacts (XGBoost/RandomForest) to power serving charts.
+* **95% Prediction Interval :** Forecasts realistic ticket ranges instead of a single, static value.
+* **MLflow Run Leaderboard :** Automated winner selection based on 5-fold cross-validation.
+* **Data Quality Center :** Reports row counts, missing values, duplicates, and category replacements.
+* **Interactive Simulator :** End-to-end booking simulator taking a user from persona prediction to flight booking and customized hotel matching.
 
 ---
 
@@ -116,9 +117,9 @@ graph TD
 
 ## 🏛️ System Architecture
 
-* **Data Pipeline Layer:** Validates files (`validate.py`), cleans nulls/duplicates (`preprocess.py`), cyclic-encodes time series, and registers variables in the Feature Store.
-* **MLOps Model Center:** Trains candidate architectures, performs RandomizedSearchCV, logs metrics (R², RMSE, F1, MAE) to SQLite-backed MLflow, and transitions models to 'Production'.
-* **Deployed System Layer:** FastAPI serves endpoints authenticated with API Keys. Streamlit renders analytics, SHAP explanations, drift metrics, and active alerts.
+* **Data Pipeline Layer :** Validates files (`validate.py`), cleans nulls/duplicates (`preprocess.py`), cyclic-encodes time series, and registers variables in the Feature Store.
+* **MLOps Model Center :** Trains candidate architectures, performs RandomizedSearchCV, logs metrics (R², RMSE, F1, MAE) to SQLite-backed MLflow, and transitions models to 'Production'.
+* **Deployed System Layer :** FastAPI serves endpoints authenticated with API Keys. Streamlit renders analytics, SHAP explanations, drift metrics, and active alerts.
 
 ---
 
