@@ -54,7 +54,7 @@ To build a secure, enterprise-grade AI Operations platform that demonstrates the
 ![Overview Dashboard](Screenshots/Overview.png)
 
 ### 2. API Performance Metrics
-![API](Screenshots/API.png)
+![API Performance Metrics](Screenshots/API.png)
 
 ### 3. Travel Journey Dashboard
 ![Travel Journey](Screenshots/Travel%20journey.png)
