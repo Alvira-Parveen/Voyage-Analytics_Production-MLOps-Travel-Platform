@@ -1,6 +1,6 @@
 # Voyage Analytics 2.0 — Production MLOps Travel Platform
 
-[![CI/CD](https://github.com/YOUR_USERNAME/voyage-analytics/actions/workflows/ci_cd.yml/badge.svg)](https://github.com/YOUR_USERNAME/voyage-analytics/actions)
+[![CI/CD](https://github.com/Alvira-Parveen/voyage-analytics/actions/workflows/ci_cd.yml/badge.svg)](https://github.com/Alvira-Parveen/voyage-analytics/actions)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.141-green.svg)](https://fastapi.tiangolo.com/)
 [![MLflow](https://img.shields.io/badge/MLflow-3.15-orange.svg)](https://mlflow.org/)
@@ -54,7 +54,7 @@ To build a secure, enterprise-grade AI Operations platform that demonstrates the
 ![Overview Dashboard](Screenshots/Overview.png)
 
 ### 2. API Performance Metrics
-![API Performance Metrics](Screenshots/API%20Performance%20Metrics.png)
+![API Performance Metrics](Screenshots/API_Performance_Metrics.png)
 
 ### 3. Travel Journey Dashboard
 ![Travel Journey](Screenshots/Travel%20journey.png)
