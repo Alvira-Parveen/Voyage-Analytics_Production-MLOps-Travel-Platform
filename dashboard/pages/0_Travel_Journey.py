@@ -60,9 +60,19 @@ html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
 API_BASE = os.getenv("API_BASE_URL", "http://localhost:8000")
 API_KEY  = os.getenv("API_KEY", "voyage-dev-key-2024")
 
-st.markdown("# End-to-End AI Travel Journey Planner")
-st.markdown("This wizard demonstrates our ML models collaborating in sequence to optimize a traveler's journey.")
+st.markdown("# Interactive AI Travel Simulator")
+st.markdown("Simulate a traveler's journey, from profile classification to flight booking and hotel recommendations.")
 st.divider()
+
+st.info(
+    "💡 **How to Use:**\n\n"
+    "1. **Select User:** On the left sidebar menu, choose a **Target User ID** from the dropdown list. This represents the customer profile.\n"
+    "2. **Persona Prediction:** The system will immediately predict their traveler persona based on spending habits.\n"
+    "3. **Flight Booking:** Select your departure and arrival cities below to forecast ticket prices and get booking recommendations.\n"
+    "4. **Lodging Matches:** The recommender engine will automatically display hotel matches personalized to the selected profile."
+)
+
+st.markdown("---")
 
 # Load processed files for lists
 @st.cache_data

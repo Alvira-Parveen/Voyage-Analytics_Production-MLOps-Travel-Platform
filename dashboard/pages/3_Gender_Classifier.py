@@ -67,6 +67,14 @@ gender_model_artifact = load_production_gender_model()
 
 st.markdown("# Traveler Profiling & Classification")
 st.markdown("Classify demographics based on spending habits, identify traveler personas, and inspect features.")
+
+st.info(
+    "💡 **How to Use:**\n\n"
+    "1. **Set Metrics:** Enter behavioral stats (flight counts, lodging expenditure, average stay length) on the left-hand column.\n"
+    "2. **Predict Demographics:** Click the **Classify Traveler Profile** button at the bottom of the input form.\n"
+    "3. **Examine Persona:** The right column will show the predicted gender classification, confidence probabilities, and traveler persona tags."
+)
+
 st.divider()
 
 col_form, col_result = st.columns([1, 1], gap="large")

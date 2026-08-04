@@ -205,7 +205,7 @@ voyage-analytics/
 │   └── main.py         # App initialization & model cache preloader
 ├── dashboard/          # Streamlit Presentation UI
 │   ├── pages/          # 11 dashboard pages (EDA, Forecasting, Quality, etc.)
-│   └── app.py          # Dashboard landing hub and system score page
+│   └── Overview.py     # Dashboard landing hub and system score page
 ├── data/               # Project Data directory
 │   ├── raw/            # Input CSVs (users, flights, hotels)
 │   └── processed/      # Cleaned features and JSON validation reports
@@ -281,7 +281,7 @@ Open three terminal windows (with your active virtual environment):
 uvicorn api.main:app --reload --host 0.0.0.0 --port 8000
 
 # Terminal 2: Start Streamlit Dashboard UI
-streamlit run dashboard/app.py
+streamlit run dashboard/Overview.py
 
 # Terminal 3: Start MLflow UI
 mlflow ui --backend-store-uri sqlite:///mlflow/mlflow.db --port 5000

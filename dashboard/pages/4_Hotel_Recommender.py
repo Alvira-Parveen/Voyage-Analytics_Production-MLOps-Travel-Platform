@@ -60,6 +60,14 @@ API_KEY  = os.getenv("API_KEY", "voyage-dev-key-2024")
 
 st.markdown("# AI Personalized Lodging Engine")
 st.markdown("Discover bespoke hotel recommendations powered by collaborative SVD matrix factorization.")
+
+st.info(
+    "💡 **How to Use:**\n\n"
+    "1. **Input Registry Code:** Enter a customer's registry code (User ID) in the left panel (e.g. `42` or `123`).\n"
+    "2. **Adjust Limit:** Set how many recommendations you want using the slider.\n"
+    "3. **Submit Search:** Click **Fetch Personalized Lodgings** to get tailored hotel recommendations showing prices, locations, and the matching engine's logic (SVD vs. content fallback)."
+)
+
 st.divider()
 
 col_form, col_results = st.columns([1, 2], gap="large")

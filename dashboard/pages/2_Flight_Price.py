@@ -59,6 +59,14 @@ flight_model_artifact = load_production_flight_model()
 
 st.markdown("# Flight Price Forecast Platform")
 st.markdown("Run automated ML pricing forecasts, check probability ranges, and explain features with SHAP.")
+
+st.info(
+    "💡 **How to Use:**\n\n"
+    "1. **Adjust Parameters:** Configure the flight details (Flight Class, Agency, Distance, and Date) using the inputs on the left column.\n"
+    "2. **Get Forecast:** Click the **Calculate Flight Price** button at the bottom of the input form.\n"
+    "3. **Analyze Output:** The right column will update with the predicted price, a 95% confidence interval, and a breakdown of which features had the most impact on the price."
+)
+
 st.divider()
 
 col_form, col_result = st.columns([1, 1], gap="large")

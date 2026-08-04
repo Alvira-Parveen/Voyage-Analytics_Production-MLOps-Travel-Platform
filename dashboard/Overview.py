@@ -103,7 +103,7 @@ def load_model_registry():
 data = load_datasets()
 registry = load_model_registry()
 
-#  Sidebar API connection status 
+# ── Sidebar API connection status ──
 with st.sidebar:
     st.markdown("## Voyage Analytics")
     st.markdown("**v2.0 — MLOps Edition**")
@@ -123,15 +123,13 @@ with st.sidebar:
     except Exception:
         st.markdown('<span class="status-err">● API Offline</span>', unsafe_allow_html=True)
 
-    st.caption(f"API Target: `{API_BASE}`")
 
-
-#  Title & Landing page 
-st.markdown("# MLOps Executive AI Operations Center")
+# ── Title & Landing page ──
+st.markdown("# Executive AI Operations Center")
 st.markdown("Real-time monitoring, model health, feature diagnostics, and deployment logs.")
 st.divider()
 
-#  executive dashboard KPI row 
+# ── executive dashboard KPI row ──
 c1, c2, c3, c4 = st.columns(4)
 
 with c1:
@@ -172,7 +170,37 @@ with c4:
 
 st.divider()
 
-#  Model Registry status 
+# ── Platform Overview & Guide Section (NEW) ──
+col_desc, col_guide = st.columns(2, gap="large")
+
+with col_desc:
+    st.markdown("### About Voyage Analytics")
+    st.markdown("""
+    Voyage Analytics is an integrated MLOps travel platform designed to optimize travel planning and pricing using machine learning. 
+    
+    Rather than treating flights, hotels, and users as isolated datasets, this system links them together in a unified pipeline. The platform enables operators to analyze customer demographics, forecast flight prices, and recommend lodging options based on past user behaviors.
+    
+    **Core Business Layers:**
+    * **Flight price forecasting** to identify the best time to purchase tickets.
+    * **Traveler classification** to segment customers based on spending patterns.
+    * **Lodging recommendations** to personalize hotel matching.
+    """)
+
+with col_guide:
+    st.markdown("### How to Use this Dashboard")
+    st.markdown("""
+    Use the navigation menu on the left sidebar to access different views:
+    
+    * **Travel Journey:** An end-to-end trip simulator. Enter a user ID to automatically predict their travel persona, forecast flights to their destination, and recommend hotels.
+    * **Flight Price:** Input a route and cabin type to forecast ticket prices and view prediction intervals.
+    * **Gender Classifier:** Analyze customer spending history to classify demographic profiles.
+    * **Hotel Recommender:** Recommend hotels for specific users using hybrid SVD collaborative filtering.
+    * **MLflow Summary & Monitoring:** Access developer logs, drift statistics, and model parameters.
+    """)
+
+st.divider()
+
+# ── Model Registry status ──
 st.markdown("### Production Model Deployments")
 
 col1, col2, col3 = st.columns(3)
@@ -211,7 +239,7 @@ for col, (mname, label, fallback_algo) in zip([col1, col2, col3], models_info):
 
 st.divider()
 
-#  Live Latency Chart 
+# ── Live Latency Chart ──
 st.markdown("### Active API Performance Metrics")
 
 hours = [f"{h:02d}:00" for h in range(24)]
@@ -233,7 +261,7 @@ fig.update_layout(
 )
 st.plotly_chart(fig, use_container_width=True)
 
-#  business context explanation center 
+# ── business context explanation center ──
 st.divider()
 st.markdown("### System Insights")
 st.info(
