@@ -2,7 +2,7 @@
 # Multi-stage build for minimal production image
 
 #  Stage 1: Build 
-FROM python:3.10-slim AS builder
+FROM python:3.12-slim AS builder
 
 WORKDIR /build
 
@@ -12,7 +12,7 @@ RUN pip install --upgrade pip && \
 
 
 #  Stage 2: Runtime 
-FROM python:3.10-slim AS runtime
+FROM python:3.12-slim AS runtime
 
 LABEL maintainer="Voyage Analytics Team"
 LABEL version="2.0.0"
