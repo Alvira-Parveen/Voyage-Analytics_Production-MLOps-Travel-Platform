@@ -53,8 +53,7 @@ CANDIDATE_MODELS = {
     "LogisticRegression": LogisticRegression(max_iter=500, C=0.5, random_state=42),
     "DecisionTree": DecisionTreeClassifier(max_depth=4, min_samples_leaf=10, random_state=42),
     "RandomForest": RandomForestClassifier(
-        n_estimators=100, max_depth=6, min_samples_leaf=8,
-        max_features="sqrt", random_state=42, n_jobs=-1
+        n_estimators=100, max_depth=6, min_samples_leaf=8, max_features="sqrt", random_state=42, n_jobs=-1
     ),
     "XGBoost": XGBClassifier(
         n_estimators=100,
