@@ -250,3 +250,4 @@
 {"timestamp": "2026-08-04T16:39:27.860092", "level": "INFO", "logger": "api", "message": "Request"}
 {"timestamp": "2026-08-04T16:39:39.497872", "level": "INFO", "logger": "api", "message": "Request"}
 {"timestamp": "2026-08-04T16:40:19.237748", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-04T19:25:51.850621", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}

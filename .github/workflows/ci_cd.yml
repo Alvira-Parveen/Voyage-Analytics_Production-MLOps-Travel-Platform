@@ -32,7 +32,7 @@ jobs:
           cache: pip
 
       - name: Install lint tools
-        run: pip install flake8 black isort
+        run: pip install -r requirements.txt flake8 black isort
 
       - name: Run flake8
         run: flake8 src/ api/ training/ --max-line-length=120 --ignore=E501,W503,E402,F401,F811,F841,E203,E241
