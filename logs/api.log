@@ -251,3 +251,115 @@
 {"timestamp": "2026-08-04T16:39:39.497872", "level": "INFO", "logger": "api", "message": "Request"}
 {"timestamp": "2026-08-04T16:40:19.237748", "level": "INFO", "logger": "api", "message": "Request"}
 {"timestamp": "2026-08-04T19:25:51.850621", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-12T15:30:48.780598", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-12T15:30:51.011717", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:51.428549", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:51.556804", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:51.556849", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-12T15:30:51.561968", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-12T15:30:51.562776", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-12T15:30:51.570473", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-12T15:30:51.571739", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:51.590800", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:51.614029", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:51.614090", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-12T15:30:51.616732", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-12T15:30:51.617357", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-12T15:30:51.623942", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-12T15:30:51.625140", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:51.644089", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:51.698875", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:51.698936", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-12T15:30:51.701155", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-12T15:30:51.701747", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-12T15:30:51.708554", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-12T15:30:51.709768", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:51.728831", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:51.751718", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:51.751775", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-12T15:30:51.757922", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-12T15:30:51.758539", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-12T15:30:51.764901", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-12T15:30:51.766036", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:51.785459", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:51.808395", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:51.808445", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-12T15:30:51.811771", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-12T15:30:51.812359", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-12T15:30:51.818688", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-12T15:30:51.819845", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:51.839204", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:51.862377", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:51.862427", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-12T15:30:51.865878", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-12T15:30:51.866466", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-12T15:30:51.873048", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-12T15:30:51.874291", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:51.893636", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:51.916654", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:51.916705", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-12T15:30:51.919121", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-12T15:30:51.919649", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-12T15:30:51.926275", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-12T15:30:51.927469", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:51.946904", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:52.004915", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:52.004974", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-12T15:30:52.007381", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-12T15:30:52.007917", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-12T15:30:52.014460", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-12T15:30:52.015641", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:52.035185", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:52.058410", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:52.058461", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-12T15:30:52.102249", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-12T15:30:52.103879", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-12T15:30:52.111954", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-12T15:30:52.113330", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:52.133220", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:52.156820", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:52.156870", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-12T15:30:52.187206", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-12T15:30:52.187959", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-12T15:30:52.195317", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-12T15:30:52.196622", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:52.216522", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:52.239842", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:52.239891", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-12T15:30:52.270481", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-12T15:30:52.271264", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-12T15:30:52.278453", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-12T15:30:52.279746", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:52.299757", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:52.323114", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:52.323169", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-12T15:30:52.354127", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-12T15:30:52.354891", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-12T15:30:52.362211", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-12T15:30:52.363534", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:52.384188", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:52.407449", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:52.407497", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-12T15:30:52.420789", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-12T15:30:52.421479", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-12T15:30:52.427948", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-12T15:30:52.429124", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:52.448501", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:52.513622", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:52.513672", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-12T15:30:52.524190", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-12T15:30:52.524915", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-12T15:30:52.531515", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-12T15:30:52.532687", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:52.552353", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:52.575350", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:52.575398", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-12T15:30:52.577826", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-12T15:30:52.578386", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}
+{"timestamp": "2026-08-12T15:30:52.584817", "level": "INFO", "logger": "api", "message": "Starting Voyage Analytics API \u2014 loading models..."}
+{"timestamp": "2026-08-12T15:30:52.586001", "level": "INFO", "logger": "api", "message": "Flight model loaded: flight_price_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:52.605572", "level": "INFO", "logger": "api", "message": "Gender model loaded: gender_classifier_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:52.628522", "level": "INFO", "logger": "api", "message": "Recommender loaded: hotel_recommender_v1.0.pkl"}
+{"timestamp": "2026-08-12T15:30:52.628572", "level": "INFO", "logger": "api", "message": "Models loaded: ['flight', 'gender', 'recommender']"}
+{"timestamp": "2026-08-12T15:30:52.630969", "level": "INFO", "logger": "api", "message": "Request"}
+{"timestamp": "2026-08-12T15:30:52.631527", "level": "INFO", "logger": "api", "message": "Voyage Analytics API shutting down."}

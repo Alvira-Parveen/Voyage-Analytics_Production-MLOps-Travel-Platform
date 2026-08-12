@@ -4,60 +4,68 @@ Unit Tests — Preprocessing & Feature Engineering
 
 import sys
 from pathlib import Path
-import pytest
-import pandas as pd
+
 import numpy as np
+import pandas as pd
+import pytest
 
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 from src.data.preprocess import preprocess_flights, preprocess_hotels, preprocess_users
-from src.data.validate import DataValidator, FLIGHTS_RULES, USERS_RULES
-
+from src.data.validate import FLIGHTS_RULES, USERS_RULES, DataValidator
 
 # Fixtures
 
+
 @pytest.fixture
 def sample_flights():
-    return pd.DataFrame({
-        "travelCode": [0, 1, 2],
-        "userCode": [0, 1, 2],
-        "from": ["Recife (PE)", "Brasilia (DF)", "Sao Paulo (SP)"],
-        "to": ["Florianopolis (SC)", "Florianopolis (SC)", "Rio de Janeiro (RJ)"],
-        "flightType": ["firstClass", "economyClass", "businessClass"],
-        "price": [1434.38, 500.00, 800.00],
-        "time": [1.76, 2.00, 1.50],
-        "distance": [676.53, 637.56, 350.00],
-        "agency": ["FlyingDrops", "CloudFy", "Rainbow"],
-        "date": ["09/26/2019", "10/03/2019", "11/15/2019"],
-    })
+    return pd.DataFrame(
+        {
+            "travelCode": [0, 1, 2],
+            "userCode": [0, 1, 2],
+            "from": ["Recife (PE)", "Brasilia (DF)", "Sao Paulo (SP)"],
+            "to": ["Florianopolis (SC)", "Florianopolis (SC)", "Rio de Janeiro (RJ)"],
+            "flightType": ["firstClass", "economyClass", "businessClass"],
+            "price": [1434.38, 500.00, 800.00],
+            "time": [1.76, 2.00, 1.50],
+            "distance": [676.53, 637.56, 350.00],
+            "agency": ["FlyingDrops", "CloudFy", "Rainbow"],
+            "date": ["09/26/2019", "10/03/2019", "11/15/2019"],
+        }
+    )
 
 
 @pytest.fixture
 def sample_hotels():
-    return pd.DataFrame({
-        "travelCode": [0, 2],
-        "userCode": [0, 0],
-        "name": ["Hotel A", "Hotel K"],
-        "place": ["Florianopolis (SC)", "Salvador (BH)"],
-        "days": [4, 2],
-        "price": [313.02, 263.41],
-        "total": [1252.08, 526.82],
-        "date": ["09/26/2019", "10/10/2019"],
-    })
+    return pd.DataFrame(
+        {
+            "travelCode": [0, 2],
+            "userCode": [0, 0],
+            "name": ["Hotel A", "Hotel K"],
+            "place": ["Florianopolis (SC)", "Salvador (BH)"],
+            "days": [4, 2],
+            "price": [313.02, 263.41],
+            "total": [1252.08, 526.82],
+            "date": ["09/26/2019", "10/10/2019"],
+        }
+    )
 
 
 @pytest.fixture
 def sample_users():
-    return pd.DataFrame({
-        "code": [0, 1, 2, 3],
-        "company": ["4You", "4You", "4You", "4You"],
-        "name": ["Roy Braun", "Joseph H", "Wilma M", "Paula D"],
-        "gender": ["male", "male", "female", "female"],
-        "age": [21, 37, 48, 23],
-    })
+    return pd.DataFrame(
+        {
+            "code": [0, 1, 2, 3],
+            "company": ["4You", "4You", "4You", "4You"],
+            "name": ["Roy Braun", "Joseph H", "Wilma M", "Paula D"],
+            "gender": ["male", "male", "female", "female"],
+            "age": [21, 37, 48, 23],
+        }
+    )
 
 
 # Preprocessing Tests
+
 
 class TestFlightsPreprocessing:
 
@@ -112,15 +120,16 @@ class TestUsersPreprocessing:
 
 # Validation Tests
 
+
 class TestDataValidator:
 
     def test_passes_valid_data(self, sample_flights):
         v = DataValidator(sample_flights, FLIGHTS_RULES, "flights")
         report = v.validate()
         # Sample has 3 rows so min_rows will fail, but no CRITICAL column issues
-        critical_non_row = [i for i in report["issues"]
-                            if i.get("severity") == "CRITICAL"
-                            and i.get("type") != "INSUFFICIENT_ROWS"]
+        critical_non_row = [
+            i for i in report["issues"] if i.get("severity") == "CRITICAL" and i.get("type") != "INSUFFICIENT_ROWS"
+        ]
         assert len(critical_non_row) == 0
 
     def test_detects_missing_columns(self):
