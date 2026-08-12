@@ -1,0 +1,47 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: voyage-dashboard
+  labels:
+    app: voyage-dashboard
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: voyage-dashboard
+  template:
+    metadata:
+      labels:
+        app: voyage-dashboard
+    spec:
+      containers:
+      - name: dashboard
+        image: ghcr.io/alvira-parveen/voyage-analytics-dashboard:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8501
+        env:
+        - name: API_BASE_URL
+          value: "http://voyage-api-service:8000"
+        - name: API_KEY
+          value: "voyage-dev-key-2024"
+        resources:
+          limits:
+            cpu: "500m"
+            memory: "512Mi"
+          requests:
+            cpu: "250m"
+            memory: "256Mi"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: voyage-dashboard-service
+spec:
+  selector:
+    app: voyage-dashboard
+  ports:
+    - protocol: TCP
+      port: 8501
+      targetPort: 8501
+  type: LoadBalancer
