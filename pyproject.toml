@@ -11,3 +11,27 @@ force_grid_wrap = 0
 use_parentheses = true
 ensure_newline_before_comments = true
 known_first_party = ["src", "api", "training", "dashboard"]
+known_third_party = [
+    "pandas",
+    "numpy",
+    "scipy",
+    "sklearn",
+    "xgboost",
+    "lightgbm",
+    "surprise",
+    "joblib",
+    "mlflow",
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "slowapi",
+    "requests",
+    "httpx",
+    "dotenv",
+    "streamlit",
+    "plotly",
+    "matplotlib",
+    "seaborn",
+    "prometheus_client",
+    "prometheus_fastapi_instrumentator",
+]

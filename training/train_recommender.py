@@ -11,9 +11,9 @@ warnings.filterwarnings("ignore")
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import joblib
+import mlflow
 import pandas as pd
 
-import mlflow
 from src.models.hotel_recommender import HybridRecommender
 from src.utils.logger import get_logger
 from src.utils.model_registry import promote_to_production, save_model_metadata

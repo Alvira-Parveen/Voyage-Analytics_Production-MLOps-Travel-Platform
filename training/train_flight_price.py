@@ -12,6 +12,7 @@ warnings.filterwarnings("ignore")
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import joblib
+import mlflow
 import mlflow.sklearn
 import numpy as np
 import pandas as pd
@@ -20,8 +21,6 @@ from sklearn.linear_model import LinearRegression, Ridge
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 from sklearn.model_selection import KFold, train_test_split
 from sklearn.preprocessing import StandardScaler
-
-import mlflow
 
 try:
     from lightgbm import LGBMRegressor

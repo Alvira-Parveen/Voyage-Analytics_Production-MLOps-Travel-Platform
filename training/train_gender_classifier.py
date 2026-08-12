@@ -12,6 +12,7 @@ warnings.filterwarnings("ignore")
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import joblib
+import mlflow
 import mlflow.sklearn
 import numpy as np
 import pandas as pd
@@ -23,7 +24,6 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.tree import DecisionTreeClassifier
 from xgboost import XGBClassifier
 
-import mlflow
 from src.utils.logger import get_logger
 from src.utils.model_registry import promote_to_production, save_model_metadata
 
