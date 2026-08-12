@@ -85,19 +85,97 @@ with col_form:
 
     c1, c2 = st.columns(2)
     with c1:
-        distance = st.number_input("Distance (km)", min_value=50.0, max_value=10000.0,
-                                   value=676.5, step=50.0)
         month = st.slider("Month of Departure", 1, 12, 9)
         year = st.selectbox("Forecast Year", [2024, 2025, 2026], index=0)
 
     with c2:
-        flight_time = st.number_input("Estimated Duration (hours)", min_value=0.5, max_value=24.0,
-                                      value=1.76, step=0.1)
         weekday = st.slider("Day of Week (0=Mon, 6=Sun)", 0, 6, 3)
         selected_season = st.selectbox("Season Forecast", list(seasons.keys()))
 
-    from_enc = st.slider("Departure Airport ID (encoded)", 0, 30, 5)
-    to_enc   = st.slider("Arrival Airport ID (encoded)", 0, 30, 10)
+    # Airport name → (encoded ID, city label)
+    AIRPORTS = {
+        "São Paulo (GRU)": {"enc": 0, "city": "São Paulo"},
+        "Rio de Janeiro (GIG)": {"enc": 1, "city": "Rio de Janeiro"},
+        "Brasília (BSB)": {"enc": 2, "city": "Brasília"},
+        "Salvador (SSA)": {"enc": 3, "city": "Salvador"},
+        "Fortaleza (FOR)": {"enc": 4, "city": "Fortaleza"},
+        "Belo Horizonte (CNF)": {"enc": 5, "city": "Belo Horizonte"},
+        "Manaus (MAO)": {"enc": 6, "city": "Manaus"},
+        "Recife (REC)": {"enc": 7, "city": "Recife"},
+        "Porto Alegre (POA)": {"enc": 8, "city": "Porto Alegre"},
+        "Curitiba (CWB)": {"enc": 9, "city": "Curitiba"},
+        "Belém (BEL)": {"enc": 10, "city": "Belém"},
+    }
+
+    # Route distance lookup (km) between city pairs
+    ROUTE_DISTANCES = {
+        ("São Paulo", "Rio de Janeiro"): (430, 1.2),
+        ("São Paulo", "Brasília"): (870, 2.0),
+        ("São Paulo", "Salvador"): (1960, 3.5),
+        ("São Paulo", "Fortaleza"): (2780, 4.5),
+        ("São Paulo", "Belo Horizonte"): (590, 1.5),
+        ("São Paulo", "Manaus"): (2690, 4.3),
+        ("São Paulo", "Recife"): (2650, 4.2),
+        ("São Paulo", "Porto Alegre"): (1110, 2.2),
+        ("São Paulo", "Curitiba"): (410, 1.1),
+        ("São Paulo", "Belém"): (2530, 4.0),
+        ("Rio de Janeiro", "Brasília"): (1150, 2.2),
+        ("Rio de Janeiro", "Salvador"): (1650, 3.0),
+        ("Rio de Janeiro", "Fortaleza"): (2820, 4.6),
+        ("Rio de Janeiro", "Belo Horizonte"): (440, 1.2),
+        ("Rio de Janeiro", "Manaus"): (2870, 4.7),
+        ("Rio de Janeiro", "Recife"): (2300, 3.8),
+        ("Rio de Janeiro", "Porto Alegre"): (1560, 2.8),
+        ("Rio de Janeiro", "Curitiba"): (850, 1.8),
+        ("Rio de Janeiro", "Belém"): (2600, 4.2),
+        ("Brasília", "Salvador"): (1250, 2.4),
+        ("Brasília", "Fortaleza"): (1700, 3.1),
+        ("Brasília", "Manaus"): (1980, 3.5),
+        ("Brasília", "Recife"): (1550, 2.9),
+        ("Brasília", "Porto Alegre"): (2000, 3.6),
+        ("Brasília", "Belém"): (1600, 3.0),
+        ("Salvador", "Fortaleza"): (1100, 2.1),
+        ("Salvador", "Recife"): (830, 1.7),
+        ("Manaus", "Belém"): (1690, 3.1),
+        ("Porto Alegre", "Curitiba"): (720, 1.6),
+    }
+
+    def get_route_info(origin_city, dest_city):
+        key = (origin_city, dest_city)
+        rev = (dest_city, origin_city)
+        if key in ROUTE_DISTANCES:
+            return ROUTE_DISTANCES[key]
+        if rev in ROUTE_DISTANCES:
+            return ROUTE_DISTANCES[rev]
+        # Fallback estimate
+        return (800, 1.8)
+
+    airport_names = list(AIRPORTS.keys())
+    origin_sel = st.selectbox(
+        "🛫 Origin Airport",
+        airport_names,
+        index=5,
+        help="Select the departure city / airport"
+    )
+    dest_options = [a for a in airport_names if a != origin_sel]
+    dest_sel = st.selectbox(
+        "🛬 Destination Airport",
+        dest_options,
+        index=0,
+        help="Select the arrival city / airport"
+    )
+
+    from_enc = AIRPORTS[origin_sel]["enc"]
+    to_enc = AIRPORTS[dest_sel]["enc"]
+    origin_city = AIRPORTS[origin_sel]["city"]
+    dest_city = AIRPORTS[dest_sel]["city"]
+    auto_distance, auto_duration = get_route_info(origin_city, dest_city)
+
+    st.info(
+        f"📍 **Route:** {origin_sel} → {dest_sel} | "
+        f"**Distance:** ~{auto_distance:,} km | **Est. Duration:** ~{auto_duration:.1f} hrs"
+    )
+
     is_holiday = st.checkbox("Target Date is Public Holiday")
     agency_popularity = st.number_input("Agency Scale Factor", min_value=1, value=250)
 
@@ -110,8 +188,8 @@ with col_result:
             "agency_enc": agencies[selected_ag],
             "from_enc": from_enc,
             "to_enc": to_enc,
-            "distance": distance,
-            "time": flight_time,
+            "distance": auto_distance,
+            "time": auto_duration,
             "month": month,
             "weekday": weekday,
             "year": year,
@@ -245,8 +323,8 @@ try:
     flights_data = pd.read_csv("data/processed/flights_clean.csv")
     if not flights_data.empty:
         similar = flights_data[
-            (flights_data["distance"] >= distance - 200) &
-            (flights_data["distance"] <= distance + 200)
+            (flights_data["distance"] >= auto_distance - 200) &
+            (flights_data["distance"] <= auto_distance + 200)
         ].head(5)
         if not similar.empty:
             st.dataframe(similar, use_container_width=True)
