@@ -111,6 +111,34 @@ To build a secure, enterprise-grade AI Operations platform that demonstrates the
 
 ---
 
+## 🚀 Recent Production Enhancements (August 2026)
+
+Recently, we rolled out several major upgrades to stabilize our production deployments, resolve overfitting, and improve user experience:
+
+### 1. Human-Readable Flight Routing UI (Dashboard Page 2)
+* **What changed:** Replaced raw, non-intuitive "Departure/Arrival Airport ID" numerical sliders (0-30) with real-world city airport selections (e.g., *São Paulo (GRU)*, *Rio de Janeiro (GIG)*, *Belo Horizonte (CNF)*).
+* **Automated Engineering:** When a user selects a route, the dashboard automatically maps airport names to encoded IDs and looks up route distances and flight durations. Users no longer input distance/duration parameters manually, protecting model input consistency.
+
+### 2. Demographic Classifier Overfitting Fix (Dashboard Page 3)
+* **Feature Reduction:** Cut down the traveler classification feature space from 10 inputs to **6 independent behavioral metrics**: `age`, `travel_frequency`, `avg_flight_price`, `preferred_flight_type_enc`, `hotel_bookings`, and `avg_hotel_spend`.
+* **Rationale:** Removed derived multicollinear elements (like `total_flight_spend` which is a direct product of price and frequency) and bucket categories (like `age_group_enc` which is derived from `age`).
+* **Regularization:** Applied strict depth limits (`max_depth=6`), minimum sample leaf counts (`min_samples_leaf=8`), and L1/L2 penalties across Random Forest, XGBoost, and Decision Tree candidate configurations to maintain a <5% train/test accuracy gap.
+
+### 3. Production Environment Alignment (Python 3.12)
+* **Parity:** Upgraded the FastAPI backend `Dockerfile` runtime, `Dockerfile.dashboard` frontend, and the GitHub Actions runner environment from Python 3.10 to **Python 3.12** to match local development conditions.
+* **Compatibility:** Resolves dependency resolution failures on clean runners for modern packages (like `pandas 2.3.3` and `numpy 2.5.1`).
+
+### 4. Production Kubernetes manifests (k8s)
+* **Orchestration:** Added a complete set of Kubernetes deployment scripts in the `kubernetes/` folder.
+* **Components:** Includes deployment configs (with readiness/liveness health probes and resource boundaries), ClusterIP services for private backend routing, LoadBalancer services for public Streamlit ingress, and PersistentVolumeClaims (PVC) for MLflow tracking files.
+
+### 5. Automated CI/CD Gates & Quality Controls
+* **Dependency Splitting:** Separated test/development dependencies in `requirements-dev.txt` with loose version ranges to allow conflict-free setup on clean runners.
+* **Unified Formatting:** Added `pyproject.toml` configurations declaring `known_third_party` packages. This resolved sorting mismatches between `isort` and `black` auto-formatters.
+* **Deployment Validation:** Added check guards to the Render deployment jobs in `.github/workflows/ci_cd.yml` to gracefully report missing repository secrets rather than generic connection failures.
+
+---
+
 ## 🧠 System Workflow & How It Works
 
 ```mermaid
