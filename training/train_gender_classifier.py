@@ -30,17 +30,19 @@ from src.utils.model_registry import promote_to_production, save_model_metadata
 logger = get_logger(__name__)
 
 # ─────────────────────────────────────────────
+# Feature selection rationale (anti-overfitting):
+# - Removed `total_flight_spend`   → directly derived from avg_price × frequency (multicollinear)
+# - Removed `age_group_enc`        → categorical bucket of `age`, adds no new signal
+# - Removed `spending_category_enc`→ derived bucket of spend values already in model
+# - Removed `company_enc`          → high cardinality proxy with low gender signal
+# Final 6 core features represent independent behavioral signals.
 FEATURE_COLS = [
     "age",
-    "company_enc",
     "travel_frequency",
     "avg_flight_price",
-    "total_flight_spend",
     "preferred_flight_type_enc",
     "hotel_bookings",
     "avg_hotel_spend",
-    "age_group_enc",
-    "spending_category_enc",
 ]
 TARGET_COL = "gender_binary"
 MODEL_NAME = "GenderClassifier"
@@ -48,13 +50,20 @@ EXPERIMENT = "gender-classification"
 MODEL_PATH = Path("models")
 
 CANDIDATE_MODELS = {
-    "LogisticRegression": LogisticRegression(max_iter=500, random_state=42),
-    "DecisionTree": DecisionTreeClassifier(max_depth=8, random_state=42),
-    "RandomForest": RandomForestClassifier(n_estimators=200, max_depth=10, random_state=42, n_jobs=-1),
+    "LogisticRegression": LogisticRegression(max_iter=500, C=0.5, random_state=42),
+    "DecisionTree": DecisionTreeClassifier(max_depth=4, min_samples_leaf=10, random_state=42),
+    "RandomForest": RandomForestClassifier(
+        n_estimators=100, max_depth=6, min_samples_leaf=8,
+        max_features="sqrt", random_state=42, n_jobs=-1
+    ),
     "XGBoost": XGBClassifier(
-        n_estimators=200,
-        max_depth=6,
+        n_estimators=100,
+        max_depth=4,
         learning_rate=0.05,
+        subsample=0.8,
+        colsample_bytree=0.7,
+        reg_alpha=0.1,
+        reg_lambda=1.0,
         use_label_encoder=False,
         eval_metric="logloss",
         random_state=42,
