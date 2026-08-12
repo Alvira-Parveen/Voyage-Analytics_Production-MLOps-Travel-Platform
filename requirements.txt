@@ -2,12 +2,12 @@
 
 #  Core Data  
 pandas==2.3.3
-numpy==2.5.1
-scipy==1.18.0
+numpy==2.2.6
+scipy==1.15.3
 
 #  Machine Learning 
-scikit-learn==1.9.0
-xgboost==3.3.0
+scikit-learn==1.7.2
+xgboost==3.2.0
 lightgbm==4.7.0
 scikit-surprise==1.1.5
 joblib==1.5.3
@@ -32,7 +32,7 @@ python-dotenv==1.2.2
 #  Presentation Layer 
 streamlit==1.60.0
 plotly==6.9.0
-matplotlib==3.11.1
+matplotlib==3.10.9
 seaborn==0.13.2
 
 #  Monitoring & Metrics 
