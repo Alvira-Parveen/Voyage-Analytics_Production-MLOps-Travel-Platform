@@ -30,3 +30,5 @@ Thumps.db
 # Temporary Presentation Generator
 generate_ppt.py
 *.pptx
+
+generate_ppt_white.py
