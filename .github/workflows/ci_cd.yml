@@ -163,12 +163,20 @@ jobs:
     steps:
       - name: Deploy API to Render
         run: |
-          curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK_API }}" \
+          if [ -z "${{ secrets.RENDER_DEPLOY_HOOK_API }}" ]; then
+            echo "❌ ERROR: RENDER_DEPLOY_HOOK_API secret is not configured in GitHub Repository secrets!"
+            exit 1
+          fi
+          curl -fsS -X POST "${{ secrets.RENDER_DEPLOY_HOOK_API }}" \
                -H "Content-Type: application/json"
 
       - name: Deploy Dashboard to Render
         run: |
-          curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK_DASHBOARD }}" \
+          if [ -z "${{ secrets.RENDER_DEPLOY_HOOK_DASHBOARD }}" ]; then
+            echo "❌ ERROR: RENDER_DEPLOY_HOOK_DASHBOARD secret is not configured in GitHub Repository secrets!"
+            exit 1
+          fi
+          curl -fsS -X POST "${{ secrets.RENDER_DEPLOY_HOOK_DASHBOARD }}" \
                -H "Content-Type: application/json"
 
       - name: Wait for deployment
