@@ -170,20 +170,15 @@ jobs:
           curl -fsS -X POST "${{ secrets.RENDER_DEPLOY_HOOK_API }}" \
                -H "Content-Type: application/json"
 
-      - name: Deploy Dashboard to Render
-        run: |
-          if [ -z "${{ secrets.RENDER_DEPLOY_HOOK_DASHBOARD }}" ]; then
-            echo "❌ ERROR: RENDER_DEPLOY_HOOK_DASHBOARD secret is not configured in GitHub Repository secrets!"
-            exit 1
-          fi
-          curl -fsS -X POST "${{ secrets.RENDER_DEPLOY_HOOK_DASHBOARD }}" \
-               -H "Content-Type: application/json"
-
       - name: Wait for deployment
         run: sleep 45
 
       - name: Health check — API
         run: |
+          if [ -z "${{ secrets.RENDER_API_URL }}" ]; then
+            echo "❌ ERROR: RENDER_API_URL secret is not configured in GitHub Repository secrets!"
+            exit 1
+          fi
           STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
             "${{ secrets.RENDER_API_URL }}/health" \
             -H "X-API-Key: ${{ secrets.API_KEY }}")
