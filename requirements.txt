@@ -1,8 +1,8 @@
 # Voyage Analytics 2.0 — Production Requirements
 
 #  Core Data  
-pandas==2.3.3
-numpy==2.5.1
+pandas==2.2.2
+numpy==1.26.4
 scipy==1.18.0
 
 #  Machine Learning 
